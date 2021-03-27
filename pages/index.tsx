@@ -1,4 +1,8 @@
-export default function Home() {
+import { GetServerSideProps } from "next";
+
+interface Props {}
+
+export default function Home(props: Props) {
   return (
     <div className="container">
       <main>
@@ -40,17 +44,15 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
     </div>
   );
 }
+
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
+  // Make request here for data
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+};
