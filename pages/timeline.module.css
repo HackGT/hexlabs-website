@@ -4,6 +4,7 @@
   border-color: var(--purple);
   border-width: 2px;
   border-style: solid;
+  margin: 0 auto;
 }
 
 .imageContainer {
@@ -12,4 +13,16 @@
   align-items: flex-start;
   padding: 0px;
   width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 1rem;
+}
+
+.buttonContainer > * {
+  margin-right: 1rem;
 }

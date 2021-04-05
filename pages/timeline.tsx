@@ -31,6 +31,10 @@ const events: Event[] = [
       {
         alt: "girl working on project at Horizons",
         path: "/hackgt7-1.jpg"
+      },
+      {
+        alt: "girl working on project at Horizons",
+        path: "/hackgt7-1.jpg"
       }
     ]
   },
@@ -67,15 +71,17 @@ function ImageContainer(images: Image[]) {
         return (
           <div
             style={{
-              height: "375px",
-              width: "100%"
+              height: "37rem",
+              width: "100%",
+              padding: "1rem"
             }}
           >
             <div
               style={{
                 position: "relative",
                 maxWidth: "100%",
-                height: "100%"
+                height: "100%",
+                marginRight: "1rem"
               }}
             >
               <Image
@@ -96,12 +102,14 @@ function ImageContainer(images: Image[]) {
 function Event(event: Event) {
   return (
     <div className={styles.event}>
-      <h1>{event.title}</h1>
-      <h2>{event.dates}</h2>
+      <h2>{event.title}</h2>
+      <h3>{event.dates}</h3>
       <p>{event.description}</p>
       {ImageContainer(event.images)}
-      <div>
-        <Button text="Website" type={ButtonType.Outlined} />
+      <div className={styles.buttonContainer}>
+        <Button text="Website" type={ButtonType.Solid} />
+        <Button text="Photos" type={ButtonType.Solid} />
+        <Button text="Devpost" type={ButtonType.Solid} />
       </div>
     </div>
   );
