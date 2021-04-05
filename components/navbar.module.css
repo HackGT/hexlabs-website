@@ -1,0 +1,9 @@
+.nav {
+  background: green;  
+}
+
+.nav > ul {
+  display: flex;
+  list-style: none;
+}
+
