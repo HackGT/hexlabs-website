@@ -1,20 +1,55 @@
-export default function Hex({size, rotation, background}) {
+export default function Hex({ size, rotation, image, color, borderSize, borderColor }) {
+  // height = 0.5*sqrt(3)*width
+  const height = (width) => 0.8660254 * width;
+  const [borderWidth, borderHeight] = [size + borderSize, height(size + borderSize)];
+  const shape = "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)";
+
   return (
     <div
       style={{
-        background,
-        width: `${size}px`,
-        height: `${0.8660254 * size}px`, // height = 0.5*sqrt(3)*width
+        position: "relative",
+        width: `${borderWidth}px`,
+        height: `${borderHeight}px`,
         transform: `rotate(${rotation}deg)`,
-        clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);"
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          width: `${size}px`,
+          height: `${height(size)}px`,
+          transform: "translate(-50%, -50%)",
+          clipPath: shape,
+          backgroundColor: color,
+          backgroundImage: `url(${image})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          zIndex: 100,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          top: "0px",
+          left: "0px",
+          width: `${borderWidth}px`,
+          height: `${borderHeight}px`,
+          clipPath: shape, 
+          backgroundColor: borderColor,
+          zIndex: 90
+        }}
+      />
     </div>
-  )
+  );
 }
 
 Hex.defaultProps = {
-  size: 200,
+  size: 400,
   rotation: 0,
-  background: "var(--purple)",
-}
+  image: "none",
+  color: "var(--purple)",
+  borderColor: "black",
+  borderSize: 0,
+};
