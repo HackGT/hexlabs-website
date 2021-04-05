@@ -4,7 +4,7 @@
 
   display: grid;
   padding: 30px 5%;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(50px, 150px) minmax(50px, auto) 0.3fr;
 }
 
 .footer ul {
@@ -12,10 +12,19 @@
   padding-left: 0px;
 }
 
+.footer li {
+  margin: 10px 0px;
+}
+
 .columns {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .columns > div {
-  margin: 0px 20px;
+  margin: 0px 40px;
+}
+
+.columnHeader {
+  font-weight: 500;
 }

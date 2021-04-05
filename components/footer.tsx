@@ -13,31 +13,80 @@ interface FooterColumn {
 
 const footerColumns: FooterColumn[] = [
   {
-    title: "What's up",
+    title: "Company",
     links: [
       {
-        name: "yo",
-        href: "yea",
+        name: "About us",
+        href: "/",
+      },
+      {
+        name: "Team",
+        href: "/",
+      },
+      {
+        name: "Contact",
+        href: "/",
       },
     ],
   },
   {
-    title: "What's up",
+    title: "Connect with us",
     links: [
       {
-        name: "yo",
-        href: "yea",
+        name: "Email",
+        href: "/",
+      },
+      {
+        name: "Facebook",
+        href: "/",
+      },
+      {
+        name: "Instagram",
+        href: "/",
+      },
+      {
+        name: "LinkedIn",
+        href: "/",
+      },
+      {
+        name: "Twitter",
+        href: "/",
+      },
+      {
+        name: "GitHub",
+        href: "/",
+      },
+    ],
+  },
+  {
+    title: "Account",
+    links: [
+      {
+        name: "Log in",
+        href: "/",
+      },
+      {
+        name: "Sign up",
+        href: "/",
       },
     ],
   },
 ];
 
 const lastColumn: FooterColumn = {
-  title: "What's up",
+  title: "Made with love by HexLabs",
   links: [
     {
-      name: "yo",
-      href: "yea",
+      name: "Terms of Service",
+      href: "/",
+    },
+    {
+      name: "Privacy Policy",
+      href: "/",
+    },
+    {
+      name: "API",
+      href: "/",
     },
   ],
 };
@@ -45,7 +94,7 @@ const lastColumn: FooterColumn = {
 function FooterItem({ title, links }) {
   return (
     <div>
-      <div className="bold">{title}</div>
+      <div className={styles.columnHeader}>{title}</div>
       <ul>
         {links.map(({ name, href }, idx) => (
           <li key={idx}>
