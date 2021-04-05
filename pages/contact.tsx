@@ -1,11 +1,12 @@
-import Layout from "layout";
-import NavBar from "../components/navbar";
 import { GetServerSideProps } from "next";
 
 interface Props {}
 
-export default function Home(props: Props) {
+export default function Contact(props: Props) {
   return (
+    <div>
+      <h1>Hello</h1>
+    </div>
   );
 }
 
