@@ -4,20 +4,9 @@
   padding: 2rem 5%;
   display: grid;
   grid-template-columns: 1fr auto;
-}
-
-.left,
-.right {
   display: flex;
   align-items: center;
-}
-
-.left {
-  justify-content: flex-start;
-}
-
-.right {
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .right > ul {
