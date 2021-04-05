@@ -1,0 +1,15 @@
+.event {
+  width: 80%;
+  min-height: 40%;
+  border-color: var(--purple);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+}
