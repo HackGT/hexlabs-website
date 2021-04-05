@@ -19,7 +19,7 @@ const navItems : NavItem[] = [
   },
   {
     name: "Events",
-    route: "/"
+    route: "/timeline"
   },
   {
     name: "Get Involved",
