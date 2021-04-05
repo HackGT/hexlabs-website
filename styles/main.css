@@ -46,3 +46,33 @@ a:focus {
 .align-right {
   text-align: right;
 }
+
+.button-link {
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-link > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background: var(--purple);
+  border-color: transparent;
+}
+
+.solid {
+  background: var(--purple);
+  border: none;
+}
+
+.outlined {
+  background: transparent;
+  border: 2px solid white;
+}
+

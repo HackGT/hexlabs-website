@@ -1,0 +1,18 @@
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--light);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.solid {
+  background: var(--purple);
+  border: none;
+}
+
+.outlined {
+  background: transparent;
+  border: 2px solid white;
+}

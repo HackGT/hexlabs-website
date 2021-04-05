@@ -1,4 +1,5 @@
 import styles from "./logo.module.css";
+import Link from "next/link";
 
 export default function Logo() {
   return (
@@ -17,9 +18,10 @@ export default function Logo() {
           fill="white"
         />
       </svg>
-      <span className={styles.title}>
-        hexlabs
-      </span>
+      <Link href="/">
+        <a className={styles.title}>
+        hexlabs</a>
+        </Link>
     </div>
   );
 }

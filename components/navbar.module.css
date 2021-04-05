@@ -1,12 +1,12 @@
 .nav {
   background: var(--purple-blue);
   color: var(--light);
-  display: flex;
   padding: 20px 5%;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 .left, .right {
-  width: 50%;
   display: flex;
   align-items: center;
 }

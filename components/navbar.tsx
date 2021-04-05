@@ -1,6 +1,7 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import Logo from "./logo";
+import Button, { ButtonType } from "./button";
 
 interface NavItem {
   name: string;
@@ -9,19 +10,19 @@ interface NavItem {
 
 const navItems : NavItem[] = [
   {
-    name: "home",
+    name: "Home",
     route: "/"
   },
   {
-    name: "about",
+    name: "About",
     route: "/about"
   },
   {
-    name: "link1",
+    name: "Events",
     route: "/"
   },
   {
-    name: "link2",
+    name: "Get Involved",
     route: "/"
   }
 ];
@@ -44,7 +45,11 @@ export default function NavBar() {
             </li>
           )}
           <li>
-            <button>Fancy button</button>
+            <div className="button-link outlined">
+              <Link href="/">
+              <a>Contact Us</a>
+              </Link>
+            </div>
           </li>
         </ul>
       </div>
