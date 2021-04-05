@@ -2,7 +2,8 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
 
-import "../styles/main.css";
+import "../styles/normalize.css";
+import "../styles/main.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
 

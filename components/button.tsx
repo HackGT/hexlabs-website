@@ -1,8 +1,8 @@
-import styles from "./button.module.css";
+import styles from "./button.module.scss";
 
 export enum ButtonType {
   Solid,
-  Outlined
+  Outlined,
 }
 
 export default function Button({ text, type }) {

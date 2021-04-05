@@ -1,4 +1,4 @@
-import styles from "./footer.module.css";
+import styles from "./footer.module.scss";
 import Logo from "./logo";
 
 interface FooterLink {
@@ -94,7 +94,7 @@ const lastColumn: FooterColumn = {
 function FooterItem({ title, links }) {
   return (
     <div>
-      <div className={styles.columnHeader}>{title}</div>
+      <div className={styles["column-header"]}>{title}</div>
       <ul>
         {links.map(({ name, href }, idx) => (
           <li key={idx}>
@@ -111,7 +111,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <Logo />
       <div className={styles.columns}>{footerColumns.map(FooterItem)}</div>
-      <div className="align-right">
+      <div className={styles.right}>
         <FooterItem {...lastColumn} />
       </div>
     </footer>

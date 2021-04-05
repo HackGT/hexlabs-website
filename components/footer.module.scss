@@ -1,0 +1,39 @@
+.footer {
+  background: var(--color-purple-blue);
+  color: var(--color-white);
+
+  display: grid;
+  padding: 3rem 5%;
+  grid-template-columns: minmax(5rem, 15rem) minmax(5rem, auto) 1fr;
+}
+
+.footer {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    margin: 0 4rem;
+  }
+}
+
+.column-header {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.right {
+  text-align: right;
+}

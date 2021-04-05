@@ -1,11 +1,9 @@
-import styles from "./logo.module.css";
+import styles from "./logo.module.scss";
 import Link from "next/link";
 
 export default function Logo() {
   return (
-    <div 
-      className={styles.container}
-    >
+    <div className={styles.container}>
       <svg
         width="28"
         height="28"
@@ -19,9 +17,8 @@ export default function Logo() {
         />
       </svg>
       <Link href="/">
-        <a className={styles.title}>
-        hexlabs</a>
-        </Link>
+        <a className={styles.title}>hexlabs</a>
+      </Link>
     </div>
   );
 }
