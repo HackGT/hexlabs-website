@@ -11,11 +11,11 @@
   *
   * Example:
   *     <Hex 
-  *         size=200 
-  *         rotation=60 
+  *         size={200}
+  *         rotation={60} 
   *         color="var(--purple)"
   *         image="https://placekitten.com/200/300"
-  *         borderSize=10
+  *         borderSize={10}
   *         borderColor="black"
   *     />
   */

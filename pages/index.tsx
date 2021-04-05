@@ -6,7 +6,7 @@ interface Props {}
 export default function Home(props: Props) {
   return (
     <>
-      <Hex />
+      <Hex borderSize={10} borderColor="black"/>
       <h1>hi</h1>
     </>
   );
