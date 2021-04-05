@@ -1,10 +1,15 @@
 import { GetServerSideProps } from "next";
+import Hex from "../components/hex";
+
 
 interface Props {}
 
 export default function Home(props: Props) {
   return (
-    <h1>hi</h1>
+    <>
+      <Hex />
+      <h1>hi</h1>
+    </>
   );
 }
 
