@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next";
 import Hex from "../components/hex";
-import Button from "../components/button";
+import { Button, ButtonType } from "../components/button";
 
 interface Props {}
 
@@ -30,7 +30,7 @@ export default function Home(props: Props) {
         }}>
           <h1>Hexlabs</h1>
           <p>Slogan will go here maybe or something longer yada yada yada</p>
-          <Button text="Action Button" />
+          <Button type={ButtonType.SOLID}>Action Button</Button>
         </div>
         <div className="hex-container">
           {/* middle */}
@@ -38,8 +38,8 @@ export default function Home(props: Props) {
             x="2%"
             y="35%"
             size={275}
-            color="rgba(255,255,255,0.2)" 
-            rotation={-45} 
+            color="rgba(255,255,255,0.2)"
+            rotation={-45}
           />
 
           {/* top right */}
@@ -47,7 +47,7 @@ export default function Home(props: Props) {
             x="40%"
             y="-7%"
             size={300}
-            color="transparent" 
+            color="transparent"
             borderSize={4}
             borderColor="rgba(255, 255, 255, 0.2)"
             rotation={45} 
@@ -67,17 +67,17 @@ export default function Home(props: Props) {
             x="5%"
             y="55%"
             size={150}
-            color="rgba(255,255,255,0.5)" 
-            rotation={45} 
+            color="rgba(255,255,255,0.5)"
+            rotation={45}
           />
           <Hex
             x="-3%"
             y="88%"
             size={100}
-            color="transparent" 
+            color="transparent"
             borderSize={5}
             borderColor="white"
-            rotation={-45} 
+            rotation={-45}
           />
         </div>
       </section>

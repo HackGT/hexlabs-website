@@ -1,9 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/roobert");
 
-:root {
-  font-size: 10px;
-}
-
 html,
 body {
   padding: 0;
@@ -11,7 +7,7 @@ body {
   box-sizing: border-box;
 
   font-family: "Roobert", sans-serif;
-  font-size: 16px;
+  font-size: 67.5%;
   line-height: 1.5;
 
   --color-purple: #7b69ec;
@@ -30,7 +26,6 @@ body {
 }
 
 * {
-  box-sizing: border-box;
   z-index: 1000;
   position: relative;
 }
@@ -106,16 +101,6 @@ p {
   flex-wrap: wrap;
 }
 
-.solid {
-  background: var(--purple);
-  border: none;
-}
-
-.outlined {
-  background: transparent;
-  border: 2px solid white;
-}
-
 .hex-container {
   position: absolute;
   top: 0px;
@@ -131,4 +116,3 @@ p {
   background: grey;
   margin: 20px;
 }
-
