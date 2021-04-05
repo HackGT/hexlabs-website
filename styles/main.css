@@ -16,11 +16,30 @@ body {
 
 * {
   box-sizing: border-box;
+  z-index: 1000;
+  position: relative;
+}
+
+
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 main {
-  margin: 40px 12%;
   min-height: 100vh;
+}
+
+section {
+  margin: 200px 15%;
 }
 
 a {
@@ -67,6 +86,11 @@ a:focus {
   border-color: transparent;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .solid {
   background: var(--purple);
   border: none;
@@ -75,5 +99,21 @@ a:focus {
 .outlined {
   background: transparent;
   border: 2px solid white;
+}
+
+.hex-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 800;
+}
+
+.dummy-card {
+  width: 300px;
+  height: 300px;
+  background: grey;
+  margin: 20px;
 }
 
