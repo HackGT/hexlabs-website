@@ -1,5 +1,6 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import Logo from "./logo";
 
 interface NavItem {
   name: string;
@@ -30,18 +31,23 @@ export default function NavBar() {
     <nav
       className={styles.nav}
     >
-      <ul>
-        {navItems.map(({ name, route }, idx) => 
-          <li key={idx}>
-            <Link href={route}>
-              <a>{name}</a>
-            </Link>
+      <div className={styles.left}>
+        <Logo/>
+      </div>
+      <div className={styles.right}>
+        <ul>
+          {navItems.map(({ name, route }, idx) => 
+            <li key={idx}>
+              <Link href={route}>
+                <a>{name}</a>
+              </Link>
+            </li>
+          )}
+          <li>
+            <button>Fancy button</button>
           </li>
-        )}
-        <li>
-          <button>Fancy button</button>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </nav>
   )
 }

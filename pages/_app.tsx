@@ -3,6 +3,8 @@ import Head from "next/head";
 import React from "react";
 
 import "../styles/main.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 // This default export is required in a new `pages/_app.js` file.
 export default function App({ Component, pageProps }: AppProps) {
@@ -12,13 +14,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>HexLabs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <h1>Header</h1>
-      </header>
-      <Component {...pageProps} />
-      <footer>
-        <h1>Footer</h1>
-      </footer>
+      <Header />
+      <main>
+        <Component {...pageProps} />
+      </main>
+      <Footer />
     </>
   );
 }

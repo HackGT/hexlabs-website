@@ -1,3 +1,21 @@
 .footer {
-  
+  background: var(--purple-blue);
+  color: var(--light);
+
+  display: grid;
+  padding: 30px 5%;
+  grid-template-columns: auto 1fr auto;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns > div {
+  margin: 0px 20px;
 }

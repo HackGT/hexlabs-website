@@ -1,9 +1,34 @@
 .nav {
-  background: green;  
+  background: var(--purple-blue);
+  color: var(--light);
+  display: flex;
+  padding: 20px 5%;
 }
 
-.nav > ul {
+.left, .right {
+  width: 50%;
   display: flex;
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end; 
+}
+
+.right > ul {
+  display: flex;
+  align-items: center;
+
+  margin: 0px;
+  padding: 0px;
+  width: fit-content;
   list-style: none;
 }
 
+.right > ul > li {
+  padding-left: 40px;
+}
