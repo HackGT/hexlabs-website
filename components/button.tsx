@@ -1,18 +1,48 @@
+import React from "react";
+import { jsx, css, SerializedStyles } from "@emotion/react";
+
 import styles from "./button.module.css";
 
 export enum ButtonType {
-  Solid,
-  Outlined
+  SOLID,
+  OUTLINED,
+  TEXT,
 }
 
-export default function Button({ text, type }) {
-  if (type == ButtonType.Outlined) {
-    return (
-      <button className={`${styles.button} ${styles.outlined}`}>{text}</button>
-    )
-  } else {
-    return (
-      <button className={`${styles.button} ${styles.solid}`}>{text}</button>
-    )
-  }
+interface Props {
+  type: ButtonType;
 }
+
+export const Button: React.FC<Props> = (props) => {
+  let typeStyles: SerializedStyles;
+
+  switch (props.type) {
+    case ButtonType.OUTLINED:
+      typeStyles = css`
+        background: transparent;
+        border: 0.2rem solid var(--color-purple);
+        color: var(--color-purple);
+      `;
+      break;
+    case ButtonType.SOLID:
+      typeStyles = css`
+        background: var(--color-purple);
+        border: none;
+        color: var(--color-white);
+      `;
+      break;
+    case ButtonType.TEXT:
+      typeStyles = css`
+        background: transparent;
+        border: none;
+        color: var(--color-purple);
+      `;
+      break;
+  }
+
+  return (
+    <button className={`${styles.button}`} css={typeStyles}>
+      {props.children}
+    </button>
+  );
+};
