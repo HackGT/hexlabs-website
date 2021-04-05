@@ -8,51 +8,49 @@ interface NavItem {
   route: string;
 }
 
-const navItems : NavItem[] = [
+const navItems: NavItem[] = [
   {
     name: "Home",
-    route: "/"
+    route: "/",
   },
   {
     name: "About",
-    route: "/about"
+    route: "/about",
   },
   {
     name: "Events",
-    route: "/"
+    route: "/",
   },
   {
     name: "Get Involved",
-    route: "/"
-  }
+    route: "/",
+  },
 ];
 
 export default function NavBar() {
   return (
-    <nav
-      className={styles.nav}
-    >
+    <nav className={styles.nav}>
       <div className={styles.left}>
-        <Logo/>
+        <Logo />
       </div>
       <div className={styles.right}>
         <ul>
-          {navItems.map(({ name, route }, idx) => 
+          {navItems.map(({ name, route }, idx) => (
             <li key={idx}>
               <Link href={route}>
                 <a>{name}</a>
               </Link>
             </li>
-          )}
+          ))}
           <li>
-            <div className="button-link outlined">
+            <div className={styles.button}>
               <Link href="/">
-              <a>Contact Us</a>
+                <a>Contact Us</a>
               </Link>
             </div>
           </li>
         </ul>
       </div>
     </nav>
-  )
+  );
 }

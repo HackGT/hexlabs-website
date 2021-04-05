@@ -4,76 +4,91 @@ html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+
   font-family: "Roobert", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
 
-  --purple: #7B69EC;
-  --blue: #33C2FF;
-  --purple-blue: linear-gradient(90deg, var(--purple) 0%, var(--blue) 100%);
+  --color-purple: #7b69ec;
+  --color-blue: #33c2ff;
+  --color-purple-blue: linear-gradient(
+    90deg,
+    var(--color-purple) 0%,
+    var(--color-blue) 100%
+  );
 
-  --light: white;
-  --dark: black;
+  --color-black: #212121;
+  --color-dark-gray: #565656;
+  --color-gray: #858585;
+  --color-light-gray: #e6e6e6;
+  --color-white: #fff;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 main {
-  margin: 40px 12%;
+  margin: 4rem 12%;
   min-height: 100vh;
 }
 
 a {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
+  text-underline-position: under;
 }
 
 a:visited {
-  color: inherit; 
+  color: inherit;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-a:focus {
-
+h1 {
+  font-size: 7.2rem;
+  font-weight: 600;
+  color: var(--color-white);
 }
 
-.bold {
-  font-weight: bold;
+h2 {
+  font-size: 5.2rem;
+  font-weight: 500;
+  color: var(--color-black);
 }
 
-.align-right {
-  text-align: right;
+h3 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: var(--color-black);
 }
 
-.button-link {
-  width: auto;
-  border-radius: 8px;
-  cursor: pointer;
+h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-black);
 }
 
-.button-link > a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 10px 20px;
-  text-decoration: none;
+h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-black);
 }
 
-.button-link:hover {
-  background: var(--purple);
-  border-color: transparent;
+h6 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-black);
 }
 
-.solid {
-  background: var(--purple);
-  border: none;
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-black);
 }
-
-.outlined {
-  background: transparent;
-  border: 2px solid white;
-}
-
