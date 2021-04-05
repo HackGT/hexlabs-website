@@ -25,7 +25,9 @@ export default function Home(props: Props) {
       </style>
 
       <section id="splash">
-        <div>
+        <div style={{
+          maxWidth: "400px"
+        }}>
           <h1>Hexlabs</h1>
           <p>Slogan will go here maybe or something longer yada yada yada</p>
           <Button text="Action Button" />
@@ -108,7 +110,7 @@ export default function Home(props: Props) {
           proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.
         </p>
-        <div class="container">
+        <div className="container">
           <div className="dummy-card" />
           <div className="dummy-card" />
         </div>

@@ -49,7 +49,7 @@ export default function Hex({ x, y, size, rotation, image, color, borderSize, bo
           l ${-dx} ${-dy}
           z`}
           stroke={borderColor}
-          stroke-width={borderSize}
+          strokeWidth={borderSize}
           fill={color}
         />
       </svg>
