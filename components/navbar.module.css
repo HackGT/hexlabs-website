@@ -1,12 +1,13 @@
 .nav {
-  background: var(--purple-blue);
-  color: var(--light);
-  padding: 10px 5%;
+  background: var(--color-purple-blue);
+  color: var(--color-white);
+  padding: 1rem 5%;
   display: grid;
   grid-template-columns: 1fr auto;
 }
 
-.left, .right {
+.left,
+.right {
   display: flex;
   align-items: center;
 }
@@ -16,19 +17,44 @@
 }
 
 .right {
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .right > ul {
   display: flex;
   align-items: center;
 
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: fit-content;
   list-style: none;
 }
 
 .right > ul > li {
-  padding-left: 40px;
+  padding-left: 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.button {
+  width: auto;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0.2rem solid white;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.button > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--color-purple);
+  border-color: transparent;
 }

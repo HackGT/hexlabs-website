@@ -23,7 +23,6 @@ export default function Hex({ x, y, size, rotation, image, color, borderSize, bo
   // height = 0.5*sqrt(3)*width
   const height = (width) => 0.8660254 * width;
   const [borderWidth, borderHeight] = [size + 2 * borderSize, height(size + 2 * borderSize)];
-  const shape = "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)";
   
   const dx = size / 2;
   const dy = Math.sqrt(3) * dx;
@@ -61,7 +60,7 @@ Hex.defaultProps = {
   size: 200,
   rotation: 0,
   image: "none",
-  color: "var(--purple)",
+  color: "var(--color-purple)",
   borderColor: "transparent",
   borderSize: 0,
 };

@@ -15,8 +15,8 @@ export default function Home(props: Props) {
             justify-content: center;
             margin: 0px;
             width: 100vw;
-            background: var(--purple-blue);
-            color: var(--light);
+            background: var(--color-purple-blue);
+            color: var(--color-white);
             padding: 0px 15%;
             min-height: 700px;
             overflow: hidden;
