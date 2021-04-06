@@ -47,7 +47,7 @@ export default function Home(props: Props) {
             x="40%"
             y="-7%"
             size={300}
-            color="transparent" 
+            color="transparent"
             borderSize={4}
             borderColor="rgba(255, 255, 255, 0.2)"
             rotation={45} 
@@ -57,7 +57,7 @@ export default function Home(props: Props) {
             x="52%"
             y="-55%"
             size={475}
-            color="black" 
+            image="/splash.png"
             rotation={45} 
           />
 
