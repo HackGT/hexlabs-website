@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
 import Hex from "../components/hex";
 import { Button, ButtonType } from "../components/button";
+import Card from "../components/card";
 
 interface Props {}
 
@@ -25,9 +26,11 @@ export default function Home(props: Props) {
       </style>
 
       <section id="splash">
-        <div style={{
-          maxWidth: "400px"
-        }}>
+        <div
+          style={{
+            maxWidth: "400px",
+          }}
+        >
           <h1>Hexlabs</h1>
           <p>Slogan will go here maybe or something longer yada yada yada</p>
           <Button type={ButtonType.SOLID}>Action Button</Button>
@@ -107,6 +110,20 @@ export default function Home(props: Props) {
       <section>
         <h2>Upcoming Events</h2>
         <div className="container">
+          <Card
+            header="Horizons"
+            coverImage="horizons.png"
+            buttons={
+              <>
+                <Button type={ButtonType.SOLID}>Event Site</Button>
+                <Button type={ButtonType.TEXT}>Learn More</Button>
+              </>
+            }
+          >
+            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
+            series! Miss the event? All workshop slides and content are posted
+            on the event website.
+          </Card>
           <div className="dummy-card" />
           <div className="dummy-card" />
         </div>
