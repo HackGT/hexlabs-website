@@ -91,7 +91,17 @@ export default function Home(props: Props) {
           science education to high school and college students in and out of
           Georgia.
         </p>
-        <div></div>
+        <div className="hex-container">
+          <Hex
+            x="-21%"
+            y="88%"
+            size={100}
+            color="transparent"
+            borderSize={5}
+            borderColor="rgba(51,194,255,0.3)"
+            rotation={45}
+          />
+        </div>
       </section>
 
       <section>
@@ -99,6 +109,24 @@ export default function Home(props: Props) {
         <div className="container">
           <div className="dummy-card" />
           <div className="dummy-card" />
+        </div>
+        <div className="hex-container">
+          <Hex
+            x="90%"
+            y="0%"
+            size={250}
+            color="rgba(123,105,236,0.3)"
+            rotation={45}
+          />
+          <Hex
+            x="90%"
+            y="0%"
+            size={200}
+            color="transparent"
+            borderSize={5}
+            borderColor="rgba(51,194,255,0.3)"
+            rotation={-45}
+          />
         </div>
       </section>
 
@@ -113,6 +141,24 @@ export default function Home(props: Props) {
         <div className="container">
           <div className="dummy-card" />
           <div className="dummy-card" />
+        </div>
+        <div className="hex-container">
+          <Hex
+            x="-40%"
+            y="82%"
+            size={400}
+            color="rgba(123,105,236,0.3)"
+            rotation={-45}
+          />
+          <Hex
+            x="21%"
+            y="77%"
+            size={250}
+            color="transparent"
+            borderSize={5}
+            borderColor="rgba(51,194,255,0.3)"
+            rotation={45}
+          />
         </div>
       </section>
     </>
