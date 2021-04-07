@@ -1,10 +1,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background: var(--color-white);
   box-shadow: rgba(0, 0, 0, 0.15) 0 4px 16px;
   border-radius: 0.4rem;
-  max-width: 60rem;
+  min-width: 20rem;
 }
 
 .cover-image {

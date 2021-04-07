@@ -23,6 +23,7 @@ body {
   --color-gray: #858585;
   --color-light-gray: #e6e6e6;
   --color-white: #fff;
+
 }
 
 * {
@@ -99,8 +100,9 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
 }
 
 .hex-container {

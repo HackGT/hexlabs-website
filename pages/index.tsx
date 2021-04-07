@@ -53,17 +53,10 @@ export default function Home(props: Props) {
             color="transparent"
             borderSize={4}
             borderColor="rgba(255, 255, 255, 0.2)"
-            rotation={45} 
+            rotation={45}
           />
 
-          <Hex
-            x="52%"
-            y="-55%"
-            size={475}
-            image="/splash.png"
-            rotation={45} 
-          />
-
+          <Hex x="52%" y="-55%" size={475} image="/splash.png" rotation={45} />
 
           {/* bottom left */}
           <Hex
@@ -124,8 +117,20 @@ export default function Home(props: Props) {
             series! Miss the event? All workshop slides and content are posted
             on the event website.
           </Card>
-          <div className="dummy-card" />
-          <div className="dummy-card" />
+          <Card
+            header="Horizons"
+            coverImage="horizons.png"
+            buttons={
+              <>
+                <Button type={ButtonType.SOLID}>Event Site</Button>
+                <Button type={ButtonType.TEXT}>Learn More</Button>
+              </>
+            }
+          >
+            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
+            series! Miss the event? All workshop slides and content are posted
+            on the event website.
+          </Card>
         </div>
         <div className="hex-container">
           <Hex
@@ -156,8 +161,34 @@ export default function Home(props: Props) {
           laborum.
         </p>
         <div className="container">
-          <div className="dummy-card" />
-          <div className="dummy-card" />
+          <Card
+            header="Horizons"
+            coverImage="horizons.png"
+            buttons={
+              <>
+                <Button type={ButtonType.SOLID}>Event Site</Button>
+                <Button type={ButtonType.TEXT}>Learn More</Button>
+              </>
+            }
+          >
+            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
+            series! Miss the event? All workshop slides and content are posted
+            on the event website.
+          </Card>
+          <Card
+            header="Horizons"
+            coverImage="horizons.png"
+            buttons={
+              <>
+                <Button type={ButtonType.SOLID}>Event Site</Button>
+                <Button type={ButtonType.TEXT}>Learn More</Button>
+              </>
+            }
+          >
+            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
+            series! Miss the event? All workshop slides and content are posted
+            on the event website.
+          </Card>
         </div>
         <div className="hex-container">
           <Hex

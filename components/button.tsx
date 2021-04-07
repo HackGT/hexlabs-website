@@ -37,7 +37,7 @@ export const Button: React.FC<Props> = (props) => {
         background: transparent;
         border: none;
         color: var(--color-purple);
-        padding: 0.55em 0;
+        padding: 0.55em 2.2rem;
       `;
       break;
   }
