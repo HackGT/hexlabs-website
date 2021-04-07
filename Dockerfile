@@ -20,7 +20,7 @@ WORKDIR /usr/src/hexlabs-website
 ENV NODE_ENV production
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-COPY --from=builder /usr/src/hexlabs-website/next.config.js ./
+# COPY --from=builder /usr/src/hexlabs-website/next.config.js ./
 COPY --from=builder /usr/src/hexlabs-website/public ./public
 COPY --from=builder /usr/src/hexlabs-website/.next ./.next
 COPY --from=builder /usr/src/hexlabs-website/node_modules ./node_modules
