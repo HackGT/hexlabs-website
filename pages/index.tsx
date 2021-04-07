@@ -8,24 +8,7 @@ interface Props {}
 export default function Home(props: Props) {
   return (
     <>
-      <style jsx>
-        {`
-          #splash {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0px;
-            width: 100vw;
-            background: var(--color-purple-blue);
-            color: var(--color-white);
-            padding: 0px 15%;
-            min-height: 700px;
-            overflow: hidden;
-          }
-        `}
-      </style>
-
-      <section id="splash">
+      <section className="splash splash-main">
         <div
           style={{
             maxWidth: "400px",

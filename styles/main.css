@@ -23,7 +23,6 @@ body {
   --color-gray: #858585;
   --color-light-gray: #e6e6e6;
   --color-white: #fff;
-
 }
 
 * {
@@ -103,6 +102,28 @@ p {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  width: 100vw;
+  background: var(--color-purple-blue);
+  color: var(--color-white);
+  padding: 0px 15%;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+.splash-main {
+  min-height: 700px;
+}
+
+.sub-title {
+  font-size: 3.8rem;
+  margin: 0px;
 }
 
 .hex-container {
