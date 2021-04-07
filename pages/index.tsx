@@ -14,7 +14,7 @@ export default function Home(props: Props) {
             maxWidth: "400px",
           }}
         >
-          <h1>Hexlabs</h1>
+          <h1>HexLabs</h1>
           <p>Slogan will go here maybe or something longer yada yada yada</p>
           <Button type={ButtonType.SOLID}>Action Button</Button>
         </div>
