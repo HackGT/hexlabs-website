@@ -113,7 +113,7 @@ p {
   background: var(--color-purple-blue);
   color: var(--color-white);
   padding: 0px 15%;
-  min-height: 450px;
+  min-height: 500px;
   overflow: hidden;
 }
 

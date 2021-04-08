@@ -41,6 +41,7 @@ export default function Hex({
   
   const width = size + 2 * (dx + borderSize);
   const height = 2 * (dy + borderSize);
+  const patternId = `hex-img-${image}`;
 
   return (
     <div
@@ -59,7 +60,7 @@ export default function Hex({
         ) : (
           <defs>
             <pattern
-              id="hex-img"
+              id={patternId}
               x="0"
               y="0"
               width="100%"
@@ -92,7 +93,7 @@ export default function Hex({
           strokeWidth={borderSize}
           transform={`rotate(rotation)`}
           style={{
-            fill: image === "none" ? color : "url(#hex-img)",
+            fill: image === "none" ? color : `url(#${patternId})`,
           }}
         />
       </svg>
