@@ -1,0 +1,17 @@
+.banner {
+  display: grid;
+  grid-template-columns: auto 80px;
+  width: 100%;
+  background: var(--color-light-purple);
+  padding: 10px 0px;
+}
+
+.banner > div {
+  text-align: center;
+  color: var(--color-black);
+  font-size: 1.4rem;
+}
+
+.banner a {
+  text-decoration: underline;
+}
