@@ -28,6 +28,10 @@ export default function Hex({
   color,
   borderSize,
   borderColor,
+  imgOffsetX,
+  imgOffsetY,
+  imgWidth,
+  imgHeight,
 }) {
   // height = 0.5*sqrt(3)*width
   const heightHex = (width) => 0.8660254 * width;
@@ -68,10 +72,10 @@ export default function Hex({
             >
               <image
                 href={image}
-                x="0"
-                y="0"
-                width="100%"
-                height="100%"
+                x={`${0 + imgOffsetX}`}
+                y={`${0 + imgOffsetY}`}
+                width={`${imgWidth}%`}
+                height={`${imgHeight}%`}
                 preserveAspectRatio="xMidYMid slice"
                 transform={`rotate(-45) translate(${-width/2} ${height/2})`}
               />
@@ -107,4 +111,8 @@ Hex.defaultProps = {
   color: "var(--color-purple)",
   borderColor: "transparent",
   borderSize: 0,
+  imgOffsetX: 0,
+  imgOffsetY: 0,
+  imgWidth: 100,
+  imgHeight: 100,
 };
