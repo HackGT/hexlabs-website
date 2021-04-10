@@ -17,22 +17,22 @@ export default function Home(props: Props) {
         <div className="hex-container">
           {/* middle */}
           <Hex
-            x="2%"
-            y="35%"
+            x="4%"
+            y="9%"
             size={275}
             color="rgba(255,255,255,0.2)"
-            rotation={45}
+            rotation={-45}
           />
 
           {/* top right */}
           <Hex
-            x="40%"
-            y="-7%"
-            size={300}
+            x="33%"
+            y="-23%"
+            size={350}
             color="transparent"
             borderSize={4}
             borderColor="rgba(255, 255, 255, 0.2)"
-            rotation={-45}
+            rotation={45}
           />
 
           <Hex 
@@ -46,20 +46,20 @@ export default function Home(props: Props) {
 
           {/* bottom left */}
           <Hex
-            x="5%"
-            y="55%"
+            x="-1%"
+            y="58%"
             size={150}
             color="rgba(255,255,255,0.5)"
-            rotation={-45}
+            rotation={45}
           />
           <Hex
             x="-3%"
-            y="88%"
+            y="81%"
             size={100}
             color="transparent"
             borderSize={5}
             borderColor="white"
-            rotation={45}
+            rotation={-45}
           />
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function Home(props: Props) {
         </p>
         <div className="hex-container">
           <Hex
-            x="-21%"
+            x="-25%"
             y="88%"
             size={100}
             color="transparent"
@@ -120,16 +120,16 @@ export default function Home(props: Props) {
         </div>
         <div className="hex-container">
           <Hex
-            x="90%"
-            y="0%"
-            size={250}
+            x="75%"
+            y="-15%"
+            size={350}
             color="rgba(123,105,236,0.3)"
             rotation={45}
           />
           <Hex
-            x="90%"
-            y="0%"
-            size={200}
+            x="55%"
+            y="43%"
+            size={250}
             color="transparent"
             borderSize={5}
             borderColor="rgba(51,194,255,0.3)"
@@ -179,14 +179,14 @@ export default function Home(props: Props) {
         <div className="hex-container">
           <Hex
             x="-40%"
-            y="82%"
-            size={400}
+            y="72%"
+            size={450}
             color="rgba(123,105,236,0.3)"
             rotation={-45}
           />
           <Hex
             x="21%"
-            y="77%"
+            y="84%"
             size={250}
             color="transparent"
             borderSize={5}
