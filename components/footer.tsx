@@ -110,7 +110,11 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <Logo />
-      <div className={styles.columns}>{footerColumns.map(FooterItem)}</div>
+      <div className={styles.columns}>
+        {footerColumns.map((props, idx) => (
+          <FooterItem {...props} key={idx} />
+        ))}
+      </div>
       <div className={styles.right}>
         <FooterItem {...lastColumn} />
       </div>

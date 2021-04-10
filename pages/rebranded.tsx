@@ -1,4 +1,5 @@
 import { GetServerSideProps } from "next";
+import Hex from "../components/hex";
 
 interface Props {}
 
@@ -40,6 +41,14 @@ export default function Rebranded(props: Props) {
         </p>
         <p>With love,<br/>
         HexLabs</p>
+      </section>
+
+      <section className="splash">
+        <Hex 
+          x="20%"
+          y="10%"
+          rotation={45}
+        />
       </section>
     </>
   );

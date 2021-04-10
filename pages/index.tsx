@@ -9,11 +9,7 @@ export default function Home(props: Props) {
   return (
     <>
       <section className="splash splash-main">
-        <div
-          style={{
-            maxWidth: "400px",
-          }}
-        >
+        <div className="max-width-400">
           <h1>HexLabs</h1>
           <p>Slogan will go here maybe or something longer yada yada yada</p>
           <Button type={ButtonType.SOLID}>Action Button</Button>
@@ -25,7 +21,7 @@ export default function Home(props: Props) {
             y="35%"
             size={275}
             color="rgba(255,255,255,0.2)"
-            rotation={-45}
+            rotation={45}
           />
 
           {/* top right */}
@@ -36,10 +32,10 @@ export default function Home(props: Props) {
             color="transparent"
             borderSize={4}
             borderColor="rgba(255, 255, 255, 0.2)"
-            rotation={45}
+            rotation={-45}
           />
 
-          <Hex x="52%" y="-55%" size={475} image="/splash.png" rotation={45} />
+          <Hex x="52%" y="10%" size={475} image="/splash.png" rotation={45} />
 
           {/* bottom left */}
           <Hex
@@ -47,7 +43,7 @@ export default function Home(props: Props) {
             y="55%"
             size={150}
             color="rgba(255,255,255,0.5)"
-            rotation={45}
+            rotation={-45}
           />
           <Hex
             x="-3%"
@@ -56,7 +52,7 @@ export default function Home(props: Props) {
             color="transparent"
             borderSize={5}
             borderColor="white"
-            rotation={-45}
+            rotation={45}
           />
         </div>
       </section>
