@@ -4,9 +4,12 @@ import { useState } from "react";
 function Cross({ onClick }) {
   return (
     <div
-      tabindex={0}
+      tabIndex={0}
       onClick={onClick}
-      onKeyDown={(e) => { if (e.key === "Enter") onClick() }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") onClick();
+      }}
+      className={styles.cross}
     >
       <svg
         width="12"
@@ -38,6 +41,6 @@ export default function Banner({ children }) {
       </div>
     );
   } else {
-    return (null);
+    return null;
   }
 }
