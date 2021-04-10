@@ -72,6 +72,8 @@ function boundingBox(coords) {
 export default function Hex({
   x,
   y,
+  imageDx,
+  imageDy,
   size,
   rotation,
   image,
@@ -125,7 +127,7 @@ export default function Hex({
         }}
       >
         {image === "none" ? (
-          <g></g>
+          (null)
         ) : (
           <defs>
             <pattern
@@ -135,6 +137,7 @@ export default function Hex({
               width="100%"
               height="100%"
               patternUnits="userSpaceOnUse"
+              patternTransform={`translate(${imageDx} ${imageDy})`}
             >
               <image
                 href={image}
@@ -142,7 +145,7 @@ export default function Hex({
                 y="0"
                 width="100%"
                 height="100%"
-                preserveAspectRatio="xMinYMin slice"
+                preserveAspectRatio="xMidYMid slice"
               />
             </pattern>
           </defs>
@@ -165,6 +168,8 @@ Hex.defaultProps = {
   size: 200,
   rotation: 0,
   image: "none",
+  imageDx: 0,
+  imageDy: 0,
   color: "var(--color-purple)",
   borderColor: "transparent",
   borderSize: 0,
