@@ -13,8 +13,8 @@ export default function About(props: Props) {
             maxWidth: "600px",
           }}
         >
-          <h1 style={{fontSize: "75px",}}>Meet the Team</h1>
-          <p style={{fontSize: "25px"}}>HackGT is a 501(c)(3) nonprofit and student organization consisting of Georgia Tech undergraduate students focused on being the drivers of computer science outreach in the Georgia Tech, state, and national communities.</p>
+          <h1>Meet the Team</h1>
+          <p>HackGT is a 501(c)(3) nonprofit and student organization consisting of Georgia Tech undergraduate students focused on being the drivers of computer science outreach in the Georgia Tech, state, and national communities.</p>
         </div>
         <div className="hex-container">
           <Hex
@@ -34,7 +34,7 @@ export default function About(props: Props) {
     <section>
       <section>
        <h2>What We Do</h2>
-        <p style={{fontSize: "20px"}}>Through throwing large-scale collegiate hackathons of upwards of 1000 people to small-scale hackathons and workshops, our organization aims to spread the spirit of application, innovation, and creativity in computer science education.
+        <p>Through throwing large-scale collegiate hackathons of upwards of 1000 people to small-scale hackathons and workshops, our organization aims to spread the spirit of application, innovation, and creativity in computer science education.
 
 By partnering with companies and organizations large and small, we are able to cultivate environments that bring value to the lives of the communities we serve all at no cost to the participants. The motivation behind throwing free events is to allow for any person of any background to have the capacity to take full advantage of a positive experience. Our organization strives to provide a resource-rich environment that ultimately ends up in allowing a participant to learn and apply new skills, connect with other like-minded innovate individuals, and bring any of their ideas to life.
         </p>
@@ -63,10 +63,10 @@ By partnering with companies and organizations large and small, we are able to c
           imgWidth={100}
           imgHeight={120}
         />
-       <h2 style={{position: "relative", right: "10%", left: "30%", paddingTop: "200px", marginLeft: "10%", paddingBottom: "400px"}}>Exec Team
-        <p style={{position: "absolute", right: "20%", lineHeight: "40px", fontSize: "20px"}}>The HexLabs Executive Board guides the vision of HexLabs. From orchestrating the team’s actions to ensuring the organization exceeds its standards, this board helps ensure that HexLabs strives to be an organization that has a positive and lasting impact on the communities we serve.
+       <h3 style={{position: "relative", right: "10%", left: "30%", paddingTop: "200px", marginLeft: "10%", paddingBottom: "400px"}}>Exec Team
+        <p style={{position: "absolute", right: "20%", lineHeight: "40px"}}>The HexLabs Executive Board guides the vision of HexLabs. From orchestrating the team’s actions to ensuring the organization exceeds its standards, this board helps ensure that HexLabs strives to be an organization that has a positive and lasting impact on the communities we serve.
         </p>
-       </h2>
+       </h3>
       </section>
       <section>
         <Hex
@@ -88,10 +88,10 @@ By partnering with companies and organizations large and small, we are able to c
           color="#E3DFFE"
           rotation={-45}
         />
-       <h2 style={{position: "relative", right: "30%", left: "-30%", paddingTop: "200px", marginRight: "10%", paddingBottom: "400px"}}>Design Team
-        <p style={{position: "absolute", right: "30%", lineHeight: "40px", fontSize: "20px"}}>The Design Team is the pioneer for eye-catching and compelling marketing for the organization. Through effective branding, unique event theming, and user friendly interfaces, HexLabs is able to offer exclusive and meaningful experiences that enrich the community. 
+       <h3 style={{position: "relative", right: "30%", left: "-30%", paddingTop: "200px", marginRight: "10%", paddingBottom: "400px"}}>Design Team
+        <p style={{position: "absolute", right: "30%", lineHeight: "40px"}}>The Design Team is the pioneer for eye-catching and compelling marketing for the organization. Through effective branding, unique event theming, and user friendly interfaces, HexLabs is able to offer exclusive and meaningful experiences that enrich the community. 
         </p>
-       </h2>
+       </h3>
       </section>
 
       <section>
@@ -116,10 +116,10 @@ By partnering with companies and organizations large and small, we are able to c
           imgWidth={120}
           imgHeight={150}
         />
-       <h2 style={{position: "relative", right: "10%", left: "30%", paddingTop: "200px", marginLeft: "10%", paddingBottom: "400px"}}>Marketing Team
-        <p style={{position: "absolute", right: "30%", lineHeight: "40px", fontSize: "20px"}}>The Marketing Team is the voice of HexLabs. This team handles all forms of communication between the world and the organization through brand management, social media engagement, and partner outreach.
+       <h3 style={{position: "relative", right: "10%", left: "30%", paddingTop: "200px", marginLeft: "10%", paddingBottom: "400px"}}>Marketing Team
+        <p style={{position: "absolute", right: "30%", lineHeight: "40px"}}>The Marketing Team is the voice of HexLabs. This team handles all forms of communication between the world and the organization through brand management, social media engagement, and partner outreach.
         </p>
-       </h2>
+       </h3>
       </section>
 
       <section>
@@ -150,11 +150,11 @@ By partnering with companies and organizations large and small, we are able to c
           color="#E3DFFE"
           rotation={15}
         />
-       <h2 style={{position: "relative", right: "10%", left: "-30%", paddingTop: "200px", marginLeft: "10%", paddingBottom: "400px"}}>Technology Team
-        <p style={{position: "absolute", right: "30%", lineHeight: "40px", fontSize: "20px"}}>The Technology Team develops the technology that allows HexLabs’ events to run smoothly. From streamlining event check-in to automating the team’s deployment workflow, the technology team implements solutions to the logistical and technical problems we face when organizing events in an effort to improve our attendees’ overall event experience.
+       <h3 style={{position: "relative", right: "10%", left: "-30%", paddingTop: "200px", marginLeft: "10%", paddingBottom: "400px"}}>Technology Team
+        <p style={{position: "absolute", right: "30%", lineHeight: "40px"}}>The Technology Team develops the technology that allows HexLabs’ events to run smoothly. From streamlining event check-in to automating the team’s deployment workflow, the technology team implements solutions to the logistical and technical problems we face when organizing events in an effort to improve our attendees’ overall event experience.
 
         </p>
-       </h2>
+       </h3>
 
         <Hex
           x="95%"
@@ -203,10 +203,10 @@ By partnering with companies and organizations large and small, we are able to c
           imgWidth={160}
           imgHeight={150}
         />
-       <h2 style={{position: "relative", right: "0%", left: "50%", paddingTop: "300px", marginLeft: "10%", paddingBottom: "1000px"}}>Operations Team
-        <p style={{position: "absolute", right: "30%", lineHeight: "40px", fontSize: "20px"}}>The Operations Team is the team responsible for the logistics of every initiative that HexLabs organizes. Including food, venue, transportation, and materials for each event, anything that is out of the scope of any of the other teams is covered by the Operations team. The goal of Operations is to make sure that the presence of each event is intact and that HexLabs’ events run smoothly.
+       <h3 style={{position: "relative", right: "0%", left: "50%", paddingTop: "300px", marginLeft: "10%", paddingBottom: "1000px"}}>Operations Team
+        <p style={{position: "absolute", right: "30%", lineHeight: "40px"}}>The Operations Team is the team responsible for the logistics of every initiative that HexLabs organizes. Including food, venue, transportation, and materials for each event, anything that is out of the scope of any of the other teams is covered by the Operations team. The goal of Operations is to make sure that the presence of each event is intact and that HexLabs’ events run smoothly.
         </p>
-       </h2>
+       </h3>
       </section>
     </section>
    </>
