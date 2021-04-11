@@ -22,6 +22,8 @@ export default function Timeline(props: Props) {
           size={300}
           rotation={45}
           image="/timeline-splash.png"
+          x="60%"
+          y="9%"
         />
       </div>
     </section>
