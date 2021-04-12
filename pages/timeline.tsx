@@ -1,7 +1,8 @@
+import Hex from "../components/hex";
 import { GetServerSideProps } from "next";
 import styles from "./timeline.module.css";
 import Image from "next/image";
-import Button, { ButtonType } from "../components/button";
+import { Button, ButtonType } from "../components/button";
 
 interface Props {}
 
@@ -101,22 +102,50 @@ function ImageContainer(images: Image[]) {
 
 function Event(event: Event) {
   return (
-    <div className={styles.event}>
-      <h2>{event.title}</h2>
-      <h3>{event.dates}</h3>
-      <p>{event.description}</p>
-      {ImageContainer(event.images)}
-      <div className={styles.buttonContainer}>
-        <Button text="Website" type={ButtonType.Solid} />
-        <Button text="Photos" type={ButtonType.Solid} />
-        <Button text="Devpost" type={ButtonType.Solid} />
+    <>
+      <div className={styles.event}>
+        <h2>{event.title}</h2>
+        <h3>{event.dates}</h3>
+        <p>{event.description}</p>
+        {ImageContainer(event.images)}
+        <div className={styles.buttonContainer}>
+          <Button type={ButtonType.OUTLINED}>Website</Button>
+          <Button type={ButtonType.OUTLINED}>Photos</Button>
+          <Button type={ButtonType.OUTLINED}>Devpost</Button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
 export default function Timeline(props: Props) {
-  return <div>{events.map(Event)}</div>;
+  return (
+    <div>
+      <section className="splash">
+        <h1>HackGT</h1>
+        <p className="max-width-600">
+          A hackathon is an event where programmers collaborate to form creative
+          and innovative solution to posed problems. Teams of students spend a
+          weekend utilizing resources and support that we provide to bring their
+          ideas to life. Hackathons provide the community with the opportunity
+          to grow, create, and impact. At HackGT, HexLabs teams up with sponsors
+          from our community to provide issues relevant to today’s world for our
+          HackGT participants to solve, provide workshops to help students
+          learn, and prizes for winners!
+        </p>
+        <div className="hex-container">
+          <Hex
+            size={300}
+            rotation={45}
+            image="/timeline-splash.png"
+            x="60%"
+            y="9%"
+          />
+        </div>
+      </section>
+      {events.map(Event)}
+    </div>
+  );
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async context => {

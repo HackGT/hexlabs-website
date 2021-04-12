@@ -1,4 +1,34 @@
-@import url("http://fonts.cdnfonts.com/css/roobert");
+@font-face {
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 
 html,
 body {
@@ -7,9 +37,10 @@ body {
   box-sizing: border-box;
 
   font-family: "Roobert", sans-serif;
-  font-size: 62.5%;
+  font-size: 67.5%;
   line-height: 1.5;
-
+  
+  --color-light-purple: #E8E4FF;
   --color-purple: #7b69ec;
   --color-blue: #33c2ff;
   --color-purple-blue: linear-gradient(
@@ -25,6 +56,11 @@ body {
   --color-white: #fff;
 }
 
+* {
+  z-index: 1000;
+  position: relative;
+}
+
 *,
 *:before,
 *:after {
@@ -32,8 +68,12 @@ body {
 }
 
 main {
-  margin: 4rem 12%;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  margin: 200px 15%;
 }
 
 a {
@@ -50,45 +90,97 @@ a {
   }
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 7.2rem;
   font-weight: 600;
-  color: var(--color-white);
 }
 
 h2 {
   font-size: 5.2rem;
-  font-weight: 500;
-  color: var(--color-black);
 }
 
 h3 {
   font-size: 3.8rem;
-  font-weight: 500;
-  color: var(--color-black);
 }
 
 h4 {
   font-size: 2.4rem;
-  font-weight: 500;
-  color: var(--color-black);
 }
 
 h5 {
   font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--color-black);
 }
 
 h6 {
   font-size: 1.4rem;
-  font-weight: 500;
   text-transform: uppercase;
-  color: var(--color-black);
 }
 
 p {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--color-black);
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  width: 100vw;
+  background: var(--color-purple-blue);
+  color: var(--color-white);
+  padding: 0px 15%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.splash-main {
+  min-height: 700px;
+}
+
+.sub-title {
+  font-size: 3.8rem;
+  margin: 0px;
+}
+
+.hex-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 800;
+}
+
+.dummy-card {
+  width: 300px;
+  height: 300px;
+  background: grey;
+  margin: 20px;
+}
+
+.max-width-400 {
+  max-width: 400px; 
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.bold {
+  font-weight: bold;
 }

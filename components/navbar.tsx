@@ -1,7 +1,6 @@
 import styles from "./navbar.module.scss";
 import Link from "next/link";
 import Logo from "./logo";
-import Button, { ButtonType } from "./button";
 
 interface NavItem {
   name: string;

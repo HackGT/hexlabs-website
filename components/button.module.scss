@@ -1,18 +1,6 @@
 .button {
-  font-family: inherit;
-  font-size: inherit;
-  color: var(--color-white);
-  padding: 1rem 2rem;
-  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
   cursor: pointer;
-}
-
-.solid {
-  background: var(--color-purple);
-  border: none;
-}
-
-.outlined {
-  background: transparent;
-  border: 0.2rem solid white;
 }
