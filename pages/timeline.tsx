@@ -113,16 +113,16 @@ function Event(event: Event) {
       <div className={styles.event}>
         <Hex
           size={25}
-          borderSize={"5"}
+          borderSize={"8"}
           borderColor={"var(--color-blue)"}
           color={"white"}
           x={"-26px"}
-          y={"49px"}
+          y={"85px"}
         />
         <div className={styles.topContainer}>
           <div className={styles.eventDescription}>
-            <h2>{event.title}</h2>
-            <h3>{event.dates}</h3>
+            <h3>{event.title}</h3>
+            <h4>{event.dates}</h4>
             <p>{event.description}</p>
           </div>
           <div className={styles.mediaContainer}>
