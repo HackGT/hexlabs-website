@@ -11,10 +11,16 @@ interface Image {
   path: string;
 }
 
+interface Media {
+  alt: string;
+  path: string;
+}
+
 interface Event {
   title: string;
   dates: string;
   description: string;
+  media: Media;
   images: Image[];
 }
 
@@ -24,7 +30,15 @@ const events: Event[] = [
     dates: "October 16-18, 2020",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    media: {
+      alt: "video of hackgt 7",
+      path: "/hackgt7-1.jpg"
+    },
     images: [
+      {
+        alt: "girl working on project at Horizons",
+        path: "/hackgt7-1.jpg"
+      },
       {
         alt: "girl working on project at Horizons",
         path: "/hackgt7-1.jpg"
@@ -44,6 +58,10 @@ const events: Event[] = [
     dates: "October 16-18, 2020",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    media: {
+      alt: "video of hackgt 7",
+      path: "/hackgt7-1.jpg"
+    },
     images: [
       {
         alt: "girl working on project at Horizons",
@@ -56,6 +74,10 @@ const events: Event[] = [
     dates: "October 16-18, 2020",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    media: {
+      alt: "video of hackgt 7",
+      path: "/hackgt7-1.jpg"
+    },
     images: [
       {
         alt: "girl working on project at Horizons",
@@ -70,32 +92,17 @@ function ImageContainer(images: Image[]) {
     <div className={styles.imageContainer}>
       {images.map(image => {
         return (
-          <div
-            style={{
-              height: "37rem",
-              width: "100%",
-              padding: "1rem"
-            }}
-          >
-            <div
-              style={{
-                position: "relative",
-                maxWidth: "100%",
-                height: "100%",
-                marginRight: "1rem"
-              }}
-            >
-              <Image
-                src={image.path}
-                alt={image.alt}
-                layout="fill"
-                objectFit="contain"
-                quality={100}
-              />
-            </div>
-          </div>
+          <img src={image.path} alt={image.alt} className={styles.image} />
         );
       })}
+    </div>
+  );
+}
+
+function MediaContainer(media: Media) {
+  return (
+    <div className={styles.imageContainer}>
+      <img src={media.path} alt={media.alt} className={styles.image} />
     </div>
   );
 }
@@ -104,9 +111,25 @@ function Event(event: Event) {
   return (
     <>
       <div className={styles.event}>
-        <h2>{event.title}</h2>
-        <h3>{event.dates}</h3>
-        <p>{event.description}</p>
+        <Hex
+          size={25}
+          borderSize={"5"}
+          borderColor={"var(--color-blue)"}
+          color={"white"}
+          x={"-26px"}
+          y={"49px"}
+        />
+        <div className={styles.topContainer}>
+          <div className={styles.eventDescription}>
+            <h2>{event.title}</h2>
+            <h3>{event.dates}</h3>
+            <p>{event.description}</p>
+          </div>
+          <div className={styles.mediaContainer}>
+            {MediaContainer(event.media)}
+          </div>
+        </div>
+
         {ImageContainer(event.images)}
         <div className={styles.buttonContainer}>
           <Button type={ButtonType.OUTLINED}>Website</Button>
