@@ -1,3 +1,53 @@
+function deg2rad(deg) {
+  return deg * (Math.PI / 180);
+}
+
+function rotate(rotation, [x, y]) {
+  const rot = deg2rad(rotation);
+  const rx = x * Math.cos(rot) - y * Math.sin(rot);
+  const ry = x * Math.sin(rot) + y * Math.cos(rot);
+  return [rx, ry];
+}
+
+function translate(dx, dy, [x, y]) {
+  return [x + dx, y + dy];
+}
+
+// height of hexagon = 0.5*sqrt(3)*width
+function heightHex(width) {
+  return 0.8660254 * width;
+}
+
+function pathStr(coords) {
+  const m = `M ${coords[0][0]} ${coords[0][1]}`;
+  const l = coords
+    .slice(1)
+    .map(([x, y]) => `L ${x} ${y}`)
+    .join(" ");
+  return `${m} ${l} Z`;
+}
+
+function boundingBox(coords) {
+  const fst = ([x, _]) => x;
+  const snd = ([_, y]) => y;
+
+  const xs = coords.map(fst);
+  const ys = coords.map(snd);
+
+  const [minX, minY] = [Math.min(...xs), Math.min(...ys)];
+  const [maxX, maxY] = [Math.max(...xs), Math.max(...ys)];
+
+  const [x, y] = [minX, minY];
+  const [width, height] = [maxX - minX, maxY - minY];
+  
+  return {
+    x,
+    y,
+    width,
+    height,
+  };
+}
+
 /** Hex
  *
  * Renders a hexagon
@@ -22,6 +72,8 @@
 export default function Hex({
   x,
   y,
+  imageDx,
+  imageDy,
   size,
   rotation,
   image,
@@ -33,18 +85,34 @@ export default function Hex({
   imgWidth,
   imgHeight,
 }) {
-  // height = 0.5*sqrt(3)*width
-  const heightHex = (width) => 0.8660254 * width;
-  const [borderWidth, borderHeight] = [
-    size + 2 * borderSize,
-    heightHex(size + 2 * borderSize),
-  ];
-
   const dx = size / 2;
   const dy = Math.sqrt(3) * dx;
+
+  // curry helpers
+
+  const getCoords = () => {
+    const dh = size / 2;
+    const points = [
+      [-dh, dy],
+      [dh, dy],
+      [dh + dx, 0],
+      [dh, -dy],
+      [-dh, -dy],
+      [-(dh + dx), 0],
+    ];
+    return points;
+  };
   
-  const width = size + 2 * (dx + borderSize);
-  const height = 2 * (dy + borderSize);
+  // curry rotate helper
+  const rotateH = (coord) => rotate(rotation, coord);
+
+  let coords = getCoords().map(rotateH);
+  const { x: ox, y: oy, width, height } = boundingBox(coords);
+  
+  // curry translate helper
+  const translateH = (coord) => translate(-ox, -oy, coord);
+  coords = coords.map(translateH);
+
   const patternId = `hex-img-${image}`;
 
   return (
@@ -53,14 +121,17 @@ export default function Hex({
         position: "absolute",
         top: y,
         left: x,
-        width: `${borderWidth}px`,
-        height: `${borderHeight}px`,
-        transform: `rotate(${rotation}deg)`,
       }}
     >
-      <svg width={width} height={height}>
+      <svg
+        width={width}
+        height={height}
+        style={{
+          overflow: "visible"
+        }}
+      >
         {image === "none" ? (
-          <g></g>
+          (null)
         ) : (
           <defs>
             <pattern
@@ -70,6 +141,7 @@ export default function Hex({
               width="100%"
               height="100%"
               patternUnits="userSpaceOnUse"
+              patternTransform={`translate(${imageDx} ${imageDy})`}
             >
               <image
                 href={image}
@@ -78,24 +150,15 @@ export default function Hex({
                 width={`${imgWidth}%`}
                 height={`${imgHeight}%`}
                 preserveAspectRatio="xMidYMid slice"
-                transform={`rotate(-45) translate(${-width/2} ${height/2})`}
               />
             </pattern>
           </defs>
         )}
 
         <path
-          d={`
-          m ${dx} ${borderSize} 
-          l ${size} 0
-          l ${dx} ${dy}
-          l ${-dx} ${dy}
-          l ${-size} 0
-          l ${-dx} ${-dy}
-          z`}
+          d={pathStr(coords)}
           stroke={borderColor}
           strokeWidth={borderSize}
-          transform={`rotate(rotation)`}
           style={{
             fill: image === "none" ? color : `url(#${patternId})`,
           }}
@@ -109,6 +172,8 @@ Hex.defaultProps = {
   size: 200,
   rotation: 0,
   image: "none",
+  imageDx: 0,
+  imageDy: 0,
   color: "var(--color-purple)",
   borderColor: "transparent",
   borderSize: 0,

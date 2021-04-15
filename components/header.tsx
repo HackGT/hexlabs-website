@@ -6,12 +6,12 @@ export default function Header() {
   return (
     <header>
       <Banner>
-        We have 
+        We have&nbsp;
         <Link href="/rebranded">
-          <a> rebranded! </a>
+          <a>rebranded!</a>
         </Link>
       </Banner>
-      <NavBar/> 
+      <NavBar />
     </header>
-  )
+  );
 }

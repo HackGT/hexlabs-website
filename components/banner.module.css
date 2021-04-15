@@ -15,3 +15,8 @@
 .banner a {
   text-decoration: underline;
 }
+
+.cross {
+  cursor: pointer;
+  outline: none;
+}
