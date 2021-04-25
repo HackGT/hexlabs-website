@@ -1,20 +1,22 @@
 import { GetServerSideProps } from "next";
+import { useMediaQuery } from "react-responsive";
+
 import { Button, ButtonType } from "../components/button";
 import Hex from "../components/hex";
 
 interface Props {}
 
 export default function About(props: Props) {
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
+
     return (
         <>
             <section className="splash splash-main">
                 <div
-                    style={{
-                        maxWidth: "600px",
-                    }}
+                    className='splash-main-text'
                 >
-                    <h1>Meet the Team</h1>
-                    <p>
+                    <h1 className="splash-heading">Meet the Team</h1>
+                    <p className="splash-text">
                         HackGT is a 501(c)(3) nonprofit and student organization
                         consisting of Georgia Tech undergraduate students
                         focused on being the drivers of computer science
@@ -23,43 +25,85 @@ export default function About(props: Props) {
                     </p>
                 </div>
                 <div className="hex-container">
-                    <Hex
-                        x="59%"
-                        y="10%"
-                        size={200}
-                        color="rgba(255,255,255,0.35)"
-                        rotation={13}
-                    />
-                    <Hex
-                        x="45%"
-                        y="20%"
-                        size={125}
-                        color="transparent"
-                        borderSize={4}
-                        borderColor="rgba(255, 255, 255, 0.3)"
-                        rotation={40}
-                    />
-                    <Hex
-                        x="55%"
-                        y="20%"
-                        size={400}
-                        image="./splash.png"
-                        rotation={15}
-                        imgOffsetX={-180}
-                        imgOffsetY={-320}
-                        imgWidth={150}
-                        imgHeight={150}
-                    />
-                    <Hex
-                        x="-3%"
-                        y="81%"
-                        size={120}
-                        color="transparent"
-                        borderSize={3}
-                        borderColor="rgba(255, 255, 255, 0.4)"
-                        rotation={45}
-                    />
-                </div>
+                    { isMobile ?
+                    <>
+                        <Hex 
+                            x='55%'
+                            y='10%'
+                            size={100}
+                            color="rgba(123, 105, 236, 0.4)"
+                            rotation={10}
+                        />
+                        <Hex 
+                            x='35%'
+                            y='10%'
+                            size={70}
+                            color="transparent"
+                            borderColor="rgba(255, 255, 255, 0.3)"
+                            borderSize={2}
+                            rotation={40}
+                        />
+                        <Hex 
+                            x='10%'
+                            y='70%'
+                            size={70}
+                            color="transparent"
+                            borderColor="rgba(255, 255, 255, 0.3)"
+                            borderSize={2}
+                            rotation={30}
+                        />
+                        <Hex
+                            x="35%"
+                            y="70%"
+                            size={150}
+                            image="./splash.png"
+                            rotation={15}
+                            imgOffsetX={-180}
+                            imgOffsetY={-80}
+                            imgWidth={150}
+                            imgHeight={180}
+                        />
+                    </> :
+                    <>
+                        <Hex
+                            x="59%"
+                            y="10%"
+                            size={200}
+                            color="rgba(255,255,255,0.35)"
+                            rotation={13}
+                        />
+                        <Hex
+                            x="45%"
+                            y="20%"
+                            size={125}
+                            color="transparent"
+                            borderSize={4}
+                            borderColor="rgba(255, 255, 255, 0.3)"
+                            rotation={40}
+                        />
+                        <Hex
+                            x="55%"
+                            y="20%"
+                            size={400}
+                            image="./splash.png"
+                            rotation={15}
+                            imgOffsetX={-180}
+                            imgOffsetY={-320}
+                            imgWidth={150}
+                            imgHeight={150}
+                        />
+                        <Hex
+                            x="-3%"
+                            y="81%"
+                            size={120}
+                            color="transparent"
+                            borderSize={3}
+                            borderColor="rgba(255, 255, 255, 0.4)"
+                            rotation={45}
+                        />
+                    </>
+                    }
+                    </div>
             </section>
 
             <section>
