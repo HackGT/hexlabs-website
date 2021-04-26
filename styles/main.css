@@ -174,10 +174,6 @@ p {
         text-align: center;
     }
 
-    .info-text-what-we-do {
-        padding-bottom: 200px;
-    }
-
     .info-heading {
         width: 60vw;
         font-size: 25px;
@@ -196,11 +192,6 @@ p {
         transform: translateX(-50%);
         line-height: 2rem !important;
         text-align: left;
-    }
-
-    .info-heading-operations {
-        padding-bottom: 80px !important;
-        padding-top: 80px !important;
     }
 }
 

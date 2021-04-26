@@ -28,6 +28,22 @@ export default function About(props: Props) {
                 .extra-padding {
                     padding: 160px 0px;
                 }
+
+                @media (max-width: 767px) {
+                    .two-col {
+                        display: flexbox;
+                        flex-wrap: wrap;
+                        position: relative;
+                    }
+
+                    .left {
+                        width: 100%;
+                    }
+
+                    .right {
+                        width: 100%;
+                    }
+                }
             `}</style>
 
             <section className="splash">
@@ -185,9 +201,9 @@ export default function About(props: Props) {
                             rotation={45}
                         />
                         <Hex
-                            x="-10%"
-                            y="-20%"
-                            size={150}
+                            x="5%"
+                            y="-15%"
+                            size={120}
                             image="./exec.png"
                             color="transparent"
                             rotation={40}
@@ -236,9 +252,9 @@ export default function About(props: Props) {
                 {isMobile ? (
                     <>
                         <Hex
-                            x="-10%"
-                            y="-20%"
-                            size={150}
+                            x="5%"
+                            y="-15%"
+                            size={120}
                             image="./exec_2.png"
                             color="transparent"
                             rotation={35}
@@ -297,9 +313,9 @@ export default function About(props: Props) {
                             rotation={45}
                         />
                         <Hex
-                            x="-10%"
-                            y="-20%"
-                            size={150}
+                            x="5%"
+                            y="-15%"
+                            size={120}
                             image="./exec.png"
                             color="transparent"
                             rotation={23}
@@ -373,9 +389,9 @@ export default function About(props: Props) {
                             rotation={15}
                         />
                         <Hex
-                            x="-10%"
-                            y="-20%"
-                            size={150}
+                            x="5%"
+                            y="-15%"
+                            size={120}
                             image="./exec.png"
                             color="transparent"
                             rotation={35}
@@ -429,9 +445,9 @@ export default function About(props: Props) {
                 {isMobile ? (
                     <>
                         <Hex
-                            x="-10%"
-                            y="-70%"
-                            size={150}
+                            x="5%"
+                            y="-15%"
+                            size={120}
                             image="./exec.png"
                             color="transparent"
                             rotation={35}
