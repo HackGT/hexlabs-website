@@ -1,93 +1,93 @@
 @font-face {
-    font-family: "Roobert";
-    src: url("../public/fonts/Roobert/Roobert-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Roobert";
-    src: url("../public/fonts/Roobert/Roobert-Medium.ttf");
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Roobert";
-    src: url("../public/fonts/Roobert/Roobert-SemiBold.ttf");
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Roobert";
-    src: url("../public/fonts/Roobert/Roobert-Bold.ttf");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
+  font-family: "Roobert";
+  src: url("../public/fonts/Roobert/Roobert-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-    font-family: "Roobert", sans-serif;
-    font-size: 67.5%;
-    line-height: 1.5;
+  font-family: "Roobert", sans-serif;
+  font-size: 67.5%;
+  line-height: 1.5;
 
-    --color-light-purple: #e8e4ff;
-    --color-purple: #7b69ec;
-    --color-blue: #33c2ff;
-    --color-purple-blue: linear-gradient(
-        90deg,
-        var(--color-purple) 0%,
-        var(--color-blue) 100%
-    );
+  --color-light-purple: #e8e4ff;
+  --color-purple: #7b69ec;
+  --color-blue: #33c2ff;
+  --color-purple-blue: linear-gradient(
+    90deg,
+    var(--color-purple) 0%,
+    var(--color-blue) 100%
+  );
 
-    --color-black: #212121;
-    --color-dark-gray: #565656;
-    --color-gray: #858585;
-    --color-light-gray: #e6e6e6;
-    --color-white: #fff;
+  --color-black: #212121;
+  --color-dark-gray: #565656;
+  --color-gray: #858585;
+  --color-light-gray: #e6e6e6;
+  --color-white: #fff;
 }
 
 * {
-    z-index: 1000;
-    position: relative;
+  z-index: 1000;
+  position: relative;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 main {
-    min-height: 100vh;
-    overflow: hidden;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 section {
-    margin: 200px 15%;
+  margin: 200px 15%;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    text-underline-position: under;
+  color: inherit;
+  text-decoration: none;
+  text-underline-position: under;
 }
 
 a:visited {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h2,
@@ -95,135 +95,135 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 h1 {
-    font-size: 7.2rem;
-    font-weight: 600;
+  font-size: 7.2rem;
+  font-weight: 600;
 }
 
 h2 {
-    font-size: 5.2rem;
+  font-size: 5.2rem;
 }
 
 h3 {
-    font-size: 3.8rem;
+  font-size: 3.8rem;
 }
 
 h4 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 h5 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h6 {
-    font-size: 1.4rem;
-    text-transform: uppercase;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 1.8rem;
-    font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .container {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
 }
 
 .splash {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px;
-    width: 100vw;
-    background: var(--color-purple-blue);
-    color: var(--color-white);
-    padding: 0px 15%;
-    min-height: 500px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  width: 100vw;
+  background: var(--color-purple-blue);
+  color: var(--color-white);
+  padding: 0px 15%;
+  min-height: 500px;
+  overflow: hidden;
 }
 
 .splash-main {
-    min-height: 700px;
+  min-height: 700px;
 }
 
 .splash-main-text {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 @media (max-width: 767px) {
-    .splash {
-        min-height: 100vh;
-        text-align: center;
-    }
+  .splash {
+    min-height: 100vh;
+    text-align: center;
+  }
 
-    .splash-heading {
-        font-size: 30px;
-    }
+  .splash-heading {
+    font-size: 30px;
+  }
 
-    .splash-text {
-        font-size: 13px;
-    }
+  .splash-text {
+    font-size: 13px;
+  }
 
-    .splash-main-text {
-        text-align: center;
-    }
+  .splash-main-text {
+    text-align: center;
+  }
 
-    .info-heading {
-        width: 60vw;
-        font-size: 25px;
-        position: relative !important;
-        left: 50% !important;
-        transform: translateX(-50%);
-        text-align: center;
-        margin-left: 0 !important;
-    }
+  .info-heading {
+    width: 60vw;
+    font-size: 25px;
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-left: 0 !important;
+  }
 
-    .info-text {
-        width: 60vw;
-        font-size: 13px;
-        position: relative !important;
-        left: 50% !important;
-        transform: translateX(-50%);
-        line-height: 2rem !important;
-        text-align: left;
-    }
+  .info-text {
+    width: 60vw;
+    font-size: 13px;
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    line-height: 2rem !important;
+    text-align: left;
+  }
 }
 
 .sub-title {
-    font-size: 3.8rem;
-    margin: 0px;
+  font-size: 3.8rem;
+  margin: 0px;
 }
 
 .hex-container {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 800;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 800;
 }
 
 .dummy-card {
-    width: 300px;
-    height: 300px;
-    background: grey;
-    margin: 20px;
+  width: 300px;
+  height: 300px;
+  background: grey;
+  margin: 20px;
 }
 
 .max-width-400 {
-    max-width: 400px;
+  max-width: 400px;
 }
 
 .max-width-600 {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
