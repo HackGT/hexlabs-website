@@ -84,7 +84,7 @@ export default function Hex({
   imgOffsetY,
   imgWidth,
   imgHeight,
-  transform,
+  transform
 }) {
   const dx = size / 2;
   const dy = Math.sqrt(3) * dx;
@@ -122,7 +122,6 @@ export default function Hex({
         position: "absolute",
         top: y,
         left: x,
-        transform,
       }}
     >
       <svg
@@ -183,4 +182,5 @@ Hex.defaultProps = {
   imgOffsetY: 0,
   imgWidth: 100,
   imgHeight: 100,
+  transform: "translate(+0%, +0%)"
 };
