@@ -6,8 +6,9 @@ interface Props {}
 export default function Rebranded(props: Props) {
   return (
     <>
-      <section className="splash">
+      <section className="splash ">
         <h1>We're Rebranding</h1>
+        <div className="max-width-600">
         <div className="sub-title">Getting ready for change</div>
         <p>
           Introducing HexLabs, the new parent organization of all your HackGT
@@ -15,6 +16,7 @@ export default function Rebranded(props: Props) {
           spaces for students to confidently discover, pursue, and create ideas
           together.
         </p>
+        </div>
       </section>
       <section>
         <p>
@@ -41,14 +43,6 @@ export default function Rebranded(props: Props) {
         </p>
         <p>With love,<br/>
         HexLabs</p>
-      </section>
-
-      <section className="splash">
-        <Hex 
-          x="20%"
-          y="10%"
-          rotation={45}
-        />
       </section>
     </>
   );

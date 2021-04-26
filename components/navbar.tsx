@@ -43,7 +43,7 @@ export default function NavBar() {
           ))}
           <li>
             <div className={styles.button}>
-              <Link href="/">
+              <Link href="/contact">
                 <a>Contact Us</a>
               </Link>
             </div>
