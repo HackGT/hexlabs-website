@@ -11,7 +11,6 @@ export default function Home(props: Props) {
       <section className="splash splash-main">
         <div className="max-width-400">
           <h1>HexLabs</h1>
-          <p>Slogan will go here maybe or something longer yada yada yada</p>
           <Button type={ButtonType.SOLID}>Action Button</Button>
         </div>
         <div className="hex-container">
