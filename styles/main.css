@@ -168,6 +168,25 @@ p {
     .splash-main-text {
         text-align: center;
     }
+
+    .info-heading {
+        width: 60vw;
+        font-size: 25px;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .info-text {
+        width: 60vw;
+        font-size: 13px;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        line-height: 2rem !important;
+        text-align: left;
+    }
 }
 
 .sub-title {

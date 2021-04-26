@@ -60,7 +60,7 @@ export default function About(props: Props) {
                             rotation={15}
                             imgOffsetX={-180}
                             imgOffsetY={-80}
-                            imgWidth={150}
+                            imgWidth={180}
                             imgHeight={180}
                         />
                     </> :
@@ -108,13 +108,13 @@ export default function About(props: Props) {
 
             <section>
                 <section>
-                    <h2>What We Do</h2>
-                    <p>
+                    <h2 className='info-heading'>What We Do</h2>
+                    <p className='info-text'>
                         Through throwing large-scale collegiate hackathons of
                         upwards of 1000 people to small-scale hackathons and
                         workshops, our organization aims to spread the spirit of
                         application, innovation, and creativity in computer
-                        science education. By partnering with companies and
+                        science education. <br /> <br /> By partnering with companies and
                         organizations large and small, we are able to cultivate
                         environments that bring value to the lives of the
                         communities we serve all at no cost to the participants.
@@ -140,18 +140,33 @@ export default function About(props: Props) {
                     </div>
                 </section>
                 <section>
-                    <Hex
-                        x="-45%"
-                        y="-0%"
-                        size={400}
-                        image="./exec.png"
-                        color="transparent"
-                        rotation={40}
-                        imgOffsetX={50}
-                        imgOffsetY={-230}
-                        imgWidth={100}
-                        imgHeight={120}
-                    />
+                    {
+                        isMobile ? 
+                        <Hex 
+                            x="-45%"
+                            y="-30%"
+                            size={200}
+                            image='./exec.png'
+                            color="transparent"
+                            imgOffsetX={50}
+                            imgOffsetY={-30}
+                            imgWidth={100}
+                            imgHeight={120}
+                        />
+                        :
+                        <Hex
+                            x="-45%"
+                            y="-0%"
+                            size={400}
+                            image="./exec.png"
+                            color="transparent"
+                            rotation={40}
+                            imgOffsetX={50}
+                            imgOffsetY={-230}
+                            imgWidth={100}
+                            imgHeight={120}
+                        />
+                    }
                     <h3
                         style={{
                             position: "relative",
@@ -161,6 +176,7 @@ export default function About(props: Props) {
                             marginLeft: "10%",
                             paddingBottom: "400px",
                         }}
+                        className="info-heading"
                     >
                         Exec Team
                         <p
@@ -169,6 +185,7 @@ export default function About(props: Props) {
                                 right: "20%",
                                 lineHeight: "40px",
                             }}
+                            className="info-text"
                         >
                             The HexLabs Executive Board guides the vision of
                             HexLabs. From orchestrating the team’s actions to
@@ -208,6 +225,7 @@ export default function About(props: Props) {
                             marginRight: "10%",
                             paddingBottom: "400px",
                         }}
+                        className="info-heading"
                     >
                         Design Team
                         <p
@@ -216,6 +234,7 @@ export default function About(props: Props) {
                                 right: "30%",
                                 lineHeight: "40px",
                             }}
+                            className="info-text"
                         >
                             The Design Team is the pioneer for eye-catching and
                             compelling marketing for the organization. Through
@@ -258,6 +277,7 @@ export default function About(props: Props) {
                             marginLeft: "10%",
                             paddingBottom: "400px",
                         }}
+                        className="info-heading"
                     >
                         Marketing Team
                         <p
@@ -266,6 +286,7 @@ export default function About(props: Props) {
                                 right: "30%",
                                 lineHeight: "40px",
                             }}
+                        className="info-text"
                         >
                             The Marketing Team is the voice of HexLabs. This
                             team handles all forms of communication between the
@@ -321,6 +342,7 @@ export default function About(props: Props) {
                             marginLeft: "10%",
                             paddingBottom: "400px",
                         }}
+                        className="info-heading"
                     >
                         Technology Team
                         <p
@@ -329,6 +351,7 @@ export default function About(props: Props) {
                                 right: "30%",
                                 lineHeight: "40px",
                             }}
+                        className="info-text"
                         >
                             The Technology Team develops the technology that
                             allows HexLabs’ events to run smoothly. From
@@ -396,6 +419,7 @@ export default function About(props: Props) {
                             marginLeft: "10%",
                             paddingBottom: "1000px",
                         }}
+                        className="info-heading"
                     >
                         Operations Team
                         <p
@@ -404,6 +428,7 @@ export default function About(props: Props) {
                                 right: "30%",
                                 lineHeight: "40px",
                             }}
+                        className="info-text"
                         >
                             The Operations Team is the team responsible for the
                             logistics of every initiative that HexLabs
