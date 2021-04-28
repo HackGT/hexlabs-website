@@ -44,6 +44,8 @@ export default function About(props: Props) {
             width: 100%;
           }
         }
+        
+
       `}</style>
 
       <section className="splash">
