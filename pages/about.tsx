@@ -86,6 +86,7 @@ export default function About(props: Props) {
           <Hex
             x="80%"
             y="-70%"
+            transform="translate(-50%, -50%)"
             color="transparent"
             borderSize={4}
             borderColor="red"
