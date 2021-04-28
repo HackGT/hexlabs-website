@@ -35,13 +35,13 @@ export default function Home(props: Props) {
             rotation={45}
           />
 
-          <Hex 
+          <Hex
             x="40%"
-            y="-50%" 
-            size={475} 
-            image="/splash.png" 
+            y="-50%"
+            size={475}
+            image="/splash.png"
             imageDy={300}
-            rotation={45} 
+            rotation={45}
           />
 
           {/* bottom left */}
