@@ -29,7 +29,44 @@ export default function About(props: Props) {
           padding: 160px 0px;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
+          .splash {
+            min-height: 100vh;
+            text-align: center;
+          }
+
+          .splash-heading {
+            font-size: 30px;
+          }
+
+          .splash-text {
+            font-size: 13px;
+          }
+
+          .splash-main-text {
+            text-align: center;
+          }
+
+          .info-heading {
+            width: 60vw;
+            font-size: 25px;
+            position: relative !important;
+            left: 50% !important;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-left: 0 !important;
+          }
+
+          .info-text {
+            width: 60vw;
+            font-size: 13px;
+            position: relative !important;
+            left: 50% !important;
+            transform: translateX(-50%);
+            line-height: 2rem !important;
+            text-align: left;
+          }
+
           .two-col {
             display: flexbox;
             flex-wrap: wrap;
@@ -44,8 +81,6 @@ export default function About(props: Props) {
             width: 100%;
           }
         }
-        
-
       `}</style>
 
       <section className="splash">
