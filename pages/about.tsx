@@ -47,6 +47,10 @@ export default function About(props: Props) {
             text-align: center;
           }
 
+          .what-we-do-p2 {
+            padding-bottom: 200px;
+          }
+
           .info-heading {
             width: 60vw;
             font-size: 25px;
@@ -208,7 +212,7 @@ export default function About(props: Props) {
           to spread the spirit of application, innovation, and creativity in
           computer science education.
         </p>
-        <p className="info-text">
+        <p className="info-text what-we-do-p2">
           By partnering with companies and organizations large and small, we are
           able to cultivate environments that bring value to the lives of the
           communities we serve all at no cost to the participants. The
@@ -276,38 +280,40 @@ export default function About(props: Props) {
       </section>
 
       <section className="two-col extra-padding">
-        {isMobile ? (
-          <>
-            <Hex
-              x="5%"
-              y="-15%"
-              size={120}
-              image="./exec_2.png"
-              color="transparent"
-              rotation={35}
-              imgOffsetX={-10}
-              imgOffsetY={-100}
-              imgWidth={120}
-              imgHeight={150}
-            />
-          </>
-        ) : (
-          <>
-            <Hex
-              x="85%"
-              y="-0%"
-              size={400}
-              image="./exec_2.png"
-              color="transparent"
-              rotation={32}
-              imgOffsetX={-50}
-              imgOffsetY={-260}
-              imgWidth={110}
-              imgHeight={120}
-            />
-            <Hex x="-70%" y="20%" size={300} color="#E3DFFE" rotation={-45} />
-          </>
-        )}
+        <div className="hex-container">
+          {isMobile ? (
+            <>
+              <Hex
+                x="5%"
+                y="-15%"
+                size={120}
+                image="./exec_2.png"
+                color="transparent"
+                rotation={35}
+                imgOffsetX={-10}
+                imgOffsetY={-100}
+                imgWidth={120}
+                imgHeight={150}
+              />
+            </>
+          ) : (
+            <>
+              <Hex
+                x="85%"
+                y="-0%"
+                size={400}
+                image="./exec_2.png"
+                color="transparent"
+                rotation={32}
+                imgOffsetX={-50}
+                imgOffsetY={-260}
+                imgWidth={110}
+                imgHeight={120}
+              />
+              <Hex x="-70%" y="20%" size={300} color="#E3DFFE" rotation={-45} />
+            </>
+          )}
+        </div>
         <div className="left">
           <h3 className="info-heading">Design Team</h3>
           <p className="info-text">
