@@ -183,4 +183,5 @@ Hex.defaultProps = {
   imgOffsetY: 0,
   imgWidth: 100,
   imgHeight: 100,
+  transform: "none",
 };
