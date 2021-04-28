@@ -37,7 +37,6 @@ body {
   box-sizing: border-box;
 
   font-family: "Roobert", sans-serif;
-  font-size: 67.5%;
   line-height: 1.5;
   
   --color-light-purple: #E8E4FF;
@@ -73,7 +72,7 @@ main {
 }
 
 section {
-  margin: 200px 15%;
+  margin: 100px 15%;
 }
 
 a {
@@ -90,6 +89,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-weight: 600;
+}
+
 h2,
 h3,
 h4,
@@ -99,40 +102,37 @@ h6 {
 }
 
 h1 {
-  font-size: 7.2rem;
-  font-weight: 600;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 5.2rem;
+  font-size: 2.75rem;
 }
 
 h3 {
-  font-size: 3.8rem;
+  font-size: 2.25rem;
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h6 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
 p {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.25rem;
 }
 
 .container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .splash {
@@ -148,12 +148,16 @@ p {
   overflow: hidden;
 }
 
+.splash p {
+  margin-bottom: 80px;
+}
+
 .splash-main {
   min-height: 700px;
 }
 
 .sub-title {
-  font-size: 3.8rem;
+  font-size: 2.5rem;
   margin: 0px;
 }
 
@@ -185,3 +189,9 @@ p {
   font-weight: bold;
 }
 
+.button-link-solid {
+  background: var(--color-purple);
+  color: var(--color-white);
+  padding: 0.55em 2.2rem;
+  border-radius: 0.4rem;
+}

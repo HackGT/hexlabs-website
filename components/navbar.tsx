@@ -18,11 +18,11 @@ const navItems: NavItem[] = [
   },
   {
     name: "Events",
-    route: "/",
+    route: "/events",
   },
   {
     name: "Get Involved",
-    route: "/",
+    route: "/get-involved",
   },
 ];
 

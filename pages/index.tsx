@@ -103,6 +103,7 @@ export default function Home(props: Props) {
             series! Miss the event? All workshop slides and content are posted
             on the event website.
           </Card>
+          {/*
           <Card
             header="Horizons"
             coverImage="horizons.png"
@@ -117,6 +118,7 @@ export default function Home(props: Props) {
             series! Miss the event? All workshop slides and content are posted
             on the event website.
           </Card>
+            */}
         </div>
         <div className="hex-container">
           <Hex

@@ -24,6 +24,8 @@ export default function About(props: Props) {
         .extra-padding {
           padding: 160px 0px; 
         }
+        
+
       `}</style>
 
       <section className="splash">

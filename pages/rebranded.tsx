@@ -6,7 +6,7 @@ interface Props {}
 export default function Rebranded(props: Props) {
   return (
     <>
-      <section className="splash ">
+      <section className="splash">
         <h1>We're Rebranding</h1>
         <div className="max-width-600">
         <div className="sub-title">Getting ready for change</div>
