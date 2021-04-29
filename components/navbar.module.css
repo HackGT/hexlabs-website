@@ -35,7 +35,7 @@
   display: block;
   height: 100%;
   width: 100%;
-  padding: 10px 20px;
+  padding: 6px 20px;
   text-decoration: none;
 }
 
@@ -64,11 +64,11 @@
 }
 
 .line {
-  fill:none;
+  fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #e4e4e4;
-  stroke-width:5.5;
-  stroke-linecap:round;
+  stroke-width: 5.5;
+  stroke-linecap: round;
 }
 
 .ham4 .top {
@@ -103,7 +103,7 @@
 }
 
 .mobile .content ul {
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .mobile .content li {
@@ -119,4 +119,3 @@
     display: block;
   }
 }
-
