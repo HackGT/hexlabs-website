@@ -17,15 +17,11 @@ const footerColumns: FooterColumn[] = [
     links: [
       {
         name: "About us",
-        href: "/",
-      },
-      {
-        name: "Team",
-        href: "/",
+        href: "/about",
       },
       {
         name: "Contact",
-        href: "/",
+        href: "/contact",
       },
     ],
   },
@@ -34,27 +30,27 @@ const footerColumns: FooterColumn[] = [
     links: [
       {
         name: "Email",
-        href: "/",
+        href: "mailto:hello@hack.gt",
       },
       {
         name: "Facebook",
-        href: "/",
+        href: "https://www.facebook.com/TheHexLabs",
       },
       {
         name: "Instagram",
-        href: "/",
+        href: "https://www.instagram.com/thehackgt/",
       },
       {
         name: "LinkedIn",
-        href: "/",
+        href: "https://www.linkedin.com/company/thehexlabs/",
       },
       {
         name: "Twitter",
-        href: "/",
+        href: "https://twitter.com/TheHexLabs",
       },
       {
         name: "GitHub",
-        href: "/",
+        href: "https://github.com/HackGT",
       },
     ],
   },
@@ -63,10 +59,6 @@ const footerColumns: FooterColumn[] = [
 const lastColumn: FooterColumn = {
   title: "Made with love by HexLabs",
   links: [
-    {
-      name: "Privacy Policy",
-      href: "/",
-    },
   ],
 };
 

@@ -37,6 +37,7 @@ body {
   box-sizing: border-box;
 
   font-family: "Roobert", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
 
   --color-light-purple: #e8e4ff;
@@ -132,7 +133,6 @@ p {
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .splash {
@@ -198,4 +198,14 @@ p {
   color: var(--color-white);
   padding: 0.55em 2.2rem;
   border-radius: 0.4rem;
+}
+
+.button-link-solid:hover {
+  text-decoration: none;
+  background: #E3DFFE;
+  color: black !important;
+}
+
+a.button-link-solid:visited {
+  color: var(--color-white);
 }
