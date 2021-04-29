@@ -30,23 +30,26 @@ const navItems: NavItem[] = [
 export default function NavBar() {
   const nav = useRef(null);
   const ham = useRef(null);
+  const hamParent = useRef(null);
+  
+  // TODO jank solution for time being
+  const mediaQuery = window.matchMedia('(max-width: 850px)')
+
   const toggle = () => {
     ham.current.classList.toggle(styles.active);
     nav.current.classList.toggle(styles.mobile);
   };
   const onClickNav = () => {
-    const isMobile = nav.current.classList.contains(styles.mobile);
-    const isActive = ham.current.classList.contains(styles.active);
-    if ((isMobile && isActive) || !isActive) {
-      toggle(); 
-    }  
+    if (mediaQuery.matches || ham.current.classList.contains(styles.active)) {
+      toggle();
+    }
   }
 
   return (
     <nav 
       className={styles.nav}
-      ref={nav}
       onClick={onClickNav}
+      ref={nav}
       >
       <div
         className={styles.hamburger}
