@@ -51,9 +51,22 @@ const footerColumns: FooterColumn[] = [
       {
         name: "GitHub",
         href: "https://github.com/HackGT",
-      },
+      }
     ],
   },
+  {
+    title: "Join the Community",
+    links: [
+      {
+        name: "Newsletter",
+        href: "http://eepurl.com/hrkumn"
+      },
+      {
+        name: "Discord",
+        href: "https://discord.gg/gFskbdD67F"
+      }
+    ]
+  }
 ];
 
 const lastColumn: FooterColumn = {

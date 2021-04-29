@@ -114,7 +114,7 @@ export default function Home(props: Props) {
             coverImage="home-discord.jpeg"
             buttons={
               <>
-                <a href="https://discord.gg/RfNZxzNb" className="button-link-solid">Join Us</a>
+                <a href="https://discord.gg/gFskbdD67F" className="button-link-solid">Join Us</a>
               </>
             }
           >

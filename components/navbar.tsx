@@ -94,7 +94,7 @@ export default function NavBar() {
             ))}
             <li>
               <div className={styles.button}>
-                <Link href="/contact">
+                <Link href="mailto:hello@hack.gt">
                   <a>Contact Us</a>
                 </Link>
               </div>

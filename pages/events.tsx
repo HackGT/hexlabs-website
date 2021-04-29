@@ -8,8 +8,62 @@ const previousEvents = [
     name: "Horizons 2020",
     description:
       "Horizons is an art+tech make-a-thon that encouraged participants to bring their most creative and quirky ideas to life by fiddling with the intersection of art and tech",
-    coverImage: "horizons.png",
+    coverImage: "horizons-2020.jpg",
   },
+  {
+    name: "HackGTeeny 6",
+    description:
+      "HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop series! Miss the event? All workshop slides and content are posted on the event website.",
+    coverImage: "hackgteeny-6.jpg",
+  },
+  {
+    name: "Horizons 2019",
+    description:
+      "Horizons was HackGT’s first Art + Tech makeathon and a celebration of the arts community at Georgia Tech.",
+    coverImage: "horizons-2019.jpg",
+  },
+  {
+    name: "BuildGT 2019",
+    description:
+      "HackGT’s third hardware hackathon! This year, we partnered with The Invention Studio and The Hive to provide tooling, materials, and mentorship at the event!",
+    coverImage: "buildgt-2019.jpg",
+  },
+  {
+    name: "HackGTeeny 5",
+    description:
+      "HackGTeeny 5 was focused around helping students jump start their CS career. At the event, we offered over 5 hours of beginner-friendly workshops!",
+    coverImage: "hackgteeny-5.jpg",
+  },
+  {
+    name: "BuildGT",
+    description:
+      "HackGT’s second hardware hackathon! We partnered with the Invention Studio to host BuildGT, a twelve hour hackathon with beginner-friendly workshops, crash courses on Invention Studio tools, and tons of hardware.",
+    coverImage: "buildgt.jpg",
+  },
+  {
+    name: "Meme-a-thon",
+    description:
+      "A #spicy event centered around crazy ideas. Whether it’s a meme-based application or a random, fun project that you would love to bring to life, this is the place to be!",
+    coverImage: "meme-a-thon.jpg"
+  },
+  {
+    name: "Hardware Hackathon",
+    description:
+      "HackGT’s first ever Hardware Hackathon! An event focused on bringing together students who are interested in bridging the worlds of hardware, electronics, and computer science.",
+    coverImage: "hardware-hackathon.jpg"
+  },
+  {
+    name: "HackgTeeny 2",
+    description:
+      "HackGT’s second small-scale hackathon focused on the development of skills needed to create full-stack projects!",
+    coverImage: "hackgteeny-2.jpg"
+  },
+  {
+    name: "HackgTeeny",
+    description:
+      "HackGT’s inaugural HackGTeeny, a hackathon geared towards beginners",
+    coverImage: "hackgteeny.jpg"
+  }
 ];
 
 export default function Events(props: Props) {
@@ -36,7 +90,7 @@ export default function Events(props: Props) {
           provide resources, workshops, and mentorship to allow students
           transform their imagination into reality.
         </p>
-        <a className="button-link-solid">Learn more</a>
+        <a href="https://2020.hack.gt" className="button-link-solid">Learn more</a>
 
         <h3>Catalyst</h3>
         <p>
@@ -46,9 +100,9 @@ export default function Events(props: Props) {
           as a career path as well as be able to receive mentorship from
           industry professionals and Georgia Tech alumni.{" "}
         </p>
-        <a className="button-link-solid">Learn more</a>
+        <a href="https://catalyst.hack.gt" className="button-link-solid">Learn more</a>
 
-        <h3>HealthTech</h3>
+        {/* <h3>HealthTech</h3>
         <p>
           HealthTech is a health-meets-tech hackathon which aims to provide more
           interdisciplinary spaces for innovation. Students from Biomedical
@@ -56,10 +110,10 @@ export default function Events(props: Props) {
           able to apply their knowledge to projects that address real and
           relevant health care problems.
         </p>
-        <a className="button-link-solid">Learn more</a>
+        <a className="button-link-solid">Learn more</a> */}
       </section>
 
-      <section>
+      {/* <section>
         <h2>Current Events</h2>
 
         <h3>Horizons</h3>
@@ -83,16 +137,18 @@ export default function Events(props: Props) {
           effort to partner with on-campus makerspaces on campus, like The Hive
           and the Invention Studio.
         </p>
-      </section>
+      </section> */}
 
       <section>
         <h2>Previous Events</h2>
-
-        {previousEvents.map(({ coverImage, name, description }) => (
-          <Card header={name} coverImage={coverImage}>
-            {description}
-          </Card>
-        ))}
+        <div className="container">
+          {previousEvents.map(({ coverImage, name, description }) => (
+            <Card header={name} coverImage={coverImage}>
+              {description}
+            </Card>
+          ))}
+        </div>
+        
       </section>
     </>
   );

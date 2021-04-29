@@ -9,11 +9,7 @@ export default function GetInvolved(props: Props) {
       <section className="splash">
         <h1>How to Get Involved</h1>
         <p>
-          We want you to be a part of our community bla bla Join us ! We read
-          all feedback carefully, and want to help you etc! Use the form below
-          to send us your comments or report any problems you experienced
-          finding information on our website. We read all feedback carefully,
-          and want to.
+          Get involved in an organization that takes pride in creating opportunities for students to innovate together, and encourages students to pursue their wildest ideas. Whether you are a student or an industry professional, there are many ways to get involved with HexLabs and the events that we throw. 
         </p>
         <div className="hex-container">{/* TODO insert hexes */}</div>
       </section>
@@ -70,8 +66,7 @@ export default function GetInvolved(props: Props) {
           providing valuable insight into establishing careers.
         </p>
         <p>
-          If you are interested in sponsoring, please reach out to hello@hack.gt
-          or fill out the form on the Contact Us page.
+          If you are interested in sponsoring, please reach out to hello@hack.gt!
         </p>
       </section>
       <section>

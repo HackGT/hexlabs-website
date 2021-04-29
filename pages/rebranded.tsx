@@ -44,6 +44,20 @@ export default function Rebranded(props: Props) {
         <p>With love,<br/>
         HexLabs</p>
       </section>
+      <section>
+        <div className="sub-title">What is HexLabs?</div>
+        <p>
+        HexLabs is a new parent organization overseeing familiar events such as HackGT, Catalyst, and HealthTech. We are creating a consistent brand encompassing everything we do as an organization.
+        </p>
+        <div className="sub-title">Why are we rebranding to HexLabs?</div>
+        <p>
+        Instead of being defined by one event, we will be known as an organization that hosts a multitude of events, in addition to our annual hacakthon, HackGT. We’ll have more flexibility to expand and improve our events, start new initiatives, tackle challenges, and maybe even explore moving past hackathons.
+        </p>
+        <div className="sub-title">What is changing?</div>
+        <p>
+        Each event and intiiative will develop its own brand and identity and have the opportunity to grow. All of our events will be associated with HexLabs, however the name of our flagship hackathon, hackGT, will not be changing.
+        </p>
+      </section>
     </>
   );
 }
