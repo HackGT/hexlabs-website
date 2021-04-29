@@ -133,7 +133,6 @@ p {
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .splash {
@@ -204,5 +203,9 @@ p {
 .button-link-solid:hover {
   text-decoration: none;
   background: #E3DFFE;
-  color: black;
+  color: black !important;
+}
+
+a.button-link-solid:visited {
+  color: var(--color-white);
 }

@@ -90,7 +90,7 @@ export default function GetInvolved(props: Props) {
 
           If you're a Georgia Tech student, you can apply to 
           join the HexLabs team! Get notified about applications
-          by joining our mailing list <a href="https://hackgt.us9.list-manage.com/subscribe?u=34c4c58551eca5eacf86c9479&id=7ac5ebfb77">here</a>!
+          by joining our mailing list <a href="http://eepurl.com/hrkumn">here</a>!
         </p>
       </section>
     </>

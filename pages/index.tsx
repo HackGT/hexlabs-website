@@ -85,6 +85,28 @@ export default function Home(props: Props) {
         </div>
       </section>
 
+      <section>
+        <h2>Say Hello to HexLabs</h2>
+        <p>
+          We’re HexLabs, the new parent organization overseeing familiar events like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons. Learn more about our new parent organizatinon which will be our driving foce behind our mission to cultivate innovative spaces for students to work together.
+        </p>
+        <Link href="/rebranded">
+          <a className="button-link-solid">Learn More</a>
+        </Link>
+        
+        {/* <div className="hex-container">
+          <Hex
+            x="-25%"
+            y="88%"
+            size={100}
+            color="transparent"
+            borderSize={5}
+            borderColor="rgba(51,194,255,0.3)"
+            rotation={45}
+          />
+        </div> */}
+      </section>
+
       {/* <section>
         <h2>Upcoming Events</h2>
         <div className="container">
@@ -138,6 +160,7 @@ export default function Home(props: Props) {
           />
         </div>
       </section> */}
+      
 
       <section>
         <h2>Community Initiatives</h2>
@@ -162,6 +185,19 @@ export default function Home(props: Props) {
             series! Miss the event? All workshop slides and content are posted
             on the event website.
           </Card> */}
+          <Card
+            header="Getting Involved"
+            coverImage="home-intouch-involved.jpg"
+            buttons={
+              <>
+                <Link href="/get-involved">
+                  <a className="button-link-solid">Learn More</a>
+                </Link>
+              </>
+            }
+          >
+            Learn more about how you can get involved with HexLabs as an organizer, participant, mentor, sponsor, and more!
+          </Card>
           <Card
             header="Discord"
             coverImage="home-discord.jpeg"
