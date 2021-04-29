@@ -160,45 +160,6 @@ p {
   max-width: 600px;
 }
 
-@media (max-width: 767px) {
-  .splash {
-    min-height: 100vh;
-    text-align: center;
-  }
-
-  .splash-heading {
-    font-size: 30px;
-  }
-
-  .splash-text {
-    font-size: 13px;
-  }
-
-  .splash-main-text {
-    text-align: center;
-  }
-
-  .info-heading {
-    width: 60vw;
-    font-size: 25px;
-    position: relative !important;
-    left: 50% !important;
-    transform: translateX(-50%);
-    text-align: center;
-    margin-left: 0 !important;
-  }
-
-  .info-text {
-    width: 60vw;
-    font-size: 13px;
-    position: relative !important;
-    left: 50% !important;
-    transform: translateX(-50%);
-    line-height: 2rem !important;
-    text-align: left;
-  }
-}
-
 .sub-title {
   font-size: 2.5rem;
   margin: 0px;
