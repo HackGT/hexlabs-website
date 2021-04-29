@@ -86,7 +86,7 @@ export default function Home(props: Props) {
       <section>
         <h2>Say Hello to HexLabs</h2>
         <p>
-          We’re HexLabs, the new parent organization overseeing familiar events like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons. Learn more about our new parent organizatinon which will be our driving foce behind our mission to cultivate innovative spaces for students to work together.
+          We’re HexLabs, the new parent organization overseeing familiar events like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons. Learn more about our new parent organizatinon which will be our driving force behind our mission to cultivate innovative spaces for students to work together.
         </p>
         <Link href="/rebranded">
           <a className="button-link-solid">Learn More</a>
