@@ -54,7 +54,7 @@ export default function Rebranded(props: Props) {
         </p>
         <div className="sub-title">What is changing?</div>
         <p>
-        Each event and intiiative will develop its own brand and identity and have the opportunity to grow. All of our events will be associated with HexLabs, however the name of our flagship hackathon, hackGT, will not be changing.
+        Each event and initiative will develop its own brand and identity and have the opportunity to grow. All of our events will be associated with HexLabs, however the name of our flagship hackathon, hackGT, will not be changing.
         </p>
       </section>
     </>
