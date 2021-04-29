@@ -20,7 +20,11 @@ export default function GetInvolved(props: Props) {
         <div className="max-width-600">
           <h1>How to Get Involved</h1>
           <p>
-            Get involved in an organization that takes pride in creating opportunities for students to innovate together, and encourages students to pursue their wildest ideas. Whether you are a student or an industry professional, there are many ways to get involved with HexLabs and the events that we throw. 
+            Get involved in an organization that takes pride in creating
+            opportunities for students to innovate together, and encourages
+            students to pursue their wildest ideas. Whether you are a student or
+            an industry professional, there are many ways to get involved with
+            HexLabs and the events that we throw.
           </p>
         </div>
         <div id="splash-hex" className="hex-container">
@@ -120,7 +124,7 @@ export default function GetInvolved(props: Props) {
           </HCard>
           <HCard header="Get on our Podcast" coverImage="involved-podcast.jpg">
             Over the past 10 years, the hacker movement has exploded in
-            popularity, but it is still shrouded in mystery. Hexlabs has decided
+            popularity, but it is still shrouded in mystery. HexLabs has decided
             to explore this phenomenon and demystify what exactly is so
             compelling about it. Join us in conversations with students,
             hackers, and makers challenging their creativity. Follow the
@@ -143,10 +147,10 @@ export default function GetInvolved(props: Props) {
       <section>
         <h2>Sponsoring</h2>
         <p>
-          Sponsoring Sponsors are incredibly important to the events that we
-          throw. We invite you to connect with students and broaden their vision
-          on how they can shape both their future and the world. As a sponsor,
-          you would receive access to the diverse and driven network of students
+          Sponsors are incredibly important to the events that we throw. We
+          invite you to connect with students and broaden their vision on how
+          they can shape both their future and the world. As a sponsor, you
+          would receive access to the diverse and driven network of students
           that HexLabs brings together every year. You can showcase your
           products and technologies for participants to use, as well as your
           company’s culture and impact on the field. You may also have the
@@ -154,7 +158,8 @@ export default function GetInvolved(props: Props) {
           providing valuable insight into establishing careers.
         </p>
         <p>
-          If you are interested in sponsoring, please reach out to hello@hack.gt!
+          If you are interested in sponsoring, please reach out to
+          hello@hack.gt!
         </p>
       </section>
       <section>

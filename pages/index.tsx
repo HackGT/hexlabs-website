@@ -15,7 +15,7 @@ export default function Home(props: Props) {
             <a className="button-link-solid">Learn More</a>
           </Link>
         </div>
-        <div className="hex-container" >
+        <div className="hex-container">
           {/* middle */}
           <Hex
             x="4%"
@@ -68,7 +68,12 @@ export default function Home(props: Props) {
       <section>
         <h2>About Us</h2>
         <p>
-          HexLabs is a student-led, nonprofit organization that throws large-scale hackathons to spread the opportunity for innovation to high school and college students. We partner with companies to cultivate an environment of enrichment and growth for our participants to be able to learn new skills and use them to bring new ideas to life.
+          HexLabs is a student-led, nonprofit organization that throws
+          large-scale hackathons to spread the opportunity for innovation to
+          high school and college students. We partner with companies to
+          cultivate an environment of enrichment and growth for our participants
+          to be able to learn new skills and use them to bring new ideas to
+          life.
         </p>
         <div className="hex-container">
           <Hex
@@ -86,7 +91,11 @@ export default function Home(props: Props) {
       <section>
         <h2>Say Hello to HexLabs</h2>
         <p>
-          We’re HexLabs, the new parent organization overseeing familiar events like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons. Learn more about our new parent organizatinon which will be our driving force behind our mission to cultivate innovative spaces for students to work together.
+          We’re HexLabs, the new parent organization overseeing familiar events
+          like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons.
+          Learn more about our new parent organizatinon which will be our
+          driving force behind our mission to cultivate innovative spaces for
+          students to work together.
         </p>
         <Link href="/rebranded">
           <a className="button-link-solid">Learn More</a>
@@ -106,18 +115,25 @@ export default function Home(props: Props) {
               </>
             }
           >
-            Learn more about how you can get involved with HexLabs as an organizer, participant, mentor, sponsor, and more!
+            Learn more about how you can get involved with HexLabs as an
+            organizer, participant, mentor, sponsor, and more!
           </Card>
           <Card
             header="Discord"
             coverImage="home-discord.jpg"
             buttons={
               <>
-                <a href="https://discord.gg/gFskbdD67F" className="button-link-solid">Join Us</a>
+                <a
+                  href="https://discord.gg/gFskbdD67F"
+                  className="button-link-solid"
+                >
+                  Join Us
+                </a>
               </>
             }
           >
-            Join the Hex Commons, a supportive community of like-minded creators.
+            Join the Hex Commons, a supportive community of like-minded
+            creators.
           </Card>
         </div>
         <div className="hex-container">

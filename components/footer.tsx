@@ -51,7 +51,7 @@ const footerColumns: FooterColumn[] = [
       {
         name: "GitHub",
         href: "https://github.com/HackGT",
-      }
+      },
     ],
   },
   {
@@ -59,20 +59,19 @@ const footerColumns: FooterColumn[] = [
     links: [
       {
         name: "Newsletter",
-        href: "http://eepurl.com/hrkumn"
+        href: "http://eepurl.com/hrkumn",
       },
       {
         name: "Discord",
-        href: "https://discord.gg/gFskbdD67F"
-      }
-    ]
-  }
+        href: "https://discord.gg/gFskbdD67F",
+      },
+    ],
+  },
 ];
 
 const lastColumn: FooterColumn = {
   title: "Made with love by HexLabs",
-  links: [
-  ],
+  links: [],
 };
 
 function FooterItem({ title, links }) {

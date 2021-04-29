@@ -8,13 +8,13 @@ export default function Rebranded(props: Props) {
       <section className="splash">
         <h1>We're Rebranding</h1>
         <div className="max-width-600">
-        <div className="sub-title">Getting ready for change</div>
-        <p>
-          Introducing HexLabs, the new parent organization of all your HackGT
-          events. Under our new name, we will continue to cultivate innovative
-          spaces for students to confidently discover, pursue, and create ideas
-          together.
-        </p>
+          <div className="sub-title">Getting ready for change</div>
+          <p>
+            Introducing HexLabs, the new parent organization of all your HackGT
+            events. Under our new name, we will continue to cultivate innovative
+            spaces for students to confidently discover, pursue, and create
+            ideas together.
+          </p>
         </div>
       </section>
       <section>
@@ -37,24 +37,36 @@ export default function Rebranded(props: Props) {
         </p>
         <p>
           Follow us on social media @thehexlabs and check out our new podcast
-          and discord channel so you can stay connected with the HexLabs
+          and Discord channel so you can stay connected with the HexLabs
           community!
         </p>
-        <p>With love,<br/>
-        HexLabs</p>
+        <p>
+          With love,
+          <br />
+          HexLabs
+        </p>
       </section>
       <section>
         <div className="sub-title">What is HexLabs?</div>
         <p>
-        HexLabs is a new parent organization overseeing familiar events such as HackGT, Catalyst, and HealthTech. We are creating a consistent brand encompassing everything we do as an organization.
+          HexLabs is a new parent organization overseeing familiar events such
+          as HackGT, Catalyst, and HealthTech. We are creating a consistent
+          brand encompassing everything we do as an organization.
         </p>
         <div className="sub-title">Why are we rebranding to HexLabs?</div>
         <p>
-        Instead of being defined by one event, we will be known as an organization that hosts a multitude of events, in addition to our annual hacakthon, HackGT. We’ll have more flexibility to expand and improve our events, start new initiatives, tackle challenges, and maybe even explore moving past hackathons.
+          Instead of being defined by one event, we will be known as an
+          organization that hosts a multitude of events, in addition to our
+          annual hackathon, HackGT. We’ll have more flexibility to expand and
+          improve our events, start new initiatives, tackle challenges, and
+          maybe even explore moving past hackathons.
         </p>
         <div className="sub-title">What is changing?</div>
         <p>
-        Each event and initiative will develop its own brand and identity and have the opportunity to grow. All of our events will be associated with HexLabs, however the name of our flagship hackathon, hackGT, will not be changing.
+          Each event and initiative will develop its own brand and identity and
+          have the opportunity to grow. All of our events will be associated
+          with HexLabs; however, the name of our flagship hackathon, HackGT,
+          will not be changing.
         </p>
       </section>
     </>

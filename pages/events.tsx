@@ -45,26 +45,26 @@ const previousEvents = [
     name: "Meme-a-thon",
     description:
       "A #spicy event centered around crazy ideas. Whether it’s a meme-based application or a random, fun project that you would love to bring to life, this is the place to be!",
-    coverImage: "meme-a-thon.jpg"
+    coverImage: "meme-a-thon.jpg",
   },
   {
     name: "Hardware Hackathon",
     description:
       "HackGT’s first ever Hardware Hackathon! An event focused on bringing together students who are interested in bridging the worlds of hardware, electronics, and computer science.",
-    coverImage: "hardware-hackathon.jpg"
+    coverImage: "hardware-hackathon.jpg",
   },
   {
     name: "HackgTeeny 2",
     description:
       "HackGT’s second small-scale hackathon focused on the development of skills needed to create full-stack projects!",
-    coverImage: "hackgteeny-2.jpg"
+    coverImage: "hackgteeny-2.jpg",
   },
   {
     name: "HackgTeeny",
     description:
       "HackGT’s inaugural HackGTeeny, a hackathon geared towards beginners",
-    coverImage: "hackgteeny.jpg"
-  }
+    coverImage: "hackgteeny.jpg",
+  },
 ];
 
 export default function Events(props: Props) {
@@ -181,7 +181,9 @@ export default function Events(props: Props) {
           provide resources, workshops, and mentorship to allow students
           transform their imagination into reality.
         </p>
-        <a href="https://2020.hack.gt" className="button-link-solid">Learn more</a>
+        <a href="https://2020.hack.gt" className="button-link-solid">
+          Learn more
+        </a>
 
         <h3>Catalyst</h3>
         <p>
@@ -191,7 +193,9 @@ export default function Events(props: Props) {
           as a career path as well as be able to receive mentorship from
           industry professionals and Georgia Tech alumni.{" "}
         </p>
-        <a href="https://catalyst.hack.gt" className="button-link-solid">Learn more</a>
+        <a href="https://catalyst.hack.gt" className="button-link-solid">
+          Learn more
+        </a>
 
         {/* <h3>HealthTech</h3>
         <p>
@@ -239,9 +243,7 @@ export default function Events(props: Props) {
             </Card>
           ))}
         </div>
-        
       </section>
     </>
   );
 }
-
