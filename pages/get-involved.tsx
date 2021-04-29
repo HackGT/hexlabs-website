@@ -27,14 +27,14 @@ export default function GetInvolved(props: Props) {
           social media pages. Learn more below!
         </p>
         <div>
-          <HCard header="Attend Events" coverImage="horizons.png">
+          <HCard header="Attend Events" coverImage="involved-events.png">
             HexLabs hosts multiple events throughout the year for college and
             high school students. We hold our flagship hackathathon, HackGT,
             annually and we also host events such as Healthtech, Catalyst,
             Horizons, BuildGT and more! Visit our Events page to find out more
             information!
           </HCard>
-          <HCard header="Get on our Podcast" coverImage="horizons.png">
+          <HCard header="Get on our Podcast" coverImage="involved-podcast.jpg">
             Over the past 10 years, the hacker movement has exploded in
             popularity, but it is still shrouded in mystery. Hexlabs has decided
             to explore this phenomenon and demystify what exactly is so
@@ -43,7 +43,7 @@ export default function GetInvolved(props: Props) {
             journeys of different individuals as they create and see how you can
             join the movement to create for the sake of creating.{" "}
           </HCard>
-          <HCard header="Discord" coverImage="horizons.png">
+          <HCard header="Discord" coverImage="involved-discord.png">
             Hackathons are undoubtedly incredible sources of creativity and
             inspiration. We want to capture that innovation and sustain it
             throughout the year by creating a supportive community of like
@@ -87,10 +87,10 @@ export default function GetInvolved(props: Props) {
       <section>
         <h2>Join our Team</h2>
         <p>
-          Stay involved with HexLabs by joining our team! You can apply to be a
-          mentor or volunteer for our events or if you’re a Georgia Tech
-          student, apply to be part of the team that makes it all happen! Learn
-          more about each of our teams on the Meet the Team page!
+
+          If you're a Georgia Tech student, you can apply to 
+          join the HexLabs team! Get notified about applications
+          by joining our mailing list <a href="http://eepurl.com/hrkumn">here</a>!
         </p>
       </section>
     </>

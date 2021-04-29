@@ -14,8 +14,10 @@ const Card: React.FC<Props> = (props) => {
         <img src={props.coverImage} alt="Cover image" />
       </div>
       <div className={styles.content}>
-        <h4>{props.header}</h4>
-        <p>{props.children}</p>
+        <div>
+          <h4>{props.header}</h4>
+          <p>{props.children}</p>
+        </div>
         {props.buttons && (
           <div className={styles["button-container"]}>{props.buttons}</div>
         )}
