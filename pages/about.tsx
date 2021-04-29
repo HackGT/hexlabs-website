@@ -30,15 +30,6 @@ export default function About(props: Props) {
         }
 
         @media (max-width: 1200px) {
-          .splash {
-            min-height: 100vh;
-            text-align: center;
-          }
-
-          .splash-main-text {
-            text-align: center;
-          }
-
           .what-we-do-p2 {
             padding-bottom: 200px;
           }
@@ -129,7 +120,7 @@ export default function About(props: Props) {
                 x="35%"
                 y="70%"
                 size={150}
-                image="./splash.png"
+                image="./about.jpg"
                 rotation={15}
                 imgOffsetX={0}
                 imgOffsetY={0}
@@ -157,7 +148,7 @@ export default function About(props: Props) {
                 x="55%"
                 y="20%"
                 size={300}
-                image="./splash.png"
+                image="./about.jpg"
                 rotation={15}
                 imgOffsetX={0}
                 imgOffsetY={0}
