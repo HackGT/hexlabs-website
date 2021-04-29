@@ -35,14 +35,6 @@ export default function About(props: Props) {
             text-align: center;
           }
 
-          .splash-heading {
-            font-size: 30px;
-          }
-
-          .splash-text {
-            font-size: 13px;
-          }
-
           .splash-main-text {
             text-align: center;
           }
@@ -53,7 +45,6 @@ export default function About(props: Props) {
 
           .info-heading {
             width: 60vw;
-            font-size: 25px;
             position: relative !important;
             left: 50% !important;
             transform: translateX(-50%);
@@ -63,7 +54,6 @@ export default function About(props: Props) {
 
           .info-text {
             width: 60vw;
-            font-size: 13px;
             position: relative !important;
             left: 50% !important;
             transform: translateX(-50%);
