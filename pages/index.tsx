@@ -12,7 +12,6 @@ export default function Home(props: Props) {
       <section className="splash splash-main">
         <div className="max-width-400">
           <h1>HexLabs</h1>
-          {/* <p>Formerly HackGT</p> */}
           <Link href="/about">
             <a className="button-link-solid">Learn More</a>
           </Link>
@@ -93,98 +92,10 @@ export default function Home(props: Props) {
         <Link href="/rebranded">
           <a className="button-link-solid">Learn More</a>
         </Link>
-        
-        {/* <div className="hex-container">
-          <Hex
-            x="-25%"
-            y="88%"
-            size={100}
-            color="transparent"
-            borderSize={5}
-            borderColor="rgba(51,194,255,0.3)"
-            rotation={45}
-          />
-        </div> */}
       </section>
-
-      {/* <section>
-        <h2>Upcoming Events</h2>
-        <div className="container">
-          <Card
-            header="Horizons"
-            coverImage="horizons.png"
-            buttons={
-              <>
-                <Button type={ButtonType.SOLID}>Event Site</Button>
-                <Button type={ButtonType.TEXT}>Learn More</Button>
-              </>
-            }
-          >
-            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
-            series! Miss the event? All workshop slides and content are posted
-            on the event website.
-          </Card>
-          
-          <Card
-            header="Horizons"
-            coverImage="horizons.png"
-            buttons={
-              <>
-                <Button type={ButtonType.SOLID}>Event Site</Button>
-                <Button type={ButtonType.TEXT}>Learn More</Button>
-              </>
-            }
-          >
-            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
-            series! Miss the event? All workshop slides and content are posted
-            on the event website.
-          </Card>
-           
-        </div>
-        <div className="hex-container">
-          <Hex
-            x="75%"
-            y="-15%"
-            size={350}
-            color="rgba(123,105,236,0.3)"
-            rotation={45}
-          />
-          <Hex
-            x="55%"
-            y="43%"
-            size={250}
-            color="transparent"
-            borderSize={5}
-            borderColor="rgba(51,194,255,0.3)"
-            rotation={-45}
-          />
-        </div>
-      </section> */}
-      
-
       <section>
         <h2>Community Initiatives</h2>
-        {/* <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p> */}
         <div className="container">
-          {/* <Card
-            header="Horizons"
-            coverImage="horizons.png"
-            buttons={
-              <>
-                <Button type={ButtonType.SOLID}>Event Site</Button>
-                <Button type={ButtonType.TEXT}>Learn More</Button>
-              </>
-            }
-          >
-            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
-            series! Miss the event? All workshop slides and content are posted
-            on the event website.
-          </Card> */}
           <Card
             header="Getting Involved"
             coverImage="home-intouch-involved.jpg"

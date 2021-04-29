@@ -19,10 +19,6 @@ const footerColumns: FooterColumn[] = [
         name: "About us",
         href: "/about",
       },
-      // {
-      //   name: "Team",
-      //   href: "",
-      // },
       {
         name: "Contact",
         href: "/contact",
@@ -58,36 +54,11 @@ const footerColumns: FooterColumn[] = [
       },
     ],
   },
-  // {
-  //   title: "Account",
-  //   links: [
-  //     {
-  //       name: "Log in",
-  //       href: "/",
-  //     },
-  //     {
-  //       name: "Sign up",
-  //       href: "/",
-  //     },
-  //   ],
-  // },
 ];
 
 const lastColumn: FooterColumn = {
   title: "Made with love by HexLabs",
   links: [
-    // {
-    //   name: "Terms of Service",
-    //   href: "/",
-    // },
-    // {
-    //   name: "Privacy Policy",
-    //   href: "/",
-    // },
-    // {
-    //   name: "API",
-    //   href: "/",
-    // },
   ],
 };
 

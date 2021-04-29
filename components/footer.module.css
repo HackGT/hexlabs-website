@@ -21,6 +21,7 @@
 .columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .columns > div {
@@ -34,4 +35,20 @@
 
 .right {
   text-align: right;
+}
+
+@media (max-width: 850px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer > * {
+    padding: 20px 0px;
+  }
+  
+  .right, .columns {
+    text-align: center;
+  }
 }
