@@ -11,8 +11,8 @@ export default function Home(props: Props) {
       <section className="splash splash-main">
         <div className="max-width-400">
           <h1>HexLabs</h1>
-          <p>Slogan will go here maybe or something longer yada yada yada</p>
-          <Button type={ButtonType.SOLID}>Action Button</Button>
+          {/* <p>Formerly HackGT</p> */}
+          <Button type={ButtonType.SOLID}>Learn More</Button>
         </div>
         <div className="hex-container">
           {/* middle */}
@@ -67,11 +67,7 @@ export default function Home(props: Props) {
       <section>
         <h2>About Us</h2>
         <p>
-          From throwing large-scale hackathons of upwards of 1000 people to
-          small-scale hackathons and workshops, our organization aims to spread
-          the spirit of application, innovation, and creativity in computer
-          science education to high school and college students in and out of
-          Georgia.
+          HexLabs is a student-led, nonprofit organization that throws large-scale hackathons to spread the opportunity for innovation to high school and college students. We partner with companies to cultivate an environment of enrichment and growth for our participants to be able to learn new skills and use them to bring new ideas to life.
         </p>
         <div className="hex-container">
           <Hex
@@ -86,7 +82,7 @@ export default function Home(props: Props) {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <h2>Upcoming Events</h2>
         <div className="container">
           <Card
@@ -103,7 +99,7 @@ export default function Home(props: Props) {
             series! Miss the event? All workshop slides and content are posted
             on the event website.
           </Card>
-          {/*
+          
           <Card
             header="Horizons"
             coverImage="horizons.png"
@@ -118,7 +114,7 @@ export default function Home(props: Props) {
             series! Miss the event? All workshop slides and content are posted
             on the event website.
           </Card>
-            */}
+           
         </div>
         <div className="hex-container">
           <Hex
@@ -138,18 +134,18 @@ export default function Home(props: Props) {
             rotation={-45}
           />
         </div>
-      </section>
+      </section> */}
 
       <section>
         <h2>Community Initiatives</h2>
-        <p>
+        {/* <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.
-        </p>
+        </p> */}
         <div className="container">
-          <Card
+          {/* <Card
             header="Horizons"
             coverImage="horizons.png"
             buttons={
@@ -162,20 +158,17 @@ export default function Home(props: Props) {
             HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
             series! Miss the event? All workshop slides and content are posted
             on the event website.
-          </Card>
+          </Card> */}
           <Card
-            header="Horizons"
+            header="Discord"
             coverImage="horizons.png"
             buttons={
               <>
-                <Button type={ButtonType.SOLID}>Event Site</Button>
-                <Button type={ButtonType.TEXT}>Learn More</Button>
+                <Button type={ButtonType.SOLID}>Join Us</Button>
               </>
             }
           >
-            HackGTeeny 6 was the 6th iteration of our beginner-friendly workshop
-            series! Miss the event? All workshop slides and content are posted
-            on the event website.
+            Join the Hex Commons, a supportive community of like-minded creators.
           </Card>
         </div>
         <div className="hex-container">
