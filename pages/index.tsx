@@ -110,7 +110,7 @@ export default function Home(props: Props) {
           </Card>
           <Card
             header="Discord"
-            coverImage="home-discord.jpeg"
+            coverImage="home-discord.jpg"
             buttons={
               <>
                 <a href="https://discord.gg/gFskbdD67F" className="button-link-solid">Join Us</a>
