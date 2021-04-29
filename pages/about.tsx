@@ -30,30 +30,12 @@ export default function About(props: Props) {
         }
 
         @media (max-width: 1200px) {
-          .splash {
-            min-height: 100vh;
-            text-align: center;
-          }
-
-          .splash-heading {
-            font-size: 30px;
-          }
-
-          .splash-text {
-            font-size: 13px;
-          }
-
-          .splash-main-text {
-            text-align: center;
-          }
-
           .what-we-do-p2 {
             padding-bottom: 200px;
           }
 
           .info-heading {
             width: 60vw;
-            font-size: 25px;
             position: relative !important;
             left: 50% !important;
             transform: translateX(-50%);
@@ -63,7 +45,6 @@ export default function About(props: Props) {
 
           .info-text {
             width: 60vw;
-            font-size: 13px;
             position: relative !important;
             left: 50% !important;
             transform: translateX(-50%);
@@ -139,7 +120,7 @@ export default function About(props: Props) {
                 x="35%"
                 y="70%"
                 size={150}
-                image="./splash.png"
+                image="./about.jpg"
                 rotation={15}
                 imgOffsetX={0}
                 imgOffsetY={0}
@@ -167,7 +148,7 @@ export default function About(props: Props) {
                 x="55%"
                 y="20%"
                 size={300}
-                image="./splash.png"
+                image="./about.jpg"
                 rotation={15}
                 imgOffsetX={0}
                 imgOffsetY={0}

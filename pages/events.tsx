@@ -1,5 +1,7 @@
 import { GetServerSideProps } from "next";
 import Card from "../components/card";
+import { useMediaQuery } from "react-responsive";
+import Hex from "../components/hex";
 
 interface Props {}
 
@@ -67,17 +69,107 @@ const previousEvents = [
 ];
 
 export default function Events(props: Props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 1200px)" });
   return (
     <>
+      <style jsx>
+        {`
+          @media (max-width: 1200px) {
+            #splash-hex {
+              display: none;
+            }
+          }
+        `}
+      </style>
       <section className="splash">
-        <h1>Events</h1>
-        <div className="sub-title">What is a Hackathon?</div>
-        <p>
-          Hackathons are 36-hour events where students from across the country
-          come together for a weekend to create anything that shows off their
-          creativity and passion for development. You may choose any platform,
-          programming language, or format to show how you re-imagine solutions.
-        </p>
+        <div className="max-width-600">
+          <h1>Events</h1>
+          <div className="sub-title">What is a Hackathon?</div>
+          <p>
+            Hackathons are 36-hour events where students from across the country
+            come together for a weekend to create anything that shows off their
+            creativity and passion for development. You may choose any platform,
+            programming language, or format to show how you re-imagine
+            solutions.
+          </p>
+        </div>
+        <div id="splash-hex" className="hex-container">
+          {isMobile ? (
+            <>
+              <Hex
+                x="55%"
+                y="10%"
+                size={100}
+                color="rgba(123, 105, 236, 0.4)"
+                rotation={10}
+              />
+              <Hex
+                x="35%"
+                y="10%"
+                size={70}
+                color="transparent"
+                borderColor="rgba(255, 255, 255, 0.3)"
+                borderSize={2}
+                rotation={40}
+              />
+              <Hex
+                x="10%"
+                y="70%"
+                size={70}
+                color="transparent"
+                borderColor="rgba(255, 255, 255, 0.3)"
+                borderSize={2}
+                rotation={30}
+              />
+              <Hex
+                x="35%"
+                y="70%"
+                size={150}
+                image="./events.png"
+                rotation={15}
+                imgOffsetX={0}
+                imgOffsetY={0}
+              />
+            </>
+          ) : (
+            <>
+              <Hex
+                x="59%"
+                y="10%"
+                size={200}
+                color="rgba(255,255,255,0.35)"
+                rotation={13}
+              />
+              <Hex
+                x="45%"
+                y="20%"
+                size={125}
+                color="transparent"
+                borderSize={2}
+                borderColor="rgba(255, 255, 255, 0.3)"
+                rotation={40}
+              />
+              <Hex
+                x="55%"
+                y="20%"
+                size={300}
+                image="./events.png"
+                rotation={15}
+                imgOffsetX={0}
+                imgOffsetY={0}
+              />
+              <Hex
+                x="-3%"
+                y="81%"
+                size={120}
+                color="transparent"
+                borderSize={3}
+                borderColor="rgba(255, 255, 255, 0.4)"
+                rotation={45}
+              />
+            </>
+          )}
+        </div>
       </section>
 
       <section>
