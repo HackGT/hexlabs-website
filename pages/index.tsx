@@ -87,6 +87,29 @@ export default function Home(props: Props) {
       </section>
 
       <section>
+        <h2>Say Hello to HexLabs</h2>
+        <p>
+          From throwing large-scale hackathons of upwards of 1000 people to
+          small-scale hackathons and workshops, our organization aims to spread
+          the spirit of application, innovation, and creativity in computer
+          science education to high school and college students in and out of
+          Georgia.
+        </p>
+        <div className="hex-container">
+          <Hex
+            x="-25%"
+            y="88%"
+            size={100}
+            color="transparent"
+            borderSize={5}
+            borderColor="rgba(51,194,255,0.3)"
+            rotation={45}
+          />
+        </div>
+      </section>
+
+
+      <section>
         <h2>Upcoming Events</h2>
         <div className="container">
           <Card
