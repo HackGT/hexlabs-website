@@ -87,10 +87,10 @@ export default function GetInvolved(props: Props) {
       <section>
         <h2>Join our Team</h2>
         <p>
-          Stay involved with HexLabs by joining our team! You can apply to be a
-          mentor or volunteer for our events or if you’re a Georgia Tech
-          student, apply to be part of the team that makes it all happen! Learn
-          more about each of our teams on the Meet the Team page!
+
+          If you're a Georgia Tech student, you can apply to 
+          join the HexLabs team! Get notified about applications
+          by joining our mailing list <a href="https://hackgt.us9.list-manage.com/subscribe?u=34c4c58551eca5eacf86c9479&id=7ac5ebfb77">here</a>!
         </p>
       </section>
     </>
