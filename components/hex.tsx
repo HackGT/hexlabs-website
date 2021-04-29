@@ -122,6 +122,7 @@ export default function Hex({
         position: "absolute",
         top: y,
         left: x,
+        transform,
       }}
     >
       <svg

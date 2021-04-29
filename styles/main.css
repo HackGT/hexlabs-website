@@ -209,3 +209,9 @@ p {
 a.button-link-solid:visited {
   color: var(--color-white);
 }
+
+@media (max-width: 500px) {
+  section {
+    margin: 100px 10%;
+  }
+}

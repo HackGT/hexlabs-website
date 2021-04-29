@@ -7,7 +7,7 @@ import Hex from "../components/hex";
 interface Props {}
 
 export default function About(props: Props) {
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1200px)" });
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function About(props: Props) {
           padding: 160px 0px;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 1200px) {
           .splash {
             min-height: 100vh;
             text-align: center;
@@ -67,7 +67,6 @@ export default function About(props: Props) {
             position: relative !important;
             left: 50% !important;
             transform: translateX(-50%);
-            line-height: 2rem !important;
             text-align: left;
           }
 
@@ -84,11 +83,23 @@ export default function About(props: Props) {
           .right {
             width: 100%;
           }
+
+          #splash-hex {
+            display: none;
+          }
+
+          .disappear {
+            display: none;
+          }
+
+          .max-width-600 {
+            max-width: 100%;
+          }
         }
       `}</style>
 
       <section className="splash">
-        <div className="">
+        <div className="max-width-600">
           <h1 className="splash-heading">Meet the Team</h1>
           <p className="splash-text">
             Our Operations, Design, Technology, and Marketing Teams work hard
@@ -96,7 +107,7 @@ export default function About(props: Props) {
             opportunities to high school and college students.
           </p>
         </div>
-        <div className="hex-container">
+        <div id="splash-hex" className="hex-container">
           {isMobile ? (
             <>
               <Hex
@@ -155,7 +166,7 @@ export default function About(props: Props) {
               <Hex
                 x="55%"
                 y="20%"
-                size={400}
+                size={300}
                 image="./splash.png"
                 rotation={15}
                 imgOffsetX={0}
@@ -176,12 +187,13 @@ export default function About(props: Props) {
       </section>
 
       <section>
-        <div className="hex-container">
+        <div className="disappear hex-container">
           {isMobile ? (
             <>
               <Hex
-                x="35%"
-                y="35%"
+                x="50%"
+                y="-15%"
+                transform="translate(-50%, 0px)"
                 size={150}
                 color="transparent"
                 borderSize={2}
@@ -235,8 +247,9 @@ export default function About(props: Props) {
               rotation={45}
             />
             <Hex
-              x="5%"
+              x="50%"
               y="-15%"
+              transform="translate(-50%, 0px)"
               size={120}
               image="./about-exec.jpg"
               color="transparent"
@@ -248,9 +261,10 @@ export default function About(props: Props) {
           </>
         ) : (
           <Hex
-            x="-45%"
-            y="-0%"
-            size={400}
+            x="-50%"
+            y="-50%"
+            transform="translate(50%, 50%)"
+            size={300}
             image="./about-exec.jpg"
             color="transparent"
             rotation={40}
@@ -276,8 +290,9 @@ export default function About(props: Props) {
           {isMobile ? (
             <>
               <Hex
-                x="5%"
+                x="50%"
                 y="-15%"
+                transform="translate(-50%, 0px)"
                 size={120}
                 image="./about-design.jpg"
                 color="transparent"
@@ -289,16 +304,16 @@ export default function About(props: Props) {
           ) : (
             <>
               <Hex
-                x="85%"
+                x="65%"
                 y="-0%"
-                size={400}
+                size={300}
                 image="./about-design.jpg"
                 color="transparent"
                 rotation={32}
                 imgOffsetX={0}
                 imgOffsetY={0}
               />
-              <Hex x="-70%" y="20%" size={300} color="#E3DFFE" rotation={-45} />
+              <Hex x="-50%" y="20%" size={300} color="#E3DFFE" rotation={-45} />
             </>
           )}
         </div>
@@ -328,8 +343,9 @@ export default function About(props: Props) {
               rotation={45}
             />
             <Hex
-              x="5%"
+              x="50%"
               y="-15%"
+              transform="translate(-50%, 0px)"
               size={120}
               image="./about-marketing.png"
               color="transparent"
@@ -356,13 +372,13 @@ export default function About(props: Props) {
               size={250}
               color="transparent"
               borderSize={4}
-              borderColor="#8a2be2"
+              borderColor="#7b69ec"
               rotation={45}
             />
             <Hex
-              x="-55%"
+              x="-25%"
               y="-0%"
-              size={400}
+              size={300}
               image="./about-marketing.png"
               color="transparent"
               rotation={20}
@@ -388,8 +404,9 @@ export default function About(props: Props) {
           <>
             <Hex x="-70%" y="0%" size={180} color="#E3DFFE" rotation={15} />
             <Hex
-              x="5%"
+              x="50%"
               y="-15%"
+              transform="translate(-50%, 0px)"
               size={120}
               image="./about-tech.png"
               color="transparent"
@@ -400,11 +417,11 @@ export default function About(props: Props) {
           </>
         ) : (
           <>
-            <Hex x="-70%" y="-10%" size={400} color="#E3DFFE" rotation={15} />
+            <Hex x="-70%" y="-10%" size={300} color="#E3DFFE" rotation={15} />
             <Hex
-              x="95%"
+              x="60%"
               y="20%"
-              size={400}
+              size={300}
               image="./about-tech.png"
               color="transparent"
               borderSize={5}
@@ -433,8 +450,9 @@ export default function About(props: Props) {
         {isMobile ? (
           <>
             <Hex
-              x="5%"
+              x="50%"
               y="-15%"
+              transform="translate(-50%, 0px)"
               size={120}
               image="./about-ops.png"
               color="transparent"
@@ -464,11 +482,11 @@ export default function About(props: Props) {
               borderColor="rgba(51,194,255,0.3)"
               rotation={45}
             />
-            <Hex x="60%" y="0%" size={600} color="#E3DFFE" rotation={50} />
+            <Hex x="60%" y="0%" size={350} color="#E3DFFE" rotation={50} />
             <Hex
-              x="-25%"
+              x="-15%"
               y="-0%"
-              size={400}
+              size={300}
               image="./about-ops.png"
               color="transparent"
               borderSize={5}
