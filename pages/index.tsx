@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
 import Hex from "../components/hex";
 import { Button, ButtonType } from "../components/button";
+import Link from "next/link";
 import Card from "../components/card";
 
 interface Props {}
@@ -12,9 +13,11 @@ export default function Home(props: Props) {
         <div className="max-width-400">
           <h1>HexLabs</h1>
           {/* <p>Formerly HackGT</p> */}
-          <Button type={ButtonType.SOLID}>Learn More</Button>
+          <Link href="/about">
+            <a className="button-link-solid">Learn More</a>
+          </Link>
         </div>
-        <div className="hex-container">
+        <div className="hex-container" >
           {/* middle */}
           <Hex
             x="4%"
@@ -164,7 +167,7 @@ export default function Home(props: Props) {
             coverImage="home-discord.jpeg"
             buttons={
               <>
-                <Button type={ButtonType.SOLID}>Join Us</Button>
+                <a href="https://discord.gg/RfNZxzNb" className="button-link-solid">Join Us</a>
               </>
             }
           >
