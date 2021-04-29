@@ -1,4 +1,3 @@
-import { GetServerSideProps } from "next";
 import { useMediaQuery } from "react-responsive";
 
 import { Button, ButtonType } from "../components/button";
@@ -494,12 +493,3 @@ export default function About(props: Props) {
     </>
   );
 }
-
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => {
-  // Make request here for data
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-};

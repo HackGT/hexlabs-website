@@ -1,5 +1,4 @@
 import Hex from "../components/hex";
-import { GetServerSideProps } from "next";
 
 interface Props {}
 
@@ -29,12 +28,3 @@ export default function Timeline(props: Props) {
     </section>
   );
 }
-
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => {
-  // Make request here for data
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-};

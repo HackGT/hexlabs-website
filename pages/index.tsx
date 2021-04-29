@@ -1,4 +1,3 @@
-import { GetServerSideProps } from "next";
 import Hex from "../components/hex";
 import { Button, ButtonType } from "../components/button";
 import Link from "next/link";
@@ -143,12 +142,3 @@ export default function Home(props: Props) {
     </>
   );
 }
-
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => {
-  // Make request here for data
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-};

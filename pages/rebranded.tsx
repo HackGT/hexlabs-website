@@ -1,4 +1,3 @@
-import { GetServerSideProps } from "next";
 import Hex from "../components/hex";
 
 interface Props {}

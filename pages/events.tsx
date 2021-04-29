@@ -1,4 +1,3 @@
-import { GetServerSideProps } from "next";
 import Card from "../components/card";
 import { useMediaQuery } from "react-responsive";
 import Hex from "../components/hex";
@@ -246,11 +245,3 @@ export default function Events(props: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async (
-  context
-) => {
-  // Make request here for data
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-};

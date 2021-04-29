@@ -148,6 +148,10 @@ p {
   overflow: hidden;
 }
 
+.splash h1 {
+  margin-bottom: 20px;
+}
+
 .splash p {
   margin-bottom: 80px;
 }
