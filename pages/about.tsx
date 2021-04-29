@@ -242,7 +242,7 @@ export default function About(props: Props) {
               x="5%"
               y="-15%"
               size={120}
-              image="./about-exec.png"
+              image="./about-exec.jpg"
               color="transparent"
               rotation={40}
               imgOffsetX={-10}
@@ -257,7 +257,7 @@ export default function About(props: Props) {
             x="-45%"
             y="-0%"
             size={400}
-            image="./about-exec.png"
+            image="./about-exec.jpg"
             color="transparent"
             rotation={40}
             imgOffsetX={50}
