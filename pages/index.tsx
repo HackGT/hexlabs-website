@@ -161,7 +161,7 @@ export default function Home(props: Props) {
           </Card> */}
           <Card
             header="Discord"
-            coverImage="horizons.png"
+            coverImage="home-discord.jpeg"
             buttons={
               <>
                 <Button type={ButtonType.SOLID}>Join Us</Button>

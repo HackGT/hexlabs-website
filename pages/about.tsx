@@ -242,7 +242,7 @@ export default function About(props: Props) {
               x="5%"
               y="-15%"
               size={120}
-              image="./exec.png"
+              image="./about-exec.png"
               color="transparent"
               rotation={40}
               imgOffsetX={-10}
@@ -257,7 +257,7 @@ export default function About(props: Props) {
             x="-45%"
             y="-0%"
             size={400}
-            image="./exec.png"
+            image="./about-exec.png"
             color="transparent"
             rotation={40}
             imgOffsetX={50}
@@ -287,7 +287,7 @@ export default function About(props: Props) {
                 x="5%"
                 y="-15%"
                 size={120}
-                image="./exec_2.png"
+                image="./about-design.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={-10}
@@ -302,7 +302,7 @@ export default function About(props: Props) {
                 x="85%"
                 y="-0%"
                 size={400}
-                image="./exec_2.png"
+                image="./about-design.jpg"
                 color="transparent"
                 rotation={32}
                 imgOffsetX={-50}
@@ -343,7 +343,7 @@ export default function About(props: Props) {
               x="5%"
               y="-15%"
               size={120}
-              image="./exec.png"
+              image="./about-marketing.png"
               color="transparent"
               rotation={23}
               imgOffsetX={-10}
@@ -377,7 +377,7 @@ export default function About(props: Props) {
               x="-55%"
               y="-0%"
               size={400}
-              image="./exec.png"
+              image="./about-marketing.png"
               color="transparent"
               rotation={20}
               imgOffsetX={50}
@@ -407,7 +407,7 @@ export default function About(props: Props) {
               x="5%"
               y="-15%"
               size={120}
-              image="./exec.png"
+              image="./about-tech.png"
               color="transparent"
               rotation={35}
               imgOffsetX={-10}
@@ -423,7 +423,7 @@ export default function About(props: Props) {
               x="95%"
               y="20%"
               size={400}
-              image="./exec_2.png"
+              image="./about-tech.png"
               color="transparent"
               borderSize={5}
               borderColor="rgba(51,194,255,0.3)"
@@ -456,7 +456,7 @@ export default function About(props: Props) {
               x="5%"
               y="-15%"
               size={120}
-              image="./exec.png"
+              image="./about-ops.png"
               color="transparent"
               rotation={35}
               imgOffsetX={-10}
@@ -491,7 +491,7 @@ export default function About(props: Props) {
               x="-25%"
               y="-0%"
               size={400}
-              image="./exec.png"
+              image="./about-ops.png"
               color="transparent"
               borderSize={5}
               borderColor="rgba(51,194,255,0.3)"
