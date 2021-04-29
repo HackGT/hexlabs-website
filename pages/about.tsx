@@ -130,10 +130,8 @@ export default function About(props: Props) {
                 size={150}
                 image="./splash.png"
                 rotation={15}
-                imgOffsetX={-180}
-                imgOffsetY={-80}
-                imgWidth={180}
-                imgHeight={180}
+                imgOffsetX={0}
+                imgOffsetY={0}
               />
             </>
           ) : (
@@ -160,10 +158,8 @@ export default function About(props: Props) {
                 size={400}
                 image="./splash.png"
                 rotation={15}
-                imgOffsetX={-180}
-                imgOffsetY={-320}
-                imgWidth={150}
-                imgHeight={150}
+                imgOffsetX={0}
+                imgOffsetY={0}
               />
               <Hex
                 x="-3%"
@@ -245,10 +241,8 @@ export default function About(props: Props) {
               image="./about-exec.jpg"
               color="transparent"
               rotation={40}
-              imgOffsetX={-10}
-              imgOffsetY={-100}
-              imgWidth={120}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
             <Hex x="-70%" y="37%" size={180} color="#E3DFFE" rotation={-45} />
           </>
@@ -260,10 +254,8 @@ export default function About(props: Props) {
             image="./about-exec.jpg"
             color="transparent"
             rotation={40}
-            imgOffsetX={50}
-            imgOffsetY={-230}
-            imgWidth={100}
-            imgHeight={120}
+            imgOffsetX={0}
+            imgOffsetY={0}
           />
         )}
         <div className="left"></div>
@@ -290,10 +282,8 @@ export default function About(props: Props) {
                 image="./about-design.jpg"
                 color="transparent"
                 rotation={35}
-                imgOffsetX={-10}
-                imgOffsetY={-100}
-                imgWidth={120}
-                imgHeight={150}
+                imgOffsetX={0}
+                imgOffsetY={0}
               />
             </>
           ) : (
@@ -305,10 +295,8 @@ export default function About(props: Props) {
                 image="./about-design.jpg"
                 color="transparent"
                 rotation={32}
-                imgOffsetX={-50}
-                imgOffsetY={-260}
-                imgWidth={110}
-                imgHeight={120}
+                imgOffsetX={0}
+                imgOffsetY={0}
               />
               <Hex x="-70%" y="20%" size={300} color="#E3DFFE" rotation={-45} />
             </>
@@ -346,10 +334,8 @@ export default function About(props: Props) {
               image="./about-marketing.png"
               color="transparent"
               rotation={23}
-              imgOffsetX={-10}
-              imgOffsetY={-100}
-              imgWidth={120}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
             <Hex
               x="0%"
@@ -380,10 +366,8 @@ export default function About(props: Props) {
               image="./about-marketing.png"
               color="transparent"
               rotation={20}
-              imgOffsetX={50}
-              imgOffsetY={-380}
-              imgWidth={120}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
           </>
         )}
@@ -410,10 +394,8 @@ export default function About(props: Props) {
               image="./about-tech.png"
               color="transparent"
               rotation={35}
-              imgOffsetX={-10}
-              imgOffsetY={-100}
-              imgWidth={120}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
           </>
         ) : (
@@ -428,10 +410,8 @@ export default function About(props: Props) {
               borderSize={5}
               borderColor="rgba(51,194,255,0.3)"
               rotation={35}
-              imgOffsetX={50}
-              imgOffsetY={-380}
-              imgWidth={160}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
           </>
         )}
@@ -459,10 +439,8 @@ export default function About(props: Props) {
               image="./about-ops.png"
               color="transparent"
               rotation={35}
-              imgOffsetX={-10}
-              imgOffsetY={-100}
-              imgWidth={120}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
             <Hex
               x="-20%"
@@ -496,10 +474,8 @@ export default function About(props: Props) {
               borderSize={5}
               borderColor="rgba(51,194,255,0.3)"
               rotation={35}
-              imgOffsetX={50}
-              imgOffsetY={-380}
-              imgWidth={160}
-              imgHeight={150}
+              imgOffsetX={0}
+              imgOffsetY={0}
             />
           </>
         )}

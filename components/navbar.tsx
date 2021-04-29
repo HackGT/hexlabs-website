@@ -33,13 +33,13 @@ export default function NavBar() {
   const hamParent = useRef(null);
   
   // TODO jank solution for time being
-  const mediaQuery = window.matchMedia('(max-width: 850px)')
 
   const toggle = () => {
     ham.current.classList.toggle(styles.active);
     nav.current.classList.toggle(styles.mobile);
   };
   const onClickNav = () => {
+    const mediaQuery = matchMedia('(max-width: 850px)')
     if (mediaQuery.matches || ham.current.classList.contains(styles.active)) {
       toggle();
     }
