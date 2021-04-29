@@ -47,7 +47,15 @@
   border-color: transparent;
 }
 
-@media (max-width: 500px) {
-  .nav {
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .left, .right {
+    display: none;
+  }
+  .hamburger {
+    display: block;
   }
 }

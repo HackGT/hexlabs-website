@@ -29,6 +29,9 @@ const navItems: NavItem[] = [
 export default function NavBar() {
   return (
     <nav className={styles.nav}>
+      <div className={styles.hamburger}>
+        hamburger
+      </div>
       <div className={styles.left}>
         <Logo />
       </div>
