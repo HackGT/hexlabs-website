@@ -31,5 +31,16 @@
 .content p {
   font-size: 1.1rem;
   color: var(--color-gray)
+}
 
+
+@media (max-width: 800px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover-image img {
+    height: 200px; 
+  }
 }
