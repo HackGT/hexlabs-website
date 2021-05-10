@@ -52,7 +52,7 @@ export default function Contact(props: Props) {
       </section>
       <section>
         <h3>Contact Us</h3>
-        <a href="mailto:hello@hack.gt">
+        <a href="mailto:hello@hexlabs.org">
           <h4>hello@hack.gt</h4>
         </a>
       </section>
