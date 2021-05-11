@@ -94,7 +94,7 @@ export default function NavBar() {
             ))}
             <li>
               <div className={styles.button}>
-                <Link href="mailto:hello@hack.gt">
+                <Link href="mailto:hello@hexlabs.org">
                   <a>Contact Us</a>
                 </Link>
               </div>
