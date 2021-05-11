@@ -159,7 +159,7 @@ export default function GetInvolved(props: Props) {
         </p>
         <p>
           If you are interested in sponsoring, please reach out to
-          hello@hack.gt!
+          hello@hexlabs.org!
         </p>
       </section>
       <section>
