@@ -38,7 +38,7 @@ const footerColumns: FooterColumn[] = [
       },
       {
         name: "Instagram",
-        href: "https://www.instagram.com/thehackgt/",
+        href: "https://www.instagram.com/thehexlabs/",
       },
       {
         name: "LinkedIn",
@@ -63,7 +63,7 @@ const footerColumns: FooterColumn[] = [
       },
       {
         name: "Discord",
-        href: "https://discord.gg/gFskbdD67F",
+        href: "http://discord.hexlabs.org/",
       },
     ],
   },
@@ -81,7 +81,7 @@ function FooterItem({ title, links }) {
       <ul>
         {links.map(({ name, href }, idx) => (
           <li key={idx}>
-            <a href={href}>{name}</a>
+            <a href={href} target="_blank">{name}</a>
           </li>
         ))}
       </ul>
