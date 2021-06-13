@@ -124,7 +124,7 @@ export default function Home(props: Props) {
             buttons={
               <>
                 <a
-                  href="https://discord.gg/gFskbdD67F"
+                  href="http://discord.hexlabs.org/"
                   className="button-link-solid"
                 >
                   Join Us
