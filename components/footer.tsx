@@ -1,6 +1,8 @@
 import styles from "./footer.module.css";
 import Logo from "./logo";
 
+declare let ml_webform_4255780: any;
+
 interface FooterLink {
   name: string;
   href: string;
