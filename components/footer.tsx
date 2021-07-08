@@ -59,7 +59,7 @@ const footerColumns: FooterColumn[] = [
     links: [
       {
         name: "Newsletter",
-        href: "http://eepurl.com/hrkumn",
+        href: "",
       },
       {
         name: "Discord",
@@ -79,11 +79,16 @@ function FooterItem({ title, links }) {
     <div>
       <div className={styles["column-header"]}>{title}</div>
       <ul>
-        {links.map(({ name, href }, idx) => (
-          <li key={idx}>
-            <a href={href} target="_blank">{name}</a>
-          </li>
-        ))}
+        {links.map(({ name, href }, idx) => {
+          return name === "Newsletter" ?
+            <li key={idx}>
+              <a onClick={() => ml_webform_4255780('show')}>{name}</a>
+            </li>
+          :
+            <li key={idx}>
+              <a href={href} target="_blank">{name}</a>
+            </li>
+        })}
       </ul>
     </div>
   );
