@@ -88,7 +88,7 @@ function FooterItem({ title, links }) {
             </li>
           :
             <li key={idx}>
-              <a href={href} target="_blank">{name}</a>
+              <a href={href} target="_blank" rel="noopener noreferrer">{name}</a>
             </li>
         })}
       </ul>
