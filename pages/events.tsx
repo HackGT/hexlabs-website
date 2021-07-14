@@ -181,7 +181,7 @@ export default function Events(props: Props) {
           provide resources, workshops, and mentorship to allow students
           transform their imagination into reality.
         </p>
-        <a href="https://2020.hack.gt" className="button-link-solid">
+        <a href="https://2021.hack.gt" className="button-link-solid">
           Learn more
         </a>
 
