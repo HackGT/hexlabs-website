@@ -29,6 +29,7 @@ class MyDocument extends Document {
             as="font"
             type="font/ttf"
           />
+          <script type="text/javascript" src="/js/mailerlite.js"></script>
         </Head>
         <body>
           <Main />
