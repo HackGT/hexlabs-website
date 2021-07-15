@@ -81,10 +81,12 @@ function FooterItem({ title, links }) {
     <div>
       <div className={styles["column-header"]}>{title}</div>
       <ul>
-        <li>
-            <a onClick={() => ml_webform_4255780('show')}>Newsletter</a>
-        </li>
         {links.map(({ name, href }, idx) => {
+          return name === "Newsletter" ?
+            <li key={idx}>
+              <a onClick={() => ml_webform_4255780('show')}>{name}</a>
+            </li>
+          :
             <li key={idx}>
               <a href={href} target="_blank" rel="noopener noreferrer">{name}</a>
             </li>
