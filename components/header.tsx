@@ -6,9 +6,12 @@ export default function Header() {
   return (
     <header>
       <Banner>
-        We have&nbsp;
-        <Link href="/rebranded">
-          <a>rebranded!</a>
+        <Link href="https://2021.hack.gt">
+          <a>HackGT 8</a>
+        </Link> registrations are open! 
+        Register 
+        <Link href="https://registration.hack.gt">
+          <a>here</a>
         </Link>
       </Banner>
       <NavBar />
