@@ -54,13 +54,13 @@ const previousEvents = [
     coverImage: "hardware-hackathon.jpg",
   },
   {
-    name: "HackgTeeny 2",
+    name: "HackGTeeny 2",
     description:
       "HackGT’s second small-scale hackathon focused on the development of skills needed to create full-stack projects!",
     coverImage: "hackgteeny-2.jpg",
   },
   {
-    name: "HackgTeeny",
+    name: "HackGTeeny",
     description:
       "HackGT’s inaugural HackGTeeny, a hackathon geared towards beginners",
     coverImage: "hackgteeny.jpg",
