@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="https://2021.hack.gt">
           <a>HackGT 8</a>
         </Link> registrations are open! 
-        Register 
+        Register&nbsp;
         <Link href="https://registration.hack.gt">
           <a>here</a>
         </Link>
