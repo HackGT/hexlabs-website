@@ -5,15 +5,6 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <Banner>
-        <Link href="https://2021.hack.gt">
-          <a>HackGT 8</a>
-        </Link> registrations are open! 
-        Register&nbsp;
-        <Link href="https://registration.hack.gt">
-          <a>here</a>
-        </Link>
-      </Banner>
       <NavBar />
     </header>
   );
