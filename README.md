@@ -1,2 +1,3 @@
 ### HexLabs Website
-Coming soon o.O
+
+Check it out at [hexlabs.org](hexlabs.org)!
