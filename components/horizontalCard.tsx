@@ -1,3 +1,4 @@
+import { Box, Text } from "@chakra-ui/react";
 import styles from "./horizontalCard.module.css";
 
 interface Props {
@@ -8,15 +9,17 @@ interface Props {
 
 const HCard: React.FC<Props> = (props) => {
   return (
-    <div className={styles.card}>
-      <div className={styles["cover-image"]}>
+    <Box className={styles.card}>
+      <Box className={styles["cover-image"]}>
         <img src={props.coverImage} alt="Cover image" />
-      </div>
-      <div className={styles.content}>
-        <h4>{props.header}</h4>
-        <p>{props.children}</p>
-      </div>
-    </div>
+      </Box>
+      <Box padding="8">
+        <Text as="h4" mb="2">
+          {props.header}
+        </Text>
+        <Text color="grey">{props.children}</Text>
+      </Box>
+    </Box>
   );
 };
 

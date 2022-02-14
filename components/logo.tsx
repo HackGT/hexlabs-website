@@ -1,10 +1,13 @@
-import styles from "./logo.module.css";
-import Link from "next/link";
+import { Box, Text } from "@chakra-ui/react";
 
 export default function Logo() {
   return (
-    <div 
-      className={styles.container}
+    <Box
+      w="fit-content"
+      h="fit-content"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
     >
       <svg
         width="28"
@@ -18,10 +21,15 @@ export default function Logo() {
           fill="white"
         />
       </svg>
-      <Link href="/">
-        <a className={styles.title}>
-        hexlabs</a>
-        </Link>
-    </div>
+      <Text
+        pl="1rem"
+        fontSize="2.1rem"
+        fontWeight="600"
+        letterSpacing="0.09rem"
+        userSelect="none"
+      >
+        hexlabs
+      </Text>
+    </Box>
   );
 }

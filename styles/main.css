@@ -37,7 +37,6 @@ body {
   box-sizing: border-box;
 
   font-family: "Roobert", sans-serif;
-  font-size: 16px;
   line-height: 1.5;
 
   --color-light-purple: #e8e4ff;
@@ -88,46 +87,6 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
-}
-
-h1 {
-  font-weight: 600;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 2.75rem;
-}
-
-h3 {
-  font-size: 2.25rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-}
-
-h6 {
-  font-size: 1.25rem;
-}
-
-p {
-  font-size: 1.25rem;
 }
 
 .container {
@@ -206,7 +165,7 @@ p {
 
 .button-link-solid:hover {
   text-decoration: none;
-  background: #E3DFFE;
+  background: #e3dffe;
   color: black !important;
 }
 
@@ -217,5 +176,11 @@ a.button-link-solid:visited {
 @media (max-width: 500px) {
   section {
     margin: 100px 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .splash-hex {
+    display: none;
   }
 }

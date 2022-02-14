@@ -1,18 +1,57 @@
 import Hex from "../components/hex";
-import { Button, ButtonType } from "../components/button";
 import Link from "next/link";
-import Card from "../components/card";
+import { Box, Button, Text, Image, SimpleGrid, Flex } from "@chakra-ui/react";
 
 interface Props {}
+
+interface InitiativeCardProps {
+  coverImage: string;
+  coverImageAlt: string;
+  heading: string;
+  body: string;
+  button: React.ReactNode;
+}
+
+const InitiativeCard: React.FC<InitiativeCardProps> = (
+  props: InitiativeCardProps
+) => {
+  return (
+    <Box layerStyle="card">
+      <Image
+        src={props.coverImage}
+        alt={props.coverImageAlt}
+        layerStyle="card-image"
+      />
+      <Flex
+        p="8"
+        flexDirection="column"
+        justifyContent="space-between"
+        gap="5"
+        flexGrow="1"
+      >
+        <Box>
+          <Text as="h4">{props.heading}</Text>
+          <Text color="gray" mt="2">
+            {props.body}
+          </Text>
+        </Box>
+
+        {props.button}
+      </Flex>
+    </Box>
+  );
+};
 
 export default function Home(props: Props) {
   return (
     <>
       <section className="splash splash-main">
         <div className="max-width-400">
-          <h1>HexLabs</h1>
+          <Text as="h2" fontWeight="700" mb="5">
+            HexLabs
+          </Text>
           <Link href="/about">
-            <a className="button-link-solid">Learn More</a>
+            <Button colorScheme="purple">Learn More</Button>
           </Link>
         </div>
         <div className="hex-container">
@@ -66,15 +105,17 @@ export default function Home(props: Props) {
       </section>
 
       <section>
-        <h2>About Us</h2>
-        <p>
+        <Text as="h3" mb="5">
+          About Us
+        </Text>
+        <Text>
           HexLabs is a student-led, nonprofit organization that throws
           large-scale hackathons to spread the opportunity for innovation to
           high school and college students. We partner with companies to
           cultivate an environment of enrichment and growth for our participants
           to be able to learn new skills and use them to bring new ideas to
           life.
-        </p>
+        </Text>
         <div className="hex-container">
           <Hex
             x="-25%"
@@ -89,53 +130,52 @@ export default function Home(props: Props) {
       </section>
 
       <section>
-        <h2>Say Hello to HexLabs</h2>
-        <p>
-          We’re HexLabs, the new parent organization overseeing familiar events
+        <Text as="h3" mb="5">
+          Say Hello to HexLabs
+        </Text>
+        <Text mb="5">
+          We're HexLabs, the new parent organization overseeing familiar events
           like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons.
           Learn more about our new parent organizatinon which will be our
           driving force behind our mission to cultivate innovative spaces for
           students to work together.
-        </p>
+        </Text>
         <Link href="/rebranded">
-          <a className="button-link-solid">Learn More</a>
+          <Button colorScheme="purple">Learn More</Button>
         </Link>
       </section>
       <section>
-        <h2>Community Initiatives</h2>
-        <div className="container">
-          <Card
-            header="Getting Involved"
+        <Text as="h3" mb="5">
+          Community Initiatives
+        </Text>
+        <SimpleGrid columns={[1, 1, 2]} spacing="40px">
+          <InitiativeCard
             coverImage="home-intouch-involved.jpg"
-            buttons={
-              <>
-                <Link href="/get-involved">
-                  <a className="button-link-solid">Learn More</a>
-                </Link>
-              </>
+            coverImageAlt="People smiling"
+            heading="Getting Involved"
+            body="Learn more about how you can get involved with HexLabs as an
+                  organizer, participant, mentor, sponsor, and more!"
+            button={
+              <Link href="/get-involved">
+                <Button colorScheme="purple">Learn More</Button>
+              </Link>
             }
-          >
-            Learn more about how you can get involved with HexLabs as an
-            organizer, participant, mentor, sponsor, and more!
-          </Card>
-          <Card
-            header="Discord"
+          />
+
+          <InitiativeCard
             coverImage="home-discord.jpg"
-            buttons={
-              <>
-                <a
-                  href="http://discord.hexlabs.org/"
-                  className="button-link-solid"
-                >
-                  Join Us
-                </a>
-              </>
+            coverImageAlt="Guy looking in mirror"
+            heading="Discord"
+            body="Join the Hex Commons, a supportive community of like-minded
+                  creators."
+            button={
+              <Link href="https://discord.hexlabs.org">
+                <Button colorScheme="purple">Join Us</Button>
+              </Link>
             }
-          >
-            Join the Hex Commons, a supportive community of like-minded
-            creators.
-          </Card>
-        </div>
+          />
+        </SimpleGrid>
+
         <div className="hex-container">
           <Hex
             x="-40%"

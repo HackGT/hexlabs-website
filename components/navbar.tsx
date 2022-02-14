@@ -25,13 +25,16 @@ const navItems: NavItem[] = [
     name: "Get Involved",
     route: "/get-involved",
   },
+  {
+    name: "Contact Us",
+    route: "/contact",
+  },
 ];
 
 export default function NavBar() {
   const nav = useRef(null);
   const ham = useRef(null);
-  const hamParent = useRef(null);
-  
+
   // TODO jank solution for time being
 
   const toggle = () => {
@@ -39,21 +42,15 @@ export default function NavBar() {
     nav.current.classList.toggle(styles.mobile);
   };
   const onClickNav = () => {
-    const mediaQuery = matchMedia('(max-width: 850px)')
+    const mediaQuery = matchMedia("(max-width: 900px)");
     if (mediaQuery.matches || ham.current.classList.contains(styles.active)) {
       toggle();
     }
-  }
+  };
 
   return (
-    <nav 
-      className={styles.nav}
-      onClick={onClickNav}
-      ref={nav}
-      >
-      <div
-        className={styles.hamburger}
-        >
+    <nav className={styles.nav} onClick={onClickNav} ref={nav}>
+      <div className={styles.hamburger}>
         <svg
           className={`${styles.ham} ${styles.hamRotate} ${styles.ham4}`}
           viewBox="0 0 100 100"
@@ -77,9 +74,7 @@ export default function NavBar() {
           />
         </svg>
       </div>
-      <div 
-        className={styles.content}
-      >
+      <div className={styles.content}>
         <div className={styles.left}>
           <Logo />
         </div>
@@ -92,13 +87,6 @@ export default function NavBar() {
                 </Link>
               </li>
             ))}
-            <li>
-              <div className={styles.button}>
-                <Link href="mailto:hello@hexlabs.org">
-                  <a>Contact Us</a>
-                </Link>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
