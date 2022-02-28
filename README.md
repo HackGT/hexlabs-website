@@ -6,3 +6,5 @@ Check it out at [hexlabs.org](hexlabs.org)!
 
 - `yarn install`
 - `yarn dev`
+
+It should be viewable at localhost:3000
