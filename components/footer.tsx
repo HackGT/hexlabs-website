@@ -1,5 +1,12 @@
 import styles from "./footer.module.css";
 import Logo from "./logo";
+import {
+  Box,
+  Text,
+  Link,
+  ListItem,
+  UnorderedList,
+} from '@chakra-ui/react'
 
 declare let ml_webform_4255780: any;
 
@@ -78,36 +85,37 @@ const lastColumn: FooterColumn = {
 
 function FooterItem({ title, links }) {
   return (
-    <div>
-      <div className={styles["column-header"]}>{title}</div>
-      <ul>
+    <Box>
+      <Box fontWeight = "600" fontSize = "1.25rem">{title}</Box>
+      <UnorderedList>
         {links.map(({ name, href }, idx) => {
           return name === "Newsletter" ?
-            <li key={idx}>
-              <a onClick={() => ml_webform_4255780('show')}>{name}</a>
-            </li>
+            <ListItem key={idx}>
+              <Link onClick={() => ml_webform_4255780('show')}>{name}</Link>
+            </ListItem>
           :
-            <li key={idx}>
-              <a href={href} target="_blank" rel="noopener noreferrer">{name}</a>
-            </li>
+            <ListItem key={idx}>
+              <Link href={href} target="_blank" rel="noopener noreferrer">{name}</Link>
+            </ListItem>
         })}
-      </ul>
-    </div>
+      </UnorderedList>
+    </Box>
   );
 }
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <Box className={styles.footer}>
+
       <Logo />
-      <div className={styles.columns}>
+      <Box className={styles.columns}>
         {footerColumns.map((props, idx) => (
           <FooterItem {...props} key={idx} />
         ))}
-      </div>
-      <div className={styles.right}>
+      </Box>
+      <Box textAlign ="right">
         <FooterItem {...lastColumn} />
-      </div>
-    </footer>
+      </Box>
+    </Box>
   );
 }
