@@ -62,8 +62,7 @@ const previousEvents = [
   },
   {
     name: "HackGTeeny",
-    description:
-      "HackGT’s inaugural HackGTeeny, a hackathon geared towards beginners",
+    description: "HackGT’s inaugural HackGTeeny, a hackathon geared towards beginners",
     coverImage: "hackgteeny.jpg",
   },
 ];
@@ -75,21 +74,14 @@ export default function Events(props: Props) {
         <div className="max-width-600">
           <Text as="h1">Events</Text>
           <Text>
-            Hackathons are 36-hour events where students from across the country
-            come together for a weekend to create anything that shows off their
-            creativity and passion for development. You may choose any platform,
-            programming language, or format to show how you re-imagine
+            Hackathons are 36-hour events where students from across the country come together for a
+            weekend to create anything that shows off their creativity and passion for development.
+            You may choose any platform, programming language, or format to show how you re-imagine
             solutions.
           </Text>
         </div>
         <div className="splash-hex hex-container">
-          <Hex
-            x="59%"
-            y="10%"
-            size={200}
-            color="rgba(255,255,255,0.35)"
-            rotation={13}
-          />
+          <Hex x="59%" y="10%" size={200} color="rgba(255,255,255,0.35)" rotation={13} />
           <Hex
             x="45%"
             y="20%"
@@ -127,12 +119,11 @@ export default function Events(props: Props) {
           HackGT
         </Text>
         <Text mb="3">
-          HackGT is our annual flagship hackathon where students from across the
-          country come together to celebrate creativity and innovation. We
-          provide resources, workshops, and mentorship to allow students
-          transform their imagination into reality.
+          HackGT is our annual flagship hackathon where students from across the country come
+          together to celebrate creativity and innovation. We provide resources, workshops, and
+          mentorship to allow students transform their imagination into reality.
         </Text>
-        <Link href="https://2021.hack.gt">
+        <Link href="/timeline">
           <Button colorScheme="purple">Learn More</Button>
         </Link>
 
@@ -140,10 +131,9 @@ export default function Events(props: Props) {
           Catalyst
         </Text>
         <Text mb="3">
-          Catalyst is HexLab’s community outreach event for high school students
-          with limited STEAM exposure. Participants at Catalyst have the
-          opportunity to learn about Computer Science and other related fields
-          as a career path as well as be able to receive mentorship from
+          Catalyst is HexLab’s community outreach event for high school students with limited STEAM
+          exposure. Participants at Catalyst have the opportunity to learn about Computer Science
+          and other related fields as a career path as well as be able to receive mentorship from
           industry professionals and Georgia Tech alumni.{" "}
         </Text>
         <Link href="https://catalyst.hack.gt">
