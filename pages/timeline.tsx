@@ -1,9 +1,7 @@
 import Hex from "../components/hex";
-import { GetServerSideProps } from "next";
 import styles from "./timeline.module.css";
 import { Text } from "@chakra-ui/react";
 import { Button, ButtonType } from "../components/button";
-import { imageConfigDefault } from "next/dist/server/image-config";
 
 interface Props {}
 
@@ -251,10 +249,3 @@ export default function Timeline(props: Props) {
     </div>
   );
 }
-
-export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
-  // Make request here for data
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-};
