@@ -1,0 +1,71 @@
+.topContainer {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+  .topContainer {
+    display: flex;
+    width: 150vw;
+    text-align: center;
+    margin-top: 5vh;
+  }
+}
+  
+.event {
+  width: 80%;
+  min-height: 40%;
+  border-left: 4px solid var(--color-blue);
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.event h2 {
+  margin: 0;
+}
+
+.eventDescription {
+  width: 50%;
+  height: 50%;
+}
+
+.mediaContainer {
+  flex: 1;
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+}
+
+.image {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-height: 300px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 1rem;
+}
+
+.buttonContainer > * {
+  margin-right: 1rem;
+}
+
+.customMargin {
+    margin-bottom: 100rem;
+    padding-bottom: 100rem;
+}
+
+.timelineStyle {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}

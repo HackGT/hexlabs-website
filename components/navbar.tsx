@@ -62,11 +62,7 @@ export default function NavBar() {
             className={`${styles.line} ${styles.top}`}
             d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
           />
-          <path
-            fill="#fff"
-            className={`${styles.line} ${styles.middle}`}
-            d="m 70,50 h -40"
-          />
+          <path fill="#fff" className={`${styles.line} ${styles.middle}`} d="m 70,50 h -40" />
           <path
             fill="#fff"
             className={`${styles.line} ${styles.bottom}`}
