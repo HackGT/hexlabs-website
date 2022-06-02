@@ -328,7 +328,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-tech.png"
+                image="./hexlabs_staff_at_horizons.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -342,7 +342,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./about-tech.png"
+                image="./hexlabs_staff_at_horizons.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -505,7 +505,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-tech.png"
+                image="./catalyst_directors_fly.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -519,7 +519,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./about-tech.png"
+                image="./catalyst_directors_fly.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
