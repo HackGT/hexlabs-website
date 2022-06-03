@@ -12,23 +12,11 @@ interface InitiativeCardProps {
   button: React.ReactNode;
 }
 
-const InitiativeCard: React.FC<InitiativeCardProps> = (
-  props: InitiativeCardProps
-) => {
+const InitiativeCard: React.FC<InitiativeCardProps> = (props: InitiativeCardProps) => {
   return (
     <Box layerStyle="card">
-      <Image
-        src={props.coverImage}
-        alt={props.coverImageAlt}
-        layerStyle="card-image"
-      />
-      <Flex
-        p="8"
-        flexDirection="column"
-        justifyContent="space-between"
-        gap="5"
-        flexGrow="1"
-      >
+      <Image src={props.coverImage} alt={props.coverImageAlt} layerStyle="card-image" />
+      <Flex p="8" flexDirection="column" justifyContent="space-between" gap="5" flexGrow="1">
         <Box>
           <Text as="h4">{props.heading}</Text>
           <Text color="gray" mt="2">
@@ -56,13 +44,7 @@ export default function Home(props: Props) {
         </div>
         <div className="hex-container">
           {/* middle */}
-          <Hex
-            x="4%"
-            y="9%"
-            size={275}
-            color="rgba(255,255,255,0.2)"
-            rotation={-45}
-          />
+          <Hex x="4%" y="9%" size={275} color="rgba(255,255,255,0.2)" rotation={-45} />
 
           {/* top right */}
           <Hex
@@ -75,23 +57,10 @@ export default function Home(props: Props) {
             rotation={45}
           />
 
-          <Hex
-            x="40%"
-            y="-50%"
-            size={475}
-            image="/splash.png"
-            imageDy={300}
-            rotation={45}
-          />
+          <Hex x="40%" y="-50%" size={475} image="/splash.png" imageDy={300} rotation={45} />
 
           {/* bottom left */}
-          <Hex
-            x="-1%"
-            y="58%"
-            size={150}
-            color="rgba(255,255,255,0.5)"
-            rotation={45}
-          />
+          <Hex x="-1%" y="58%" size={150} color="rgba(255,255,255,0.5)" rotation={45} />
           <Hex
             x="-3%"
             y="81%"
@@ -109,12 +78,10 @@ export default function Home(props: Props) {
           About Us
         </Text>
         <Text>
-          HexLabs is a student-led, nonprofit organization that throws
-          large-scale hackathons to spread the opportunity for innovation to
-          high school and college students. We partner with companies to
-          cultivate an environment of enrichment and growth for our participants
-          to be able to learn new skills and use them to bring new ideas to
-          life.
+          HexLabs is a student-led, nonprofit organization that throws large-scale hackathons to
+          spread the opportunity for innovation to high school and college students. We partner with
+          companies to cultivate an environment of enrichment and growth for our participants to be
+          able to learn new skills and use them to bring new ideas to life.
         </Text>
         <div className="hex-container">
           <Hex
@@ -134,11 +101,10 @@ export default function Home(props: Props) {
           Say Hello to HexLabs
         </Text>
         <Text mb="5">
-          We're HexLabs, the new parent organization overseeing familiar events
-          like HackGT, HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons.
-          Learn more about our new parent organizatinon which will be our
-          driving force behind our mission to cultivate innovative spaces for
-          students to work together.
+          We're HexLabs, the new parent organization overseeing familiar events like HackGT,
+          HackGTeeny, Catalyst, BuildGT, HealthTech, and Horizons. Learn more about our new parent
+          organizatinon which will be our driving force behind our mission to cultivate innovative
+          spaces for students to work together.
         </Text>
         <Link href="/rebranded">
           <Button colorScheme="purple">Learn More</Button>
@@ -150,7 +116,7 @@ export default function Home(props: Props) {
         </Text>
         <SimpleGrid columns={[1, 1, 2]} spacing="40px">
           <InitiativeCard
-            coverImage="home-intouch-involved.jpg"
+            coverImage="./horizons_painter.jpg"
             coverImageAlt="People smiling"
             heading="Getting Involved"
             body="Learn more about how you can get involved with HexLabs as an
@@ -163,7 +129,7 @@ export default function Home(props: Props) {
           />
 
           <InitiativeCard
-            coverImage="home-discord.jpg"
+            coverImage="./guys_looking_up.jpg"
             coverImageAlt="Guy looking in mirror"
             heading="Discord"
             body="Join the Hex Commons, a supportive community of like-minded
@@ -177,13 +143,7 @@ export default function Home(props: Props) {
         </SimpleGrid>
 
         <div className="hex-container">
-          <Hex
-            x="-40%"
-            y="72%"
-            size={450}
-            color="rgba(123,105,236,0.3)"
-            rotation={-45}
-          />
+          <Hex x="-40%" y="72%" size={450} color="rgba(123,105,236,0.3)" rotation={-45} />
           <Hex
             x="21%"
             y="84%"
