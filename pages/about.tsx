@@ -148,7 +148,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-exec.jpg"
+                image="./catalyst_image1.png"
                 color="transparent"
                 rotation={40}
                 imgOffsetX={0}
@@ -162,7 +162,7 @@ export default function About(props: Props) {
               y="-50%"
               transform="translate(50%, 50%)"
               size={300}
-              image="./about-exec.jpg"
+              image="./catalyst_image1.png"
               color="transparent"
               borderSize={5}
               borderColor="rgba(51,194,255,0.3)"
@@ -195,7 +195,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-design.jpg"
+                image="./horizons_image4.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -208,7 +208,7 @@ export default function About(props: Props) {
                 x="65%"
                 y="-0%"
                 size={300}
-                image="./about-design.jpg"
+                image="./horizons_image4.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -255,7 +255,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-marketing.png"
+                image="./horizons_image8.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -289,7 +289,7 @@ export default function About(props: Props) {
                 x="-25%"
                 y="-0%"
                 size={300}
-                image="./about-marketing.png"
+                image="./horizons_image8.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -328,7 +328,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./hexlabs_staff_at_horizons.jpg"
+                image="./horizons_image7.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -342,7 +342,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./hexlabs_staff_at_horizons.jpg"
+                image="./horizons_image7.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -381,7 +381,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-tech.png"
+                image="./tech_at_work.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -395,7 +395,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./about-tech.png"
+                image="./tech_at_work.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -434,7 +434,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-ops.png"
+                image="./ops_people.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -467,7 +467,7 @@ export default function About(props: Props) {
                 x="-15%"
                 y="-0%"
                 size={300}
-                image="./about-ops.png"
+                image="./ops_people.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -505,7 +505,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./catalyst_directors_fly.jpg"
+                image="./catalyst_teachers.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -519,7 +519,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./catalyst_directors_fly.jpg"
+                image="./catalyst_teachers.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
