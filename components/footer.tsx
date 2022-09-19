@@ -1,12 +1,6 @@
 import styles from "./footer.module.css";
 import Logo from "./logo";
-import {
-  Box,
-  Text,
-  Link,
-  ListItem,
-  UnorderedList,
-} from '@chakra-ui/react'
+import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 
 declare let ml_webform_4255780: any;
 
@@ -25,12 +19,16 @@ const footerColumns: FooterColumn[] = [
     title: "Company",
     links: [
       {
-        name: "About us",
+        name: "About Us",
         href: "/about",
       },
       {
         name: "Contact",
         href: "/contact",
+      },
+      {
+        name: "Privacy Policy",
+        href: "https://privacy.hexlabs.org",
       },
     ],
   },
@@ -86,17 +84,20 @@ const lastColumn: FooterColumn = {
 function FooterItem({ title, links }) {
   return (
     <Box>
-      <Box fontWeight = "600" fontSize = "1.25rem">{title}</Box>
-      <UnorderedList>
+      <Box fontWeight="600" fontSize="1.25rem">
+        {title}
+      </Box>
+      <UnorderedList margin="0">
         {links.map(({ name, href }, idx) => {
-          return name === "Newsletter" ?
+          return name === "Newsletter" ? (
             <ListItem key={idx}>
-              <Link onClick={() => ml_webform_4255780('show')}>{name}</Link>
+              <Link onClick={() => ml_webform_4255780("show")}>{name}</Link>
             </ListItem>
-          :
+          ) : (
             <ListItem key={idx}>
-              <Link href={href} target="_blank" rel="noopener noreferrer">{name}</Link>
+              <Link href={href}>{name}</Link>
             </ListItem>
+          );
         })}
       </UnorderedList>
     </Box>
@@ -106,14 +107,13 @@ function FooterItem({ title, links }) {
 export default function Footer() {
   return (
     <Box className={styles.footer}>
-
       <Logo />
       <Box className={styles.columns}>
         {footerColumns.map((props, idx) => (
           <FooterItem {...props} key={idx} />
         ))}
       </Box>
-      <Box textAlign ="right">
+      <Box textAlign="right">
         <FooterItem {...lastColumn} />
       </Box>
     </Box>
