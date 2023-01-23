@@ -136,7 +136,7 @@ export default function Events(props: Props) {
           and other related fields as a career path as well as be able to receive mentorship from
           industry professionals and Georgia Tech alumni.{" "}
         </Text>
-        <Link href="https://catalyst.hack.gt">
+        <Link href="https://catalyst.hexlabs.org">
           <Button colorScheme="purple">Learn More</Button>
         </Link>
 
