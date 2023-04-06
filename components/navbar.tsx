@@ -72,7 +72,7 @@ export default function NavBar() {
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
-          <Logo />
+          <Link href="/"><a><Logo /></a></Link>
         </div>
         <div className={styles.right}>
           <ul>
