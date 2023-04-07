@@ -72,7 +72,9 @@ export default function NavBar() {
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
-          <Logo />
+          <Link href="/">
+            <a style={{ textDecoration: 'none' }}><Logo /></a>
+          </Link>
         </div>
         <div className={styles.right}>
           <ul>
