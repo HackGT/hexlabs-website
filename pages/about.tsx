@@ -67,7 +67,7 @@ export default function About(props: Props) {
             x="55%"
             y="20%"
             size={300}
-            image="./about.jpg"
+            image="./horizons_helpdesk.jpg"
             rotation={15}
             imgOffsetX={0}
             imgOffsetY={0}
@@ -148,7 +148,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-exec.jpg"
+                image="./exec_team.jpg"
                 color="transparent"
                 rotation={40}
                 imgOffsetX={0}
@@ -162,7 +162,7 @@ export default function About(props: Props) {
               y="-50%"
               transform="translate(50%, 50%)"
               size={300}
-              image="./about-exec.jpg"
+              image="./exec_team.jpg"
               color="transparent"
               borderSize={5}
               borderColor="rgba(51,194,255,0.3)"
@@ -195,7 +195,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-design.jpg"
+                image="./design_team_pic.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -208,7 +208,7 @@ export default function About(props: Props) {
                 x="65%"
                 y="-0%"
                 size={300}
-                image="./about-design.jpg"
+                image="./design_team_pic.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -255,7 +255,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-marketing.png"
+                image="./marketing_team.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -289,12 +289,12 @@ export default function About(props: Props) {
                 x="-25%"
                 y="-0%"
                 size={300}
-                image="./about-marketing.png"
+                image="./marketing_team.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
                 rotation={20}
-                imgOffsetX={0}
+                imgOffsetX={-1}
                 imgOffsetY={0}
               />
             </>
@@ -381,7 +381,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-tech.png"
+                image="./tech_team.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -395,7 +395,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./about-tech.png"
+                image="./tech_team.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -434,7 +434,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-ops.png"
+                image="./ops_team.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -467,7 +467,7 @@ export default function About(props: Props) {
                 x="-15%"
                 y="-0%"
                 size={300}
-                image="./about-ops.png"
+                image="./ops_team.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
