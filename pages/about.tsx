@@ -225,13 +225,14 @@ export default function About(props: Props) {
             Design Team
           </Text>
           <Text>
-            The Design Team ideates and designs all of HexLabs’s visual and product experiences. We
-            are a multidisciplinary team made of one-of-kind designers with passions for graphic
-            design, product design, motion design, UX research, and more! Together, we are
-            responsible for theming the event, curating swag like stickers and t-shirts, designing
-            graphics for marketing posts, and wireframing/prototyping all HexLabs tech products and
-            websites. We look for outside-of-the-box thinkers who are passionate about their craft,
-            eager to collaborate, and ready to design the never-before-seen.
+            The Design Team ideates and designs all of HexLabs’s visual and product 
+            experiences. We are a multidisciplinary team made of one-of-kind designers 
+            with passions for graphic design, branding, product design, and beyond! 
+            Together, we are responsible for event theming, curating swag such as 
+            stickers and t-shirts, creating marketing graphics, digital assets, and 
+            wireframing/prototyping all HexLabs tech products and websites. 
+            We seek innovative thinkers who are passionate about their craft, eager to 
+            collaborate and grow as designers, and ready to create the never-before-seen.
           </Text>
         </div>
         <div className="right"></div>
