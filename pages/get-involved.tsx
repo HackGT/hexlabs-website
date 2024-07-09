@@ -83,7 +83,7 @@ export default function GetInvolved(props: Props) {
             journeys of different individuals as they create and see how you can
             join the movement to create for the sake of creating.{" "}
           </HCard>
-          <HCard header="Discord" coverImage="involved-discord.png">
+          <HCard header="Discord" coverImage="discord.png">
             Hackathons are undoubtedly incredible sources of creativity and
             inspiration. We want to capture that innovation and sustain it
             throughout the year by creating a supportive community of like

@@ -24,7 +24,7 @@ const events: Event[] = [
     title: "HackGT X: Journal of Memories",
     dates: "October 13 - 15, 2023",
     description:
-      "HackGTs 10th annual, and first entirely virtual, installment of our marquee collegiate hackathon! In 2023, 2500 participants came together to embark on a 36-hour adventure to ‘Reimagine Reality’. Our goal was to redefine what it means to have an incredible hacker experience through workshops, mentors, and tech talks. We hoped to spark our participants’ imagination and creativity as they reimagined and created their own world! ",
+      "HackGTs 10th annual collegiate hackathon! In 2023, 2500 participants came together to embark on a 36-hour adventure to innovate, reimagine, and shape the future. Through workshops, mentors, and tech talks from leading companies and renown leaders, we provided a surreal hackathon experience for all participants. We hoped to spark our participants’ imagination and creativity as they reimagined and created their own world!",
     devPostLink: "https://hackgt-x.devpost.com/",
     images: [
       {
@@ -48,7 +48,7 @@ const events: Event[] = [
     title: "HackGT 9: Retro Reset",
     dates: "October 21 - 23, 2022",
     description:
-      "HackGTs 9th annual installment of our marquee collegiate hackathon! In 2022, over 1000 participants came together to embark on a 36-hour adventure to ‘Retro Reset’. Our goal was to redefine what it means to have an incredible hacker experience through workshops, mentors, and tech talks. We hoped to spark our participants’ imagination and creativity as they reimagined and created their own world! ",
+      "HackGTs 9th annual collegiate hackathon! In 2022, over 1000 participants came together to embark on a 36-hour adventure to ‘Retro Reset’. With four unique tracks and close to $34,000 in prices, we hoped to spark our participants’ imagination and creativity as they experienced a virtul gaming arcade  ",
     devPostLink: "https://hackgt-9.devpost.com/",
     images: [
       {
@@ -72,7 +72,7 @@ const events: Event[] = [
     title: "HackGT 8: Discover Your Craft",
     dates: "October 22 - 24, 2021",
     description:
-      "HackGTs 8th annual installment of our flagship event! In 2021, 1500 participants joined together from across the globe to embark on a 36-hour adventure to ‘Discover Your Craft’. Our goal was to redefine what it means to have an incredible hacker experience through workshops, mentors, and tech talks. We hoped to spark our participants’ imagination and creativity as they reimagined and created their own world! ",
+      "HackGTs 8th annual installment of our flagship event! In 2021, 1500 participants joined together from across the globe to embark on a 36-hour adventure to ‘Discover Your Craft’. Our goal was to redefine what it means to have an incredible experience through both virtual and in-person workshops, mentors, and tech talks. We hoped to spark our participants’ creativity as they networked with other participants and hone their hacking skills.",
     devPostLink: "https://hackgt8.devpost.com/",
     images: [
       {

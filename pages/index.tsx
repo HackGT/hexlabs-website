@@ -163,8 +163,8 @@ export default function Home(props: Props) {
           />
 
           <InitiativeCard
-            coverImage="home-discord.jpg"
-            coverImageAlt="Guy looking in mirror"
+            coverImage="home-discord-new.png"
+            coverImageAlt="friends smiling at HackGT8"
             heading="Discord"
             body="Join the Hex Commons, a supportive community of like-minded
                   creators."
