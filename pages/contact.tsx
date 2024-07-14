@@ -21,7 +21,7 @@ export default function Contact(props: Props) {
           <Hex
             size={300}
             rotation={45}
-            image="/timeline-splash.png"
+            image="/contact-us.png"
             x="60%"
             y="9%"
           />
