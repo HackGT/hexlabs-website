@@ -39,7 +39,7 @@ export default function GetInvolved(props: Props) {
             x="55%"
             y="20%"
             size={300}
-            image="./get-involved.jpg"
+            image="./how-to-get-involved.jpg"
             rotation={15}
             imgOffsetX={0}
             imgOffsetY={0}
@@ -67,14 +67,14 @@ export default function GetInvolved(props: Props) {
           social media pages. Learn more below!
         </Text>
         <div>
-          <HCard header="Attend Events" coverImage="involved-events.png">
+          <HCard header="Attend Events" coverImage="attend-events.jpg">
             HexLabs hosts multiple events throughout the year for college and
             high school students. We hold our flagship hackathathon, HackGT,
             annually and we also host events such as Healthtech, Catalyst,
             Horizons, BuildGT and more! Visit our Events page to find out more
             information!
           </HCard>
-          <HCard header="Get on our Podcast" coverImage="involved-podcast.jpg">
+          <HCard header="Get on our Podcast" coverImage="join-podcast.jpg">
             Over the past 10 years, the hacker movement has exploded in
             popularity, but it is still shrouded in mystery. HexLabs has decided
             to explore this phenomenon and demystify what exactly is so
@@ -83,7 +83,7 @@ export default function GetInvolved(props: Props) {
             journeys of different individuals as they create and see how you can
             join the movement to create for the sake of creating.{" "}
           </HCard>
-          <HCard header="Discord" coverImage="involved-discord.png">
+          <HCard header="Discord" coverImage="discord.png">
             Hackathons are undoubtedly incredible sources of creativity and
             inspiration. We want to capture that innovation and sustain it
             throughout the year by creating a supportive community of like

@@ -21,6 +21,78 @@ interface Event {
 
 const events: Event[] = [
   {
+    title: "HackGT X: Journal of Memories",
+    dates: "October 13 - 15, 2023",
+    description:
+      "HackGTs 10th annual collegiate hackathon! In 2023, 2500 participants came together to embark on a 36-hour adventure to innovate, reimagine, and shape the future. Through workshops, mentors, and tech talks from leading companies and renown leaders, we provided a surreal hackathon experience for all participants. We hoped to spark our participants’ imagination and creativity as they reimagined and created their own world!",
+    devPostLink: "https://hackgt-x.devpost.com/",
+    images: [
+      {
+        id: "X-1",
+        alt: "participants smiling for a picture at HackGTX",
+        path: "/hackgtx-1.png",
+      },
+      {
+        id: "X-2",
+        alt: "stuffed animals with HackGTX t-shirts",
+        path: "/hackgtx-2.png",
+      },
+      {
+        id: "X-3",
+        alt: "teams working on their projects at HackGTX",
+        path: "/hackgtx-3.png",
+      },
+    ],
+  },
+  {
+    title: "HackGT 9: Retro Reset",
+    dates: "October 21 - 23, 2022",
+    description:
+      "HackGTs 9th annual collegiate hackathon! In 2022, over 1000 participants came together to embark on a 36-hour adventure to ‘Retro Reset’. With four unique tracks and close to $34,000 in prices, we hoped to spark our participants’ imagination and creativity as they experienced a virtul gaming arcade  ",
+    devPostLink: "https://hackgt-9.devpost.com/",
+    images: [
+      {
+        id: "9-1",
+        alt: "HackGT group picture 1",
+        path: "/hackgt9-1.png",
+      },
+      {
+        id: "9-2",
+        alt: "HackGT group picture 2",
+        path: "/hackgt9-2.png",
+      },
+      {
+        id: "9-3",
+        alt: "girl playing arcade game",
+        path: "/hackgt9-3.png",
+      },
+    ],
+  },
+  {
+    title: "HackGT 8: Discover Your Craft",
+    dates: "October 22 - 24, 2021",
+    description:
+      "HackGTs 8th annual installment of our flagship event! In 2021, 1500 participants joined together from across the globe to embark on a 36-hour adventure to ‘Discover Your Craft’. Our goal was to redefine what it means to have an incredible experience through both virtual and in-person workshops, mentors, and tech talks. We hoped to spark our participants’ creativity as they networked with other participants and hone their hacking skills.",
+    devPostLink: "https://hackgt8.devpost.com/",
+    images: [
+      {
+        id: "8-1",
+        alt: "HackGT9 light decorations",
+        path: "/hackgt8-1.png",
+      },
+      {
+        id: "8-2",
+        alt: "participants at workshop",
+        path: "/hackgt8-2.png",
+      },
+      {
+        id: "8-3",
+        alt: "HackGT9 decorations",
+        path: "/hackgt8-3.png",
+      },
+    ],
+  },
+  {
     title: "HackGT 7: Reimagine Reality",
     dates: "October 16 - 18, 2020",
     description:

@@ -79,8 +79,8 @@ export default function Home(props: Props) {
             x="40%"
             y="-50%"
             size={475}
-            image="/splash.png"
-            imageDy={300}
+            image="/main-picture.jpg"
+            imageDy={100}
             rotation={45}
           />
 
@@ -150,7 +150,7 @@ export default function Home(props: Props) {
         </Text>
         <SimpleGrid columns={[1, 1, 2]} spacing="40px">
           <InitiativeCard
-            coverImage="home-intouch-involved.jpg"
+            coverImage="get-involved-new.jpg"
             coverImageAlt="People smiling"
             heading="Getting Involved"
             body="Learn more about how you can get involved with HexLabs as an
@@ -163,8 +163,8 @@ export default function Home(props: Props) {
           />
 
           <InitiativeCard
-            coverImage="home-discord.jpg"
-            coverImageAlt="Guy looking in mirror"
+            coverImage="home-discord-new.png"
+            coverImageAlt="friends smiling at HackGT8"
             heading="Discord"
             body="Join the Hex Commons, a supportive community of like-minded
                   creators."
