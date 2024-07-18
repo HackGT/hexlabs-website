@@ -39,7 +39,7 @@ export default function GetInvolved(props: Props) {
             x="55%"
             y="20%"
             size={300}
-            image="./how-to-get-involved.jpg"
+            image="/how-to-get-involved.jpg"
             rotation={15}
             imgOffsetX={0}
             imgOffsetY={0}
