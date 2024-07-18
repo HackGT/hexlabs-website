@@ -313,7 +313,7 @@ export default function Timeline(props: Props) {
           learn, and prizes for winners!
         </p>
         <div className="hex-container">
-          <Hex size={300} rotation={45} image="/timeline-splash.png" x="60%" y="9%" />
+          <Hex size={300} rotation={45} image="/timeline-new.jpg" x="60%" y="9%" />
         </div>
       </section>
 
