@@ -37,7 +37,7 @@ const footerColumns: FooterColumn[] = [
     links: [
       {
         name: "Email",
-        href: "mailto:hello@hack.gt",
+        href: "mailto:hello@hexlabs.org",
       },
       {
         name: "Facebook",
