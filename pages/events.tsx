@@ -131,7 +131,7 @@ export default function Events(props: Props) {
             x="55%"
             y="20%"
             size={300}
-            image="./events.jpg"
+            image="./events.JPG"
             rotation={15}
             imgOffsetX={0}
             imgOffsetY={0}
