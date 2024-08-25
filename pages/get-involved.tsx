@@ -8,7 +8,7 @@ export default function GetInvolved(props: Props) {
   return (
     <>
       <section className="splash">
-        <div className="max-width-600">
+        <div className="max-width-500">
           <Text as="h1">How to Get Involved</Text>
           <Text>
             Get involved in an organization that takes pride in creating

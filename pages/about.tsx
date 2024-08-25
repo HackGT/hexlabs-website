@@ -45,10 +45,10 @@ export default function About(props: Props) {
       `}</style>
 
       <section className="splash">
-        <div className="max-width-600">
+        <div className="max-width-500">
           <Text as="h1">Meet the Team</Text>
           <Text>
-            Our Operations, Design, Technology, and Marketing Teams work hard throughout the year to
+            Our Operations, Design, Technology, Finance and Marketing Teams work hard throughout the year to
             put on hackathons and bring STEM opportunities to high school and college students.
           </Text>
         </div>

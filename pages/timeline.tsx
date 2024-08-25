@@ -306,7 +306,7 @@ export default function Timeline(props: Props) {
     <div>
       <section id="styles.customMargin" className="splash">
         <h1>HackGT</h1>
-        <p className="max-width-600">
+        <p className="max-width-500">
           Hackathons provide the community with the opportunity to grow, create, and impact. At
           HackGT, HexLabs teams up with sponsors from our community to provide issues relevant to
           today’s world for our HackGT participants to solve, provide workshops to help students

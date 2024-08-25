@@ -71,7 +71,7 @@ export default function Events(props: Props) {
   return (
     <>
       <section className="splash">
-        <div className="max-width-600">
+        <div className="max-width-500">
           <Text as="h1">Events</Text>
           <Text>
             Hackathons are 36-hour events where students from across the country come together for a

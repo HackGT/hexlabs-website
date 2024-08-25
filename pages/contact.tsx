@@ -8,7 +8,7 @@ export default function Contact(props: Props) {
   return (
     <>
       <section className="splash">
-        <div className="max-width-600">
+        <div className="max-width-500">
           <Text as="h1">Contact Us</Text>
           <Text>
             We want you to let us know what is going on. How do you feel about
