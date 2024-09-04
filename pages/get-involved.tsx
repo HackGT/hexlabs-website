@@ -39,7 +39,7 @@ export default function GetInvolved(props: Props) {
             x="55%"
             y="20%"
             size={300}
-            image="./how-to-get-involved.jpg"
+            image="/how-to-get-involved.JPG"
             rotation={15}
             imgOffsetX={0}
             imgOffsetY={0}
@@ -67,7 +67,7 @@ export default function GetInvolved(props: Props) {
           social media pages. Learn more below!
         </Text>
         <div>
-          <HCard header="Attend Events" coverImage="attend-events.jpg">
+          <HCard header="Attend Events" coverImage="attend-events.JPG">
             HexLabs hosts multiple events throughout the year for college and
             high school students. We hold our flagship hackathathon, HackGT,
             annually and we also host events such as Healthtech, Catalyst,

@@ -7,6 +7,42 @@ interface Props {}
 
 const previousEvents = [
   {
+    name: "Horizons 2024",
+    description:
+    "This is the third annual design and tech make-a-thon! This year's theme was celestial and cosmic creativity!",
+    coverImage: "horizons-2024.jpg",
+  },
+  {
+    name: "Horizons 2023",
+    description:
+      "This is the second annual design and tech make-a-thon! This year's theme was based on Sketchbook cafe rewarding over $900 in prizes!",
+    coverImage: "horizons-2023.jpg",
+  },
+  {
+    name: "Hackcon 2023",
+    description:
+      "An event hosted by MLH which welcomes over 300 participants annually with the opportunity to meet companies, attend skill-building workshops, and make new connections.",
+    coverImage: "hackcon-2023.jpg",
+  },
+  {
+    name: "Horizons 2022",
+    description:
+      "Horizons is a 24 hour long arts and tech make-a-thon! Partipicipants of any experience level are welcome to create any digital or design product.",
+    coverImage: "horizons-2022.jpg",
+  },
+  {
+    name: "Prototypical 2022",
+    description:
+      "This is Hexlabs second annual Make-A-Thon, a 9-hour long day event for participants to show off their creative skills with cardboard!",
+    coverImage: "prototypical-2022.jpg",
+  },
+  {
+    name: "Prototypical 2021",
+    description:
+      "Hosted on campus, Prototypical is a Make-A-Thon opportunity for participants to build cardboard prototypes, build hands-on products, and works in teams.",
+    coverImage: "prototypical-2021.jpg",
+  },
+  {
     name: "Horizons 2020",
     description:
       "Horizons is an art+tech make-a-thon that encouraged participants to bring their most creative and quirky ideas to life by fiddling with the intersection of art and tech",
@@ -95,7 +131,7 @@ export default function Events(props: Props) {
             x="55%"
             y="20%"
             size={300}
-            image="./events.jpg"
+            image="./events.JPG"
             rotation={15}
             imgOffsetX={0}
             imgOffsetY={0}

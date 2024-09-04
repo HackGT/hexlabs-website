@@ -150,7 +150,7 @@ export default function Home(props: Props) {
         </Text>
         <SimpleGrid columns={[1, 1, 2]} spacing="40px">
           <InitiativeCard
-            coverImage="get-involved-new.jpg"
+            coverImage="get-involved.jpg"
             coverImageAlt="People smiling"
             heading="Getting Involved"
             body="Learn more about how you can get involved with HexLabs as an
