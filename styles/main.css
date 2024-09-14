@@ -137,6 +137,15 @@ a:hover {
   z-index: 800;
 }
 
+.hex-image {
+  transition: transform 0.3s ease;
+}
+
+.hex-container svg:hover .hex-image {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 .dummy-card {
   width: 300px;
   height: 300px;
