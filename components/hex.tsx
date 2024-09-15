@@ -146,6 +146,7 @@ export default function Hex({
               patternTransform={`translate(${imageDx} ${imageDy})`}
             >
               <image
+                className="hex-image"
                 href={image}
                 x={`${0 + imgOffsetX}`}
                 y={`${0 + imgOffsetY}`}
