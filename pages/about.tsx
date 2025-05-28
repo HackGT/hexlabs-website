@@ -345,7 +345,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-finance-2025.png"
+                image="./about-finance-2025.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={50}
@@ -359,7 +359,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./about-finance-2025.png"
+                image="./about-finance-2025.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -400,7 +400,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-tech-new.jpg"
+                image="./about-tech-2025.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -414,7 +414,7 @@ export default function About(props: Props) {
                 x="60%"
                 y="20%"
                 size={300}
-                image="./about-tech-new.jpg"
+                image="./about-tech-2025.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
@@ -458,7 +458,7 @@ export default function About(props: Props) {
                 y="-15%"
                 transform="translate(-50%, 0px)"
                 size={120}
-                image="./about-ops-new.jpg"
+                image="./about-ops-2025.jpg"
                 color="transparent"
                 rotation={35}
                 imgOffsetX={0}
@@ -491,7 +491,7 @@ export default function About(props: Props) {
                 x="-15%"
                 y="-0%"
                 size={300}
-                image="./about-ops-new.jpg"
+                image="./about-ops-2025.jpg"
                 color="transparent"
                 borderSize={5}
                 borderColor="rgba(51,194,255,0.3)"
