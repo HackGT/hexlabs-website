@@ -79,7 +79,7 @@ export default function Home(props: Props) {
             x="40%"
             y="-50%"
             size={475}
-            image="/main-picture.jpg"
+            image="/main-picture.png"
             imageDy={100}
             rotation={45}
           />
