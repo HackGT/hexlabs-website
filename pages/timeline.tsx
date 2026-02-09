@@ -21,6 +21,54 @@ interface Event {
 
 const events: Event[] = [
   {
+    title: "HackGT 12: Midnight at the Museum",
+    dates: "September 26 - 28, 2025",
+    description:
+      "HackGTs 12th annual collegiate hackathon! In 2025, over 1,500 participants gathered for a 36-hour experience centered on innovation, problem-solving, and shaping the future. Exploring the museum at midnight, they expanded their knowledge through workshops, guest speakers, and hands-on collaboration to create projects that were truly thrilling.",
+    devPostLink: "https://hackgt-12.devpost.com/",
+    images: [
+      {
+        id: "12-1",
+        alt: "participants coding at HackGT12",
+        path: "/hackgt12-1.png",
+      },
+      {
+        id: "12-2",
+        alt: "participants smiling behind Starry Night at HackGT11",
+        path: "/hackgt12-2.png",
+      },
+      {
+        id: "12-3",
+        alt: "PrizePicks winners smiling together at HackGT12",
+        path: "/hackgt12-3.png",
+      },
+    ],
+  },
+  {
+    title: "HackGT 11: Circus of Inventions",
+    dates: "September 27 - 29, 2024",
+    description:
+      "HackGTs 11th annual collegiate hackathon! In 2024, over 1500 participants came together to embark on a 36-hour adventure to tackle novel challenges, win exciting prizes, and make lasting connections. Featuring guest speakers and mini-workshops, participants explored all that the carnival had to offer and came together to curate immersive, creative solutions that dazzled with innovation.",
+    dvPostLink: "https://hackgt-11-circus-of-invention.devpost.com/",
+    images: [
+      {
+        id: "11-1",
+        alt: "participants at opening ceremony of HackGT11",
+        path: "/hackgt11-1.png",
+      },
+      {
+        id: "11-2",
+        alt: "participants at a mini-workshop event at HackGT11",
+        path: "/hackgt11-2.png",
+      },
+      {
+        id: "11-3",
+        alt: "participants gathered together at HackGT11",
+        path: "/hackgt11-3.png",
+      },
+    ],
+  },
+  {
     title: "HackGT X: Journal of Memories",
     dates: "October 13 - 15, 2023",
     description:
