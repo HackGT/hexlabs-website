@@ -34,7 +34,7 @@ const events: Event[] = [
       },
       {
         id: "12-2",
-        alt: "participants smiling behind Starry Night at HackGT11",
+        alt: "participants smiling behind Starry Night at HackGT12",
         path: "/hackgt12-2.png",
       },
       {
