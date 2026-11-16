@@ -17,3 +17,5 @@ package-lock.json
 
 out/
 dist/
+/.cloudflare
+/public/.cloudflare

@@ -34,7 +34,7 @@ const events: Event[] = [
       },
       {
         id: "12-2",
-        alt: "participants smiling behind Starry Night at HackGT11",
+        alt: "participants smiling behind Starry Night at HackGT12",
         path: "/hackgt12-2.png",
       },
       {
@@ -49,7 +49,7 @@ const events: Event[] = [
     dates: "September 27 - 29, 2024",
     description:
       "HackGTs 11th annual collegiate hackathon! In 2024, over 1500 participants came together to embark on a 36-hour adventure to tackle novel challenges, win exciting prizes, and make lasting connections. Featuring guest speakers and mini-workshops, participants explored all that the carnival had to offer and came together to curate immersive, creative solutions that dazzled with innovation.",
-    dvPostLink: "https://hackgt-11-circus-of-invention.devpost.com/",
+    devPostLink: "https://hackgt-11-circus-of-invention.devpost.com/",
     images: [
       {
         id: "11-1",
