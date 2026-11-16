@@ -27,7 +27,7 @@ const InitiativeCard: React.FC<InitiativeCardProps> = (
         flexDirection="column"
         justifyContent="space-between"
         gap="5"
-        flexGrow="1"
+        flexGrow={1}
       >
         <Box>
           <Text as="h4">{props.heading}</Text>
